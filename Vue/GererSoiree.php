@@ -21,31 +21,11 @@
    <div class="col-12 p_colonne_gauche g-0"> <!-- Colonne principale  -->
    
    <div id="ImagePic">
-   <img src="./Image/PicduMidi.png" class="rounded-circle mx-auto d-block" width="20%" alt="image Pic">
+   <img src="../Image/PicduMidi.png" class="rounded-circle mx-auto d-block" width="20%" alt="image Pic">
+
    </div>
-   <div class="mt-5"></div>
-   
-   <div class="fs-4 fw-bold "> 
-    
-   <div class="col-3">
-			<p>Accueil</p>
     </div>
-
-    <div class="col-6">
-       <p>Atelier</p>
-    </div>
-
-    <div class="col-9">
-                         <p>salle</p>
-    </div>
-
-    <div class="col-12">
-			<p>Gérer soirée</p>
 </div>
-</div>
-</div>
-
-
 
 
 </main>
