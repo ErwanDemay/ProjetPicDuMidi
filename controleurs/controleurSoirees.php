@@ -15,14 +15,14 @@ switch ($action){
                        break;
     case 'modifierSoiree' : 
                        $id=$_GET['id'];
-                       $connexionBDDev = new SoireeDAO();
+                       $connexionBD = new SoireeDAO();
                        $laSoiree = $connexionBD->getUneSoiree($id);
-                       include("./vues/v_modifierSoiree.php");
+                       include("./vues/formulaires/v_modifierSoiree.php");
                        break;
     case 'soireeModifiee'  :
                         $connexionBD = new SoireeDAO();
 
-                        $id = $_POST['id'];
+                        $id = (int) $_POST['id'];
                         $nom = $_POST['nom'];
                         $date = $_POST['date'];
                         $lieu = $_POST['lieu'];

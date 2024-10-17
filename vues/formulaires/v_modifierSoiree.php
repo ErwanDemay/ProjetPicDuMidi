@@ -1,4 +1,4 @@
-<form action='/index.php?controleur=competences&action=competenceModifiee' method="POST">
+<form action='/index.php?controleur=soiree&action=soireeModifiee' method="POST">
   <div>
     <input type="hidden" name="id" id="id" value=' "<?php echo $laSoiree->getId(); ?>" '/>
   </div>
