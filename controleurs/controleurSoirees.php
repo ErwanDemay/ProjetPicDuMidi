@@ -18,5 +18,29 @@ switch ($action){
                        $laSoiree = $connexionBD->getUneSoiree($id);
                        include("vues/v_modifierSoiree.php");
                        break;
+    case 'soireeModifiee'  :
+                        $connexionBD = new SoireeDAO();
+
+                        $id = $_POST['id'];
+                        $nom = $_POST['nom'];
+                        $date = $_POST['date'];
+                        $lieu = $_POST['lieu'];
+                        $description = $_POST['description'];
+                        $nbPlaces = $_POST['nbPlaces'];
+
+                        $laSoiree = new Soiree($id, $nom, $date, $lieu, $description, $nbPlaces);
+
+                        $resultat = $connexionBDComp->editSoiree($laSoiree);
+
+                        $lesSoirees = $connexionBD->getLesSoirees();
+                        include("vues/v_consultationSoirees.php");
+                        break;
 }
 
+ase 'competenceModifiee'  :  
+    $connexionBDComp = new CompetencesDAO();
+    $competence = new Competence($_GET['id']);
+    $resultat = $connexionBDComp->editCompetence($_POST['id'],$_POST['nom']);
+    $lesCompetences = $connexionBDComp->getLesCompetences();
+    include("vues/competences.php");
+    break;
