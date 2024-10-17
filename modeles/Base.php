@@ -7,7 +7,7 @@ class Base {
 
     protected function setConnexionBase(string $nomdb, string $user, string $mdp) {         
 	try{
-            $serveurBdDistant = 'mysql-mancisidor.alwaysdata.net';
+            $serveurBdDistant = 'http://www.mysql-mancisidor.alwaysdata.net/mancisidor_bdd_picdumidi';
 
             $nomBdDistante = $nomdb;
             $this->db = new PDO("mysql:host=".$serveurBdDistant.";dbname=".$nomBdDistante,$user,$mdp);

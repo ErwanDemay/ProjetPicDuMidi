@@ -9,7 +9,7 @@ class Soiree {
     
     
     public function __construct($id, $nom, $date, $lieu, $description, $nbPlaces){
-        private int $id;
+        $this->id = $id;
         $this->nom = $nom;
         $this->date = $date;
         $this->lieu = $lieu;

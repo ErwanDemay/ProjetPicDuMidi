@@ -12,7 +12,7 @@ class SoireeDAO extends Base{
         $tableauSoirees = $resultatDeLaRequete->fetchAll();
         $lesObjSoirees = array();
         foreach($tableauSoirees as $uneLigneUneSoiree){
-            $uneSoiree = new Soiree($uneLigneUneSoiree $uneSoiree["id_soiree"],$uneSoiree["nom_soiree"],$uneSoiree["date_soiree"],$uneSoiree["lieu"],$uneSoiree["description"],$uneSoiree["nbPlaces"]);
+            $uneSoiree = new Soiree($uneLigneUneSoiree["id_soiree"],$uneLigneUneSoiree["nom_soiree"],$uneLigneUneSoiree["date_soiree"],$uneLigneUneSoiree["lieu"],$uneLigneUneSoiree["description"],$uneLigneUneSoiree["nbPlaces"]);
             $lesObjSoirees[] = $uneSoiree;
         }
         return $lesObjSoirees;
@@ -23,12 +23,12 @@ class SoireeDAO extends Base{
         return $resultatDeLaRequete;
     }
     
-    public function addSoiree($laSoiree){
+    public function addSoiree($soiree){
         $resultatDeLaRequete=$this->exec(" INSERT INTO soirees (`nom_soiree`, `date_soiree`,`lieu`,`description`,`nbPlaces`) VALUES('".$soiree->getNom()."','".$soiree->getDate()."','".$soiree->getLieu()."','".$soiree->getDescription()."'),'".$soiree->getNbPlaces()."';");
         return $resultatDeLaRequete;
     }
     
-    public function editSoiree($laSoiree){
+    public function editSoiree($soiree){
         $resultatDeLaRequete=$this->exec("UPDATE soirees SET `nom_soiree`, `date_soiree`,`lieu`,`description`,`nbPlaces`='".$soiree->getNom()."','".$soiree->getDate()."','".$soiree->getLieu()."','".$soiree->getDescription()."'),'".$soiree->getNbPlaces()."'WHERE id='".$soiree->getId()."';");
         return $resultatDeLaRequete;
     }
