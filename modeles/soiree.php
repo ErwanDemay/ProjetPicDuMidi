@@ -3,14 +3,16 @@ class Soiree {
     private int $id;
     private String $nom;
     private String $date;
+    private String $lieu;
     private String $description;
     private int $nbPlaces;
     
     
-    public function __construct($id, $nom, $date, $description, $nbPlaces){
-        $this->id = $id;
+    public function __construct($id, $nom, $date, $lieu, $description, $nbPlaces){
+        private int $id;
         $this->nom = $nom;
         $this->date = $date;
+        $this->lieu = $lieu;
         $this->description = $description;
         $this->nbPlaces = $nbPlaces;
     }
