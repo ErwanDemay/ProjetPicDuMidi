@@ -31,8 +31,18 @@ switch ($action){
 
                         $laSoiree = new Soiree($id, $nom, $date, $lieu, $description, $nbPlaces);
 
-                        $resultat = $connexionBDComp->editSoiree($laSoiree);
+                        $resultat = $connexionBD->editSoiree($laSoiree);
 
+                        $lesSoirees = $connexionBD->getLesSoirees();
+                        include("../vues/v_consultationSoirees.php");
+                        break;
+    case 'soireeModifiee'  :
+                        $connexionBD = new SoireeDAO();
+
+                        $id = $_POST['id'];
+                        
+                        $resultat = $connexionBD->deleteSoiree($id);
+    
                         $lesSoirees = $connexionBD->getLesSoirees();
                         include("../vues/v_consultationSoirees.php");
                         break;
