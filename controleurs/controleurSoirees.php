@@ -7,10 +7,10 @@ $action= "gestionSoirees";}
     
 
 switch ($action){
-    case 'gestionSoirees'  :
+    case 'consultationSoirees'  :
                        $connexionBD = new SoireeDAO();
                        $lesSoirees = $connexionBD->getLesSoirees();
-                       include("vues/v_gestionSoirees.php");
+                       include("vues/v_consultationSoirees.php");
                        break;
     case 'modifierSoiree' : 
                        $id=$_GET['id'];
