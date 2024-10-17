@@ -1,9 +1,3 @@
-<?php
-$id=$_GET['id'];
-
-
-?>
-
 <form action='/index.php?controleur=competences&action=competenceModifiee' method="POST">
   <div>
     <input type="hidden" name="id" id="id" value=' "<?php echo $id; ?>" '/>
