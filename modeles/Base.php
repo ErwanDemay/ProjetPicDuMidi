@@ -7,7 +7,7 @@ class Base {
 
     protected function setConnexionBase(string $nomdb, string $user, string $mdp) {         
 	try{
-            $serveurBdDistant = '';
+            $serveurBdDistant = 'mysql-mancisidor.alwaysdata.net';
 
             $nomBdDistante = $nomdb;
             $this->db = new PDO("mysql:host=".$serveurBdDistant.";dbname=".$nomBdDistante,$user,$mdp);
@@ -19,9 +19,6 @@ class Base {
 	}
     }
     
-    /**
-     * methode publique définie pour pouvoir accéder à la méthode query() de la propriété $db qui est privée.
-     */
     protected function query(string $sql) {
         return $this->db->query($sql);
     }
