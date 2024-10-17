@@ -14,7 +14,7 @@ switch ($action){
                        break;
     case 'modifierSoiree' : 
                        $id=$_GET['id'];
-                       $connexionBDDev = new DeveloppeurDAO();
+                       $connexionBDDev = new SoireeDAO();
                        $laSoiree = $connexionBD->getUneSoiree($id);
                        include("vues/v_modifierSoiree.php");
                        break;
