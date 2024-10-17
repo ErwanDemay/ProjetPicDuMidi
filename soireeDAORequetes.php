@@ -29,7 +29,7 @@ class SoireeDAO extends Base{
     }
     
     public function editSoiree($laSoiree){
-        $resultatDeLaRequete=$this->exec("UPDATE soirees SET `nom_soiree`, `date_soiree`,`lieu`,`description`,`nbPlaces`='".$soiree->getNom()."','".$soiree->getDate()."','".$soiree->getLieu()."','".$soiree->getDescription()."'),'".$soiree->getNbPlaces()."'WHERE id='".$id."';");
+        $resultatDeLaRequete=$this->exec("UPDATE soirees SET `nom_soiree`, `date_soiree`,`lieu`,`description`,`nbPlaces`='".$soiree->getNom()."','".$soiree->getDate()."','".$soiree->getLieu()."','".$soiree->getDescription()."'),'".$soiree->getNbPlaces()."'WHERE id='".$soiree->getId()."';");
         return $resultatDeLaRequete;
     }
 

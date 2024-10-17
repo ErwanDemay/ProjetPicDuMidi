@@ -36,11 +36,3 @@ switch ($action){
                         include("vues/v_consultationSoirees.php");
                         break;
 }
-
-ase 'competenceModifiee'  :  
-    $connexionBDComp = new CompetencesDAO();
-    $competence = new Competence($_GET['id']);
-    $resultat = $connexionBDComp->editCompetence($_POST['id'],$_POST['nom']);
-    $lesCompetences = $connexionBDComp->getLesCompetences();
-    include("vues/competences.php");
-    break;
