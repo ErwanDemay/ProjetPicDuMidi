@@ -1,6 +1,6 @@
 <?php
-include_once ("../modeles/Base.php");
-include_once ("../modeles/Soiree.php");
+include_once ("./modeles/Base.php");
+include_once ("./modeles/Soiree.php");
 class SoireeDAO extends Base{
     
     public function __construct(){
