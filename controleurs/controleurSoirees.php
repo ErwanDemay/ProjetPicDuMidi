@@ -9,7 +9,7 @@ $action= "consultationSoirees";}
   
 $connexionBD = new SoireeDAO();
                        $lesSoirees = $connexionBD->getLesSoirees();
-                       include("./vues/v_consultationSoirees.php");
+                       include("../vues/v_consultationSoirees.php");
 
 
 /*
