@@ -26,6 +26,9 @@ class Soiree {
     public function getDate(){
         return $this->date;
     }
+    public function getLieu(){
+        return $this->lieu;
+    }
     public function getDescription(){
         return $this->description;
     }
