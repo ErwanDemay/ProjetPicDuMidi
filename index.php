@@ -22,7 +22,7 @@
    <div class="col-12 p_colonne_gauche "> <!-- Colonne principale  -->
    
    <div id="ImagePic">
-   <img src="./Image/PicduMidi.png" class="rounded-circle mx-auto d-block" width="20%" alt="image Pic">
+   <img src="./Images/PicduMidi.png" class="rounded-circle mx-auto d-block" width="20%" alt="image Pic">
    </div>
    
    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"   >
