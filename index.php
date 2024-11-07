@@ -34,7 +34,7 @@
     <div class="col-3">
     <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Option1</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Retourner a l'accueil</a>
         </li>
       </ul>
       </div>
