@@ -20,7 +20,7 @@ class SoireeDAO extends Base{
     }
     
     public function deleteSoiree($id){
-        $resultatDeLaRequete=$this->exec("DELETE FROM soirees WHERE id_soiree=".$id->getId().";");
+        $resultatDeLaRequete=$this->exec("DELETE FROM soirees WHERE id_soiree=".$id.";");
         return $resultatDeLaRequete;
     }
     

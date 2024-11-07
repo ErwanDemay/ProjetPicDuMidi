@@ -36,6 +36,13 @@ switch ($action){
                         $lesSoirees = $connexionBD->getLesSoirees();
                         include("./vues/v_consultationSoirees.php");
                         break;
+    case 'supprimerSoiree' :
+                        $id=$_GET['id'];
+                        $connexionBD = new SoireeDAO();
+                        $connexionBD->deleteSoiree($id);
+                        $lesSoirees = $connexionBD->getLesSoirees();
+                        include("./vues/v_consultationSoirees.php");
+                        break;                        
     case 'soireeModifiee'  :
                         $connexionBD = new SoireeDAO();
 
