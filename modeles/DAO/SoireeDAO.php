@@ -30,8 +30,8 @@ class SoireeDAO extends Base{
     }
     
     public function editSoiree($soiree){
-        echo "UPDATE soirees SET `nom_soiree`, `date_soiree`,`lieu`,`description`,`nbPlaces`='".$soiree->getNom()."','".$soiree->getDate()."','".$soiree->getLieu()."','".$soiree->getDescription()."','".$soiree->getNbPlaces()."'WHERE id_soiree='".$soiree->getId()."';";
-        $resultatDeLaRequete=$this->exec("UPDATE soirees SET `nom_soiree`, `date_soiree`,`lieu`,`description`,`nbPlaces`='".$soiree->getNom()."','".$soiree->getDate()."','".$soiree->getLieu()."','".$soiree->getDescription()."','".$soiree->getNbPlaces()."'WHERE id_soiree='".$soiree->getId()."';");
+        //echo "UPDATE soirees SET `nom_soiree`='".$soiree->getNom()."', `date_soiree`='".$soiree->getDate()."',`lieu`='".$soiree->getLieu()."',`description`='".$soiree->getDescription()."',`nbPlaces`=".$soiree->getNbPlaces()." WHERE id_soiree=".$soiree->getId().";";
+        $resultatDeLaRequete=$this->exec("UPDATE soirees SET `nom_soiree`='".$soiree->getNom()."', `date_soiree`='".$soiree->getDate()."',`lieu`='".$soiree->getLieu()."',`description`='".$soiree->getDescription()."',`nbPlaces`=".$soiree->getNbPlaces()." WHERE id_soiree=".$soiree->getId().";");
         return $resultatDeLaRequete;
     }
 

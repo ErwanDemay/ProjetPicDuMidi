@@ -1,6 +1,6 @@
 <?php
 class Soiree {
-    private int $id;
+    private $id;
     private String $nom;
     private String $date;
     private String $lieu;

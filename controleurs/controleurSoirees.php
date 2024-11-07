@@ -22,7 +22,7 @@ switch ($action){
     case 'soireeModifiee'  :
                         $connexionBD = new SoireeDAO();
 
-                        $id = (int) $_POST['id'];
+                        $id =  $_POST['id'];
                         $nom = $_POST['nom'];
                         $date = $_POST['date'];
                         $lieu = $_POST['lieu'];
