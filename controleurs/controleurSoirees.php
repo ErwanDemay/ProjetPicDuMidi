@@ -51,6 +51,12 @@ switch ($action){
                         $resultat = $connexionBD->deleteSoiree($id);
     
                         $lesSoirees = $connexionBD->getLesSoirees();
-                        include("   ./vues/v_consultationSoirees.php");
+                        include("  ./vues/v_consultationSoirees.php");
                         break;
+
+    case 'ajouterSoiree' :  
+        $connexionBD = new SoireeDAO();
+        $lesSoirees = $connexionBD->getLesSoirees();
+        include("./vues/v_ajoutSoiree.php");
+        break;
 }

@@ -1,4 +1,5 @@
 <div id="description">
+        <a href="index.php?controleur=soiree&action=ajouterSoiree">Effectuer une réservation </a>
 <h2> Les soirées enregistrées sont : </h2>
 	<?php
 		foreach ($lesSoirees as $Soiree) {
