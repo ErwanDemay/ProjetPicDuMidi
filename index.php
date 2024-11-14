@@ -15,7 +15,7 @@
 </head>
 <body>
 <!--Création de colonne-->
- <main class="text-center border border-primary   " >
+ <main class="text-center border" >
 
    <div class="row align-items-stretch "> 
 
@@ -27,14 +27,13 @@
    
    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"   >
   <div class="container-fluid">
-    <a class="navbar-brand col-3">Barre de navigation : </a>
     
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
     
     <div class="col-3">
     <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Retourner a l'accueil</a>
+          <a class="nav-link active" aria-current="page" href="index.php">Retourner à l'accueil</a>
         </li>
       </ul>
       </div>
@@ -58,7 +57,7 @@
       <div class="col-3">
     <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.php?controleur=soiree">Gerer Soirée</a>
+          <a class="nav-link active" aria-current="page" href="./index.php?controleur=soiree">Gérer les soirées</a>
         </li>
       </ul>
       </div>

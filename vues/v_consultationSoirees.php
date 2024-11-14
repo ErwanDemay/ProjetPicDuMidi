@@ -1,5 +1,9 @@
 <div id="description">
-<h2> Les soirées enregistrées sont : </h2>
+<a href="index.php?controleur=soiree&action=ajouterSoiree" class="btn btn-success btn-lg rounded-pill shadow">
+    <i class="bi bi-plus-circle"></i> Créer une soirée
+</a>
+
+<h2>Voici la liste des soirées enregistrées : </h2>
 	<?php
 		foreach ($lesSoirees as $Soiree) {
                     //Affichage des informations de la soirées
