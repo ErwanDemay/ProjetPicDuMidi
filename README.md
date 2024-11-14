@@ -14,4 +14,12 @@ a changer :
         ajouter les infos pour les soirées ppour l'admin
         vérifier orthographe
 
+        table client 
+        et table association porteuse "Réservation" qui a pour clé primaire les deux clé primaire des autres tables 
+        champ "nbréservations" dans "réservation"
+
+        remplir les tables 
+
+        requête pour récuperer le nbplace restante  
+
 
