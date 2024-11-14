@@ -7,6 +7,9 @@ class Soiree {
     private String $description;
     private int $nbPlaces;
     
+
+
+
     
     public function __construct($id, $nom, $date, $lieu, $description, $nbPlaces){
         $this->id = $id;
@@ -16,6 +19,7 @@ class Soiree {
         $this->description = $description;
         $this->nbPlaces = $nbPlaces;
     }
+
     
     public function getId(){
         return $this->id;

@@ -57,6 +57,24 @@ switch ($action){
     case 'ajouterSoiree' :  
         $connexionBD = new SoireeDAO();
         $lesSoirees = $connexionBD->getLesSoirees();
-        include("./vues/v_ajoutSoiree.php");
+        include("./vues/formulaires/v_ajoutSoiree.php");
         break;
+
+    case 'soireeAjoutee' : 
+        $connexionBD = new SoireeDAO();
+
+                       
+                        $nom = $_POST['nom'];
+                        $date = $_POST['date'];
+                        $lieu = $_POST['lieu'];
+                        $description = $_POST['description'];
+                        $nbPlaces = $_POST['nbPlaces'];
+
+                        $laSoiree = new Soiree(null, $nom, $date, $lieu, $description, $nbPlaces);
+
+                        $resultat = $connexionBD->addSoiree($laSoiree);
+
+                        $lesSoirees = $connexionBD->getLesSoirees();
+                        include("./vues/v_consultationSoirees.php");
+                        break;
 }

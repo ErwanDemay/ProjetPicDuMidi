@@ -15,7 +15,7 @@
 </head>
 <body>
 <!--Création de colonne-->
- <main class="text-center border border-primary   " >
+ <main class="text-center border" >
 
    <div class="row align-items-stretch "> 
 
