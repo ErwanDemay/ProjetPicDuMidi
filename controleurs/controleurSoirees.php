@@ -10,8 +10,8 @@ $action= "consultationSoirees";}
 switch ($action){
     case 'prochainesSoirees'    :
                         $connexionBD = new SoireeDAO();
-                        $lesSoirees = $connexionBD->getLesSoirees();
-
+                        $lesSoirees = $connexionBD->getProchainesLesSoirees();
+                        include("./vues/v_consultationProchainesSoirees.php");
                         break;
     case 'consultationSoirees'  :
                        $connexionBD = new SoireeDAO();

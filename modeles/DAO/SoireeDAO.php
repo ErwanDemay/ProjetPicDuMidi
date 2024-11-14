@@ -9,7 +9,7 @@ class SoireeDAO extends Base{
     }
     
     public function getLesSoirees(){
-        $resultatDeLaRequete=$this->query("SELECT * FROM soirees;");
+        $resultatDeLaRequete=$this->query("SELECT * FROM soirees ORDER BY date_soiree;");
         $tableauSoirees = $resultatDeLaRequete->fetchAll();
         $lesObjSoirees = array();
         foreach($tableauSoirees as $uneLigneUneSoiree){
@@ -43,6 +43,17 @@ class SoireeDAO extends Base{
         $uneSoiree = $resultatDeLaRequete->fetch();
         $unObjSoiree = new Soiree($uneSoiree["id_soiree"],$uneSoiree["nom_soiree"],$uneSoiree["date_soiree"],$uneSoiree["lieu"],$uneSoiree["description"],$uneSoiree["nbPlaces"]);
         return $unObjSoiree;
+    }
+
+    public function getProchainesLesSoirees(){
+        $resultatDeLaRequete=$this->query("SELECT * FROM soirees WHERE date_soiree>curdate() ORDER BY date_soiree;");
+        $tableauSoirees = $resultatDeLaRequete->fetchAll();
+        $lesObjSoirees = array();
+        foreach($tableauSoirees as $uneLigneUneSoiree){
+            $uneSoiree = new Soiree($uneLigneUneSoiree["id_soiree"],$uneLigneUneSoiree["nom_soiree"],$uneLigneUneSoiree["date_soiree"],$uneLigneUneSoiree["lieu"],$uneLigneUneSoiree["description"],$uneLigneUneSoiree["nbPlaces"]);
+            $lesObjSoirees[] = $uneSoiree;
+        }
+        return $lesObjSoirees;
     }
 
 }

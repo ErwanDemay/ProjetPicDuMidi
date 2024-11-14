@@ -31,7 +31,7 @@
 </style>
 <div class="consultation">
 <div id="description">
-<a href="index.php?controleur=soiree&action=ajouterSoiree" class="myButton">
+<a href="index2.php?controleur=soiree&action=ajouterSoiree" class="myButton">
     <i class="bi bi-plus-circle"></i> Créer une soirée
 </a>
 
@@ -46,8 +46,8 @@
                                 "<p>Description : ".$Soiree->getDescription()."</p>".
                                 "<p>Nombre de places : ".$Soiree->getNbPlaces()."</p>";
 
-                    echo "<button><a href='index.php?controleur=soiree&action=supprimerSoiree&id=".$Soiree->getId()."'><img src='Images/supprimer.png' width='25px' height='25px'></a></button>";
-                    echo "<button><a href='index.php?controleur=soiree&action=modifierSoiree&id=".$Soiree->getId()."'><img src='Images/modifier.png' width='25px' height='25px'></a></button>";
+                    echo "<button><a href='index2.php?controleur=soiree&action=supprimerSoiree&id=".$Soiree->getId()."'><img src='Images/supprimer.png' width='25px' height='25px'></a></button>";
+                    echo "<button><a href='index2.php?controleur=soiree&action=modifierSoiree&id=".$Soiree->getId()."'><img src='Images/modifier.png' width='25px' height='25px'></a></button>";
                     //Pas d'envoi d'autre infos que l'id, on récupèrera tout dans le formulaire de modification
 
                     //Ligne et alinéas pour séparer les soirées
