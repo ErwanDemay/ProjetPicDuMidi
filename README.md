@@ -22,4 +22,5 @@ a changer :
 
         requête pour récuperer le nbplace restante  
 
-
+        //TODO ajouter phpUnit sur le projet 
+        Quand soirée ajoutée , mettre page intérmédiaire pour renviyer a l'accueil pour éviter les duplications 
