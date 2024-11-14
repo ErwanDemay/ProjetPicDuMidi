@@ -30,4 +30,6 @@
 
     <p>La soirée a bien été ajoutée</p>
     <a class="bouton" href='/index.php?controleur=soiree&action=consultationSoirees'>Retour accueil</a>";
+    <br>
+    <a class="bouton" href='/index.php?controleur=soiree'>Retour à la gestion des soirées</a>";
 
