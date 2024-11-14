@@ -8,6 +8,11 @@ if (isset($_GET['action'])){
 $action= "consultationSoirees";}
 
 switch ($action){
+    case 'prochainesSoirees'    :
+                        $connexionBD = new SoireeDAO();
+                        $lesSoirees = $connexionBD->getLesSoirees();
+
+                        break;
     case 'consultationSoirees'  :
                        $connexionBD = new SoireeDAO();
                        $lesSoirees = $connexionBD->getLesSoirees();
