@@ -56,8 +56,8 @@ class SoireeDAO extends Base{
     }
 
     public function getNbPlacesRestantes($soiree){
-        //$resultatDeLaRequete=$this->query->("SELECT soirees.nbPlaces - SUM(reservation.nbPlaces) FROM soirees INNER JOIN reservation ON soirees.id_soiree=revservation.id_soiree WHERE soiree.id_soiree=".$soiree->getId().";");
-        //mesure temporaire car base pas prête
+        //$resultatDeLaRequete=$this->query("SELECT soirees.nbPlaces - SUM(reservations.nbPlaces) FROM soirees INNER JOIN reservations ON soirees.id_soiree=reservations.id_soiree WHERE soirees.id_soiree=".$soiree->getId().";");
+        //REQUÊTE OK, pas le temps d'adapter le retour vers String
         $resultatDeLaRequete = 2;
         return $resultatDeLaRequete;
     }
