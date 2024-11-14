@@ -6,7 +6,7 @@
     h2 { font-size: 36px; color: #00698f; }
     .consultation{height: 100%;}
 
-    .myButton {
+    .bouton {
 	background:linear-gradient(to bottom, #4d4d4d 5%, #000000 100%);
 	background-color:#4d4d4d;
 	border-radius:28px;
@@ -20,18 +20,18 @@
 	text-decoration:none;
 	text-shadow:0px 1px 0px #2f6627;
 }
-.myButton:hover {
-	background:linear-gradient(to bottom, #000000 5%, #4d4d4d 100%);
-	background-color:#000000;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
-}
+    .bouton:hover {
+        background:linear-gradient(to bottom, #000000 5%, #4d4d4d 100%);
+        background-color:#000000;
+    }
+    .bouton:active {
+        position:relative;
+        top:1px;
+    }
 </style>
 <div class="consultation">
 <div id="description">
-<a href="index2.php?controleur=soiree&action=ajouterSoiree" class="myButton">
+<a href="index2.php?controleur=soiree&action=ajouterSoiree" class="bouton">
     <i class="bi bi-plus-circle"></i> Créer une soirée
 </a>
 
@@ -54,5 +54,6 @@
                     echo "<br><br> ------------------------------------ <br><br>";
         }
 	?>
+    <br><br><br><br><br><br>
 </div>
 </div>
