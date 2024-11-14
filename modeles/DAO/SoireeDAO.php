@@ -33,7 +33,6 @@ class SoireeDAO extends Base{
     
     
     public function editSoiree($soiree){
-        //echo "UPDATE soirees SET `nom_soiree`='".$soiree->getNom()."', `date_soiree`='".$soiree->getDate()."',`lieu`='".$soiree->getLieu()."',`description`='".$soiree->getDescription()."',`nbPlaces`=".$soiree->getNbPlaces()." WHERE id_soiree=".$soiree->getId().";";
         $resultatDeLaRequete=$this->exec("UPDATE soirees SET `nom_soiree`='".$soiree->getNom()."', `date_soiree`='".$soiree->getDate()."',`lieu`='".$soiree->getLieu()."',`description`='".$soiree->getDescription()."',`nbPlaces`=".$soiree->getNbPlaces()." WHERE id_soiree=".$soiree->getId().";");
         return $resultatDeLaRequete;
     }
@@ -56,4 +55,10 @@ class SoireeDAO extends Base{
         return $lesObjSoirees;
     }
 
+    public function getNbPlacesRestantes($soiree){
+        //$resultatDeLaRequete=$this->query->("SELECT soirees.nbPlaces - SUM(reservation.nbPlaces) FROM soirees INNER JOIN reservation ON soirees.id_soiree=revservation.id_soiree WHERE soiree.id_soiree=".$soiree->getId().";");
+        //mesure temporaire car base pas prête
+        $resultatDeLaRequete = 2;
+        return $resultatDeLaRequete;
+    }
 }
