@@ -1,26 +1,9 @@
 # ProjetPicDuMidi
-Première séance : 17/10/2024
-page index crée 
-a changer : 
-        la page d'accueil a adapter en fonction du site déja existant
-        liens fonctionnels (href normaux et controleurs)
 
+TODO: FAIRE DES PULLS A CHAQUE DEBUT DE SEANCE
 
-        Séance du 07/11/2024
-
-         TODO:  
-        accueil a changer
-        afficher les soirées pour les clients
-        ajouter les infos pour les soirées ppour l'admin
-        vérifier orthographe
-
-        table client 
-        et table association porteuse "Réservation" qui a pour clé primaire les deux clé primaire des autres tables 
-        champ "nbréservations" dans "réservation"
-
-        remplir les tables 
-
-        requête pour récuperer le nbplace restante  
-
-        //TODO ajouter phpUnit sur le projet 
-        Quand soirée ajoutée , mettre page intérmédiaire pour renviyer a l'accueil pour éviter les duplications 
+-Arranger le css (repartir de 0)
+-Mettre la documentation
+-Mettre en place les tests Unitaires (regler probleme erwan sur pc )
+-Ajouter aux soirées une heure de début et un prix
+-Faire en sorte que les soirées soient affichées sous forme de tableau pour plus de lisibiltié
