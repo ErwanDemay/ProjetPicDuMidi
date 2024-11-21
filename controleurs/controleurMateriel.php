@@ -9,41 +9,38 @@ $action= "consultationMateriel";}
 
 switch ($action){
     case 'consultationMateriel'  :
-                       $connexionBD = new MaterielDAO();
-                       $lesMateriels = $connexionBD->getLesMateriels();
+                       $MaterielDAO = new MaterielDAO();
+                       $lesMateriels = $MaterielDAO->getLesMateriels();
                        include("./vues/v_consultationMateriel.php");
                        break;
-    case 'modifierSoiree' : 
+    case 'modifierMateriel' : 
                        $id=$_GET['id'];
-                       $connexionBD = new SoireeDAO();
-                       $laSoiree = $connexionBD->getUneSoiree($id);
-                       include("./vues/formulaires/v_modifierSoiree.php");
+                       $MaterielDAO = new MaterielDAO();
+                       $leMateriel = $MaterielDAO->getUnMateriel($id);
+                       include("./vues/formulaires/v_modifierMateriel.php");
                        break;
-    case 'soireeModifiee'  :
-                        $connexionBD = new SoireeDAO();
+    case 'materielModifiee'  :
+                        $MaterielDAO = new MaterielDAO();
 
                         $id =  $_POST['id'];
                         $nom = $_POST['nom'];
-                        $date = $_POST['date'];
-                        $lieu = $_POST['lieu'];
-                        $description = $_POST['description'];
-                        $nbPlaces = $_POST['nbPlaces'];
+                        $etat = $_POST['etat'];
 
-                        $laSoiree = new Soiree($id, $nom, $date, $lieu, $description, $nbPlaces);
+                        $leMateriel = new Materiel($id, $nom, $etat);
 
-                        $resultat = $connexionBD->editSoiree($laSoiree);
+                        $resultat = $MaterielDAO->editMateriel($leMateriel);
 
-                        $lesSoirees = $connexionBD->getLesSoirees();
-                        include("./vues/v_consultationSoirees.php");
+                        $lesMateriels = $MaterielDAO->getLesMateriels();
+                        include("./vues/v_consultationMateriel.php");
                         break;
-    case 'supprimerSoiree' :
+    case 'supprimerMateriel' :
                         $id=$_GET['id'];
-                        $connexionBD = new SoireeDAO();
-                        $connexionBD->deleteSoiree($id);
-                        $lesSoirees = $connexionBD->getLesSoirees();
-                        include("./vues/v_consultationSoirees.php");
+                        $MaterielDAO = new MaterielDAO();
+                        $MaterielDAO->deleteMateriel($id);
+                        $lesMateriels = $MaterielDAO->getLesMateriels();
+                        include("./vues/v_consultationMateriel.php");
                         break;                        
-    case 'soireeModifiee'  :
+    /*case 'soireeModifiee'  :
                         $connexionBD = new SoireeDAO();
 
                         $id = $_POST['id'];
@@ -52,29 +49,26 @@ switch ($action){
     
                         $lesSoirees = $connexionBD->getLesSoirees();
                         include("  ./vues/v_consultationSoirees.php");
-                        break;
+                        break;*/
 
-    case 'ajouterSoiree' :  
-        $connexionBD = new SoireeDAO();
-        $lesSoirees = $connexionBD->getLesSoirees();
-        include("./vues/formulaires/v_ajoutSoiree.php");
+    case 'ajouterMateriel' :  
+        $MaterielDAO = new MaterielDAO();
+        $lesMateriels = $MaterielDAO->getLesMateriels();
+        include("./vues/formulaires/v_ajoutmateriel.php");
         break;
 
-    case 'soireeAjoutee' : 
-        $connexionBD = new SoireeDAO();
+    case 'materielAjoutee' : 
+        $MaterielDAO = new MaterielDAO();
 
                        
                         $nom = $_POST['nom'];
-                        $date = $_POST['date'];
-                        $lieu = $_POST['lieu'];
-                        $description = $_POST['description'];
-                        $nbPlaces = $_POST['nbPlaces'];
+                        $etat = $_POST['etat'];
 
-                        $laSoiree = new Soiree(null, $nom, $date, $lieu, $description, $nbPlaces);
+                        $leMateriel = new Materiel(null, $nom, $etat);
 
-                        $resultat = $connexionBD->addSoiree($laSoiree);
+                        $resultat = $MaterielDAO->addMateriel($leMateriel);
 
-                        $lesSoirees = $connexionBD->getLesSoirees();
-                        include("./vues/v_validationAjout.php");
+                        $lesMateriels = $MaterielDAO->getLesMateriels();
+                        include("./vues/v_consultationMateriel.php");
                         break;
 }

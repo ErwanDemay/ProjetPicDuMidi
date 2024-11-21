@@ -34,8 +34,17 @@ class MaterielDAO extends Base{
     
     
     public function editMateriel($materiel){
-        $resultatDeLaRequete=$this->exec("UPDATE materiel SET `nom_materiel`='".$materiel->getNom()."', `etat_materiel`='".$materiel->getEtat()." WHERE id_soiree=".$materiel->getId().";");
+        $req = "UPDATE materiel SET `nom_materiel`='".$materiel->getNom()."', `etat_materiel`='".$materiel->getEtat()."' WHERE materiel.id_materiel=".$materiel->getId().";";
+        echo $req;
+        $resultatDeLaRequete=$this->exec($req);
         return $resultatDeLaRequete;
+    }
+
+    public function getUnMateriel($id){
+        $resultatDeLaRequete=$this->query("SELECT * FROM materiel WHERE id_materiel='".$id."';");
+        $unMateriel = $resultatDeLaRequete->fetch();
+        $unObjMateriel = new Materiel($unMateriel["id_materiel"],$unMateriel["nom_materiel"],$unMateriel["etat_materiel"]);
+        return $unObjMateriel;
     }
 
     public function estEnPanne($materiel){
