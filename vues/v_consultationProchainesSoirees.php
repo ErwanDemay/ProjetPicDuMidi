@@ -22,7 +22,9 @@
                                 "<p>Date : ".$date_affichage."</p>".
                                 "<p>Lieu : ".$Soiree->getLieu()."</p>".
                                 "<p>Description : ".$Soiree->getDescription()."</p>".
-                                "<p>Nombre de places restantes : ".$connexionBD->getNbPlacesRestantes($Soiree)."</p>";
+                                "<p>Nombre de places restantes : ".$connexionBD->getNbPlacesRestantes($Soiree)."</p>".
+                                "<p>Prix : ".$Soiree->getPrix()."</p>".
+                                "<p>Date de début : ".$Soiree->getDateDebut()."</p>";
 
                     //Ligne et alinéas pour séparer les soirées
                     echo " <p>------------------------------------</p> ";

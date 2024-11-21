@@ -29,6 +29,14 @@
     <input name="nbPlaces" id="nbPlaces">
   </div>
   <div>
+    <label for="prix">Prix :</label>
+    <input type="prix" id="prix">
+  </div>
+  <div>
+    <label for="date_debut">Date de début : </label>
+    <input type="date" id="date_debut">
+  </div>
+  <div>
     <button>Ajouter la soirée </button>
   </div>
 </form>

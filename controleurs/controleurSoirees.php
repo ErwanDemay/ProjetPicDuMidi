@@ -33,8 +33,10 @@ switch ($action){
                         $lieu = $_POST['lieu'];
                         $description = $_POST['description'];
                         $nbPlaces = $_POST['nbPlaces'];
+                        $prix = $_POST['prix'];
+                        $date_debut = $_POST['date_debut'];
 
-                        $laSoiree = new Soiree($id, $nom, $date, $lieu, $description, $nbPlaces);
+                        $laSoiree = new Soiree($id, $nom, $date, $lieu, $description, $nbPlaces,$prix,$date_debut);
 
                         $resultat = $connexionBD->editSoiree($laSoiree);
 
@@ -74,8 +76,10 @@ switch ($action){
                         $lieu = $_POST['lieu'];
                         $description = $_POST['description'];
                         $nbPlaces = $_POST['nbPlaces'];
+                        $prix = $_POST['prix'];
+                        $date_debut = $_POST['date_debut'];
 
-                        $laSoiree = new Soiree(null, $nom, $date, $lieu, $description, $nbPlaces);
+                        $laSoiree = new Soiree(null, $nom, $date, $lieu, $description, $nbPlaces,$prix,$date_debut);
 
                         $resultat = $connexionBD->addSoiree($laSoiree);
 

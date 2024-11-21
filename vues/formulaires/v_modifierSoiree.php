@@ -32,6 +32,14 @@
     <label for="nbPlaces">Nombre de places :</label>
     <input name="nbPlaces" id="nbPlaces" value="<?php echo $laSoiree->getNbPlaces(); ?>"/>
   </div>
+  iv>
+    <label for="prix">Prix :</label>
+    <input type="prix" id="prix" value="<?php echo $laSoriee->getPrix();?>"/>
+  </div>
+  <div>
+    <label for="date_debut">Date de début : </label>
+    <input type="date" id="date_debut" value="<?php echo $laSoiree->getDateDebut();?>">
+  </div>
   <div>
     <button>Modifier</button>
   </div>

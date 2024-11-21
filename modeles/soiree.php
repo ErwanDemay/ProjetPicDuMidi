@@ -6,18 +6,25 @@ class Soiree {
     private String $lieu;
     private String $description;
     private int $nbPlaces;
+
+    private String $prix;
+
+    private String $date_debut;
     
 
 
 
     
-    public function __construct($id, $nom, $date, $lieu, $description, $nbPlaces){
+    public function __construct($id, $nom, $date, $lieu, $description, $nbPlaces,$prix,$date_debut){
         $this->id = $id;
         $this->nom = $nom;
         $this->date = $date;
         $this->lieu = $lieu;
         $this->description = $description;
         $this->nbPlaces = $nbPlaces;
+        $this->prix = $prix;
+        $this->date_debut= $date_debut;
+        
     }
 
     
@@ -38,5 +45,13 @@ class Soiree {
     }
     public function getNbPlaces(){
         return $this->nbPlaces;
+    }
+
+    public function getPrix(){
+        return $this->prix;
+    }
+
+    public function getDateDebut(){
+        return $this->date_debut;
     }
 }
