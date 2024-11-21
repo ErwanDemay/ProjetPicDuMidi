@@ -24,8 +24,7 @@
                                 "<p>Description : ".$Soiree->getDescription()."</p>".
                                 "<p>Nombre de places restantes : ".$connexionBD->getNbPlacesRestantes($Soiree)."</p>".
                                 "<p>Prix : ".$Soiree->getPrix()."</p>".
-                                "<p>Date de début : ".$Soiree->getDateDebut()."</p>";
-
+                                "<p>Heure de début : ".$Soiree->getHeureDebut()."</p>";
                     //Ligne et alinéas pour séparer les soirées
                     echo " <p>------------------------------------</p> ";
         }

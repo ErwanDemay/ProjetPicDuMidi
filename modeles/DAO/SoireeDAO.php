@@ -13,7 +13,7 @@ class SoireeDAO extends Base{
         $tableauSoirees = $resultatDeLaRequete->fetchAll();
         $lesObjSoirees = array();
         foreach($tableauSoirees as $uneLigneUneSoiree){
-            $uneSoiree = new Soiree($uneLigneUneSoiree["id_soiree"],$uneLigneUneSoiree["nom_soiree"],$uneLigneUneSoiree["date_soiree"],$uneLigneUneSoiree["lieu"],$uneLigneUneSoiree["description"],$uneLigneUneSoiree["nbPlaces"],$uneLigneUneSoiree["prix"],$uneLigneUneSoiree["date_debut"]);
+            $uneSoiree = new Soiree($uneLigneUneSoiree["id_soiree"],$uneLigneUneSoiree["nom_soiree"],$uneLigneUneSoiree["date_soiree"],$uneLigneUneSoiree["lieu"],$uneLigneUneSoiree["description"],$uneLigneUneSoiree["nbPlaces"], $uneLigneUneSoiree["prix"], $uneLigneUneSoiree["heureDebut"]);
             $lesObjSoirees[] = $uneSoiree;
         }
         return $lesObjSoirees;
@@ -26,21 +26,21 @@ class SoireeDAO extends Base{
     
     public function addSoiree($soiree) {
         $resultatDeLaRequete = $this->exec(
-            "INSERT INTO soirees (`nom_soiree`, `date_soiree`, `lieu`, `description`, `nbPlaces`,`prix`,`date_debut`) 
-             VALUES ('".$soiree->getNom()."', '".$soiree->getDate()."', '".$soiree->getLieu()."', '".$soiree->getDescription()."', '".$soiree->getNbPlaces()."' ,'".$soiree->getPrix()."'),'".$soiree->getDateDebut()."' ;");
+            "INSERT INTO soirees (`nom_soiree`, `date_soiree`, `lieu`, `description`, `nbPlaces`,`prix`,`heureDebut`) 
+             VALUES ('".$soiree->getNom()."', '".$soiree->getDate()."', '".$soiree->getLieu()."', '".$soiree->getDescription()."', '".$soiree->getNbPlaces()."' ,'".$soiree->getPrix()."', '".$soiree->getHeureDebut()."');");
         return $resultatDeLaRequete;
     }
     
     
     public function editSoiree($soiree){
-        $resultatDeLaRequete=$this->exec("UPDATE soirees SET `nom_soiree`='".$soiree->getNom()."', `date_soiree`='".$soiree->getDate()."',`lieu`='".$soiree->getLieu()."',`description`='".$soiree->getDescription()."',`nbPlaces`=".$soiree->getNbPlaces()."',`prix`=".$soiree->getPrix()."',`date_debut`=".$soiree->getDateDebut()."' WHERE id_soiree=".$soiree->getId().";");
+        $resultatDeLaRequete=$this->exec("UPDATE soirees SET `nom_soiree`='".$soiree->getNom()."', `date_soiree`='".$soiree->getDate()."',`lieu`='".$soiree->getLieu()."',`description`='".$soiree->getDescription()."',`nbPlaces`=".$soiree->getNbPlaces().",`prix` = '".$soiree->getPrix()."', `heureDebut`= '".$soiree->getHeureDebut()."'  WHERE id_soiree=".$soiree->getId().";");
         return $resultatDeLaRequete;
     }
 
     public function getUneSoiree($id){
         $resultatDeLaRequete=$this->query("SELECT * FROM soirees WHERE id_soiree='".$id."';");
         $uneSoiree = $resultatDeLaRequete->fetch();
-        $unObjSoiree = new Soiree($uneSoiree["id_soiree"],$uneSoiree["nom_soiree"],$uneSoiree["date_soiree"],$uneSoiree["lieu"],$uneSoiree["description"],$uneSoiree["nbPlaces"],$uneSoiree["prix"],$uneSoiree["date_debut"]);
+        $unObjSoiree = new Soiree($uneSoiree["id_soiree"],$uneSoiree["nom_soiree"],$uneSoiree["date_soiree"],$uneSoiree["lieu"],$uneSoiree["description"],$uneSoiree["nbPlaces"],$uneSoiree["prix"],$uneSoiree["heureDebut"]);
         return $unObjSoiree;
     }
 
@@ -49,7 +49,7 @@ class SoireeDAO extends Base{
         $tableauSoirees = $resultatDeLaRequete->fetchAll();
         $lesObjSoirees = array();
         foreach($tableauSoirees as $uneLigneUneSoiree){
-            $uneSoiree = new Soiree($uneLigneUneSoiree["id_soiree"],$uneLigneUneSoiree["nom_soiree"],$uneLigneUneSoiree["date_soiree"],$uneLigneUneSoiree["lieu"],$uneLigneUneSoiree["description"],$uneLigneUneSoiree["nbPlaces"],$uneLigneUneSoiree["prix"],$uneLigneUneSoiree["date_debut"]);
+            $uneSoiree = new Soiree($uneLigneUneSoiree["id_soiree"],$uneLigneUneSoiree["nom_soiree"],$uneLigneUneSoiree["date_soiree"],$uneLigneUneSoiree["lieu"],$uneLigneUneSoiree["description"],$uneLigneUneSoiree["nbPlaces"],$uneLigneUneSoiree["prix"],$uneLigneUneSoiree["heureDebut"]);
             $lesObjSoirees[] = $uneSoiree;
         }
         return $lesObjSoirees;

@@ -30,11 +30,11 @@
   </div>
   <div>
     <label for="prix">Prix :</label>
-    <input type="prix" id="prix">
+    <input name="prix" id="prix">
   </div>
   <div>
-    <label for="date_debut">Date de début : </label>
-    <input type="date" id="date_debut">
+  <label for="heureDebut">Heure de début : </label>
+  <input name="heureDebut" id="heureDebut">
   </div>
   <div>
     <button>Ajouter la soirée </button>
