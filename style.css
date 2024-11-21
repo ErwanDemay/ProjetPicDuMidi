@@ -1,0 +1,147 @@
+/* Fullscreen background settings */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px;
+  padding: 20px;
+  gap: 20px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-buttons-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.logo {
+  height: 70px;
+  margin-right: 60%;
+  cursor: pointer;
+}
+
+.nav-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.nav-button:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(1.1);
+}
+
+/* Sidebar icons */
+.sidebar {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sidebar-icon {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sidebar-icon:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+/* Main content container */
+.content {
+  /*position: relative;*/
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for readability */
+}
+
+/* Title styles */
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: 300;
+}
+
+/* Button styles */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.button {
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+  width: 200px;
+}
+
+.button:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.button-price {
+  font-weight: bold;
+}
+
+/* Button text alignment */
+.button-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Footer with timing information */
+.footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.8rem;
+}

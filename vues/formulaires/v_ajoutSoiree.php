@@ -9,8 +9,12 @@
     <input name="nom" id="nom" >
   </div>
   <div>
-    <label for="date">Date :</label>
-    <input name="date" id="date">
+    <?php
+    $today = date('Y-m-d'); 
+    $nextYear = date('Y-m-d', strtotime('+1 year'));
+    ?>
+    <label for="Calendar">Date :</label>
+    <input type="date" name="date" value="<?php echo $today; ?>" min="<?php echo $today; ?>" max="<?php echo $nextYear; ?>" />
   </div>
   <div>
     <label for="lieu">Lieu :</label>
