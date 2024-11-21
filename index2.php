@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -12,7 +13,7 @@
 <body>
 
 <div class="navbar">
-    <img src="./Image/PicduMidiLogo.webp" alt="Logo du Pic du Midi" class="logo">
+    <img src="./Images/PicduMidiLogo.webp" alt="Logo du Pic du Midi" class="logo">
     
     <div class="nav-buttons">
         <a class="nav-button" href="./index2.php?controleur=soiree">Gérer soirée</a>
@@ -34,6 +35,7 @@
                             include("./controleurs/controleurSoirees.php"); 
                             break;
               }
+              
 ?>
 
 
@@ -75,9 +77,9 @@
 <script>
 
     const images = [
-        'url("./Image/PicduMidi3.webp")',
-        'url("./Image/PicduMidi2.png")',
-        'url("./Image/PicduMidi.png")'
+        'url("./Images/PicduMidi3.webp")',
+        'url("./Images/PicduMidi6.png")',
+        'url("./Images/PicduMidi45.png")'
     ];
 
     let currentImageIndex = 0;
