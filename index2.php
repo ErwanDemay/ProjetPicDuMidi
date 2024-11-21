@@ -15,10 +15,10 @@
     <img src="./Images/PicduMidiLogo.webp" alt="Logo du Pic du Midi" class="logo">
     
     <div class="nav-buttons">
-        <a class="nav-button" href="./index2.php">Retour à l'accueil</a>
+        <a class="nav-button" href="./index2.php">accueil</a>
         <a class="nav-button" href="./index2.php?controleur=soiree&action=prochainesSoirees">Prochaine soirée</a>
         <a class="nav-button" href="./index2.php?controleur=soiree">Gérer soirée</a>
-        <button class="nav-button">À propos</button>
+        <a class="nav-button" href="./index2.php?controleur=materiel">Gérer matériels</a>
     </div>
 </div>
 
@@ -65,6 +65,9 @@
                         break;
                     case 'soiree' : 
                             include("./controleurs/controleurSoirees.php"); 
+                            break;
+                    case 'materiel' : 
+                            include("./controleurs/controleurMateriel.php"); 
                             break;
               }
 ?>
