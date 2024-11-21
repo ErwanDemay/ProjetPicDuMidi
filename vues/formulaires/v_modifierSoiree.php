@@ -13,8 +13,12 @@
     <input name="nom" id="nom" value="<?php echo $laSoiree->getNom(); ?>"/>
   </div>
   <div>
-    <label for="date">Date :</label>
-    <input name="date" id="date" value="<?php echo $laSoiree->getDate(); ?>"/>
+  <?php
+    $today = date('Y-m-d'); 
+    $nextYear = date('Y-m-d', strtotime('+1 year'));
+    ?>
+    <label for="Calendar">Date :</label>
+    <input type="date" name="date" value="<?php echo $laSoiree->getDate(); ?>" min="<?php echo $today; ?>" max="<?php echo $nextYear; ?>" />
   </div>
   <div>
     <label for="lieu">Lieu :</label>
