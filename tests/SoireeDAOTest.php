@@ -5,7 +5,7 @@ require_once('../modeles/DAO/SoireeDAO.php');
 require_once('../modeles/soiree.php');
 
 class SoireeDAOTests extends TestCase{
-    SoireeDAO $monDAO = new SoireeDAO();
+    $monDAO = new SoireeDAO();
 
     /**
      * Test que la fonction getLesSoirees() retourne bien une collection de soirées
@@ -23,10 +23,16 @@ class SoireeDAOTests extends TestCase{
      * @param $soiree  objet soirée créé pour le test
      * @return $lesSoirees  collection d'objets Soiree
      */
-    public function testGetLesSoirees(){
-        $soireeAAjouter = new Soiree(156, 'soireeTestPHPUnit', '9999-11-11', 'salle 24', 'may Allah destroy PHPUnit', 12);
+    public function testAddSoiree(){
+        $soireeAAjouter = new Soiree(156, 'soireeDAOTestPHPUnit', '9999-11-11', 'salle 24', 'may Allah destroy PHPUnit', 12);
+        $monDAO->addSoiree($soireeAAjouter);
 
         $lesSoirees = $monDAO->getLesSoirees();
-        $this->assertContainsOnlyInstancesOf(MyClass::Soiree, $lesSoirees);
-    }
+        for ($lesSoirees as $uneSoiree){
+            if ($uneSoiree->getId() == 156){
+                $laSoiree = $uneSoiree;
+            }
+        }
+        $this->assertEquals(156, $laSoiree->getId(), 'NOK_AddSoiree');
+}
 }
