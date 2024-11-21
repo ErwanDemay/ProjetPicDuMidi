@@ -13,9 +13,13 @@
 	<?php
 		foreach ($lesSoirees as $Soiree) {
             
+        // Récupération et transformation de la date
+        $date_bdd = $Soiree->getDate(); // Format AAAA-MM-JJ
+        $date_affichage = DateTime::createFromFormat('Y-m-d', $date_bdd)->format('d-m-Y'); // Format JJ-MM-AAAA
+
                     //Affichage des informations de la soirées
                     echo        "<p>Nom : ".$Soiree->getNom()."</p>".
-                                "<p>Date : ".$Soiree->getDate()."</p>".
+                                "<p>Date : ".$date_affichage."</p>".
                                 "<p>Lieu : ".$Soiree->getLieu()."</p>".
                                 "<p>Description : ".$Soiree->getDescription()."</p>".
                                 "<p>Nombre de places restantes : ".$connexionBD->getNbPlacesRestantes($Soiree)."</p>";
