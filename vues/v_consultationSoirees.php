@@ -39,7 +39,6 @@
 	<?php
 		foreach ($lesSoirees as $Soiree) {
 
-              // Récupération et transformation de la date
             $date_bdd = $Soiree->getDate(); // Format AAAA-MM-JJ
             $date_affichage = DateTime::createFromFormat('Y-m-d', $date_bdd)->format('d-m-Y'); // Format JJ-MM-AAAA
             
