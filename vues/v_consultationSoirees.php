@@ -28,14 +28,17 @@
         position:relative;
         top:1px;
     }
+    th {color:black;}
 </style>
 <div class="consultation">
-<div id="description">
+<table id="description">
 <a href="index2.php?controleur=soiree&action=ajouterSoiree" class="bouton">
     <i class="bi bi-plus-circle"></i> Créer une soirée
 </a>
 
 <h2>Voici la liste des soirées enregistrées : </h2>
+<table>
+    <tr> <th>Nom</th> <th>Date</th> <th>Lieu</th> <th>Description</th> <th>Nombre de places</th> <th>Nombre de places restantes</th> <th>Prix</th> <th>Heure de début</th> <th>Supprimer</th> <th>Modifier</th></tr>
 	<?php
 		foreach ($lesSoirees as $Soiree) {
 
@@ -43,25 +46,28 @@
             $date_affichage = DateTime::createFromFormat('Y-m-d', $date_bdd)->format('d-m-Y'); // Format JJ-MM-AAAA
             
                     //Affichage des informations de la soirées
-                    echo        "<p>Nom : ".$Soiree->getNom()."</p>".
-                                "<p>Date : ".$date_affichage."</p>".
-                                "<p>Lieu : ".$Soiree->getLieu()."</p>".
-                                "<p>Description : ".$Soiree->getDescription()."</p>".
-                                "<p>Nombre de places : ".$Soiree->getNbPlaces()."</p>".
-                                "<p>Nombre de places restantes : ".$connexionBD->getNbPlacesRestantes($Soiree)."</p>".
-                                "<p>Prix : ".$Soiree->getPrix()."</p>".
-                                "<p>Heure de début : ".$Soiree->getHeureDebut()."</p>";
+                    echo        "<tr>".
+                                "<td><p>".$Soiree->getNom()."</p></td>".
+                                "<td><p>".$date_affichage."</p></td>".
+                                "<td><p>".$Soiree->getLieu()."</p></td>".
+                                "<td><p>".$Soiree->getDescription()."</p></td>".
+                                "<td><p>".$Soiree->getNbPlaces()."</p></td>".
+                                "<td><p>".$connexionBD->getNbPlacesRestantes($Soiree)."</p></td>".
+                                "<td><p>".$Soiree->getPrix()."</p></td>".
+                                "<td><p>".$Soiree->getHeureDebut()."</p></td>";
 
                                 
 
-                    echo "<button><a href='index2.php?controleur=soiree&action=supprimerSoiree&id=".$Soiree->getId()."'><img src='Images/supprimer.png' width='25px' height='25px'></a></button>";
-                    echo "<button><a href='index2.php?controleur=soiree&action=modifierSoiree&id=".$Soiree->getId()."'><img src='Images/modifier.png' width='25px' height='25px'></a></button>";
+                    echo "<td><button><a href='index2.php?controleur=soiree&action=supprimerSoiree&id=".$Soiree->getId()."'><img src='Images/supprimer.png' width='25px' height='25px'></a></button></td>";
+                    echo "<td><button><a href='index2.php?controleur=soiree&action=modifierSoiree&id=".$Soiree->getId()."'><img src='Images/modifier.png' width='25px' height='25px'></a></button></td>";
                     //Pas d'envoi d'autre infos que l'id, on récupèrera tout dans le formulaire de modification
-
+                    echo "</tr>";
                     //Ligne et alinéas pour séparer les soirées
-                    echo "<br><br> ------------------------------------ <br><br>";
+                    //echo "<br><br> ------------------------------------ <br><br>";
         }
 	?>
+</table>
     <br><br><br><br><br><br>
+    </table>
 </div>
 </div>
