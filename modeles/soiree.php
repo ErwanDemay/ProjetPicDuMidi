@@ -44,7 +44,7 @@ class Soiree {
      * Summary of prix
      * @var int $prix  prix de la soirée
      */
-    private String $prix;
+    private int $prix;
     /**
      * Summary of  heureDebut
      * @var string $heureDebut heure de début de la soirée
