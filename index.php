@@ -8,14 +8,14 @@
 </head>
 <body>
 
-<!--diaporama fond-->
+<div id="ombre">
 <div class="diaporama">
-    <div class="diaporamaContenu">
-      <img class="diapo" src="../Images/PicduMidi1.png" alt="Image 1">
-      <img class="diapo" src="../Images/PicduMidi2.png" alt="Image 2">
-      <img class="diapo" src="../Images/PicduMidi3.png" alt="Image 3">
-    </div>
+  <div class="diaporamaContenu">
+    <img class="diapo" src="../Images/PicduMidi1.png" alt="Image 1">
+    <img class="diapo" src="../Images/PicduMidi2.png" alt="Image 2">
+    <img class="diapo" src="../Images/PicduMidi3.png" alt="Image 3">
   </div>
+</div>
 
   <nav>
     <ul>
@@ -31,14 +31,16 @@
     </ul>
   </nav>
 
+  <div id="contenuIndex">
   <div id="txtAccueil">
     <h1>LE PIC DU MIDI 2877M</h1>
     <h2>Le Balcon des Pyrénées</h2>
-    <br>
     <p class="pAccueil">Venez vivre un moment hors du temps en contemplant la vue à couper le souffle qui s'offre à vous. Bienvenue au Pic du Midi…</p>
     <br>
-    <button class="buttonBilleterie">Billeterie</button>
+    <button id="buttonBilleterie">Billeterie</button>
   </div>
+</div>
+</div>
 
 </body>
 </html>

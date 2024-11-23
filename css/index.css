@@ -1,14 +1,25 @@
 /*tout n'est pas commenté mais c'est déjà bien celui qui râle je le couche*/
+
+body {
+    overflow-x: hidden; /*désactive le scroll horizontal*/
+    width: 100vw;
+    height: 100vh;
+  }
+#ombre {
+    background-color: #00000081;
+}
+
 /*style de la navbar*/
 nav {
+    padding-left: 50px;
     background-color: #333;
-    border-radius: 15px;
 }
 
 nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
+    padding-right: 5%;
 }
 
 nav li {
@@ -102,4 +113,55 @@ nav li {
     30%, 55%{left: -100%}
     
     60%, 85%{left: -200%}
+}
+
+/*style pour la le contenu de l'index */
+#contenuIndex {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#txtAccueil {
+    color: white;
+    width: 60%;
+    height: 30%;
+    /*background-color: #00000081;*/
+    border-radius: 10px;
+    /*box-shadow: 0 10px 10px #00000081;*/
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+  /*style du bouton billeterie*/
+#buttonBilleterie {
+    width: 9em;
+    height: 3em;
+    border-radius: 30em;
+    font-size: 15px;
+    font-family: inherit;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+   
+#buttonBilleterie::before {
+    content: '';
+    width: 0;
+    height: 3em;
+    border-radius: 30em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, #0f92d8 0%, #0d2ecf 100%);
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+#buttonBilleterie:hover::before {
+    width: 9em;
 }
