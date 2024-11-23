@@ -5,16 +5,16 @@
 <a href="index.php?controleur=materiel&action=ajouterMateriel" class="bouton">
     <i class="bi bi-plus-circle"></i> Créer un matériel</a>
 
-<h2>Voici la liste des matériels enregistrées : </h2>
-<table>
+<h2>Voici la liste des matériels : </h2>
+<table style="justify-content:center;">
     <tr> <th>Nom</th> <th>État</th> <th>Suppimer</th> <th>Modifier</th></tr>
 	<?php
 		foreach ($lesMateriels as $Materiel) {
             
                     //Affichage des informations de la soirées
                     echo        "<tr>".
-                                "<td><p>Nom : ".$Materiel->getNom()."</p></td>".
-                                "<td><p>État : ".$Materiel->getEtat()."</p></td>";
+                                "<td><p>".$Materiel->getNom()."</p></td>".
+                                "<td><p> ".$Materiel->getEtat()."</p></td>";
 
                     echo "<td><button><a href='index.php?controleur=materiel&action=supprimerMateriel&id=".$Materiel->getId()."'><img src='Images/supprimer.png' width='25px' height='25px'></a></button></td>";
                     echo "<td><button><a href='index.php?controleur=materiel&action=modifierMateriel&id=".$Materiel->getId()."'><img src='Images/modifier.png' width='25px' height='25px'></a></button></td>";

@@ -25,9 +25,7 @@ class SoireeDAO extends Base{
     }
     
     public function addSoiree($soiree) {
-        $resultatDeLaRequete = $this->exec(
-            "INSERT INTO soirees (`nom_soiree`, `date_soiree`, `lieu`, `description`, `nbPlaces`,`prix`,`heureDebut`) 
-             VALUES ('".$soiree->getNom()."', '".$soiree->getDate()."', '".$soiree->getLieu()."', '".$soiree->getDescription()."', '".$soiree->getNbPlaces()."' ,'".$soiree->getPrix()."', '".$soiree->getHeureDebut()."');");
+        $resultatDeLaRequete = $this->exec("INSERT INTO soirees (`nom_soiree`, `date_soiree`, `lieu`, `description`, `nbPlaces`,`prix`,`heureDebut`) VALUES ('".$soiree->getNom()."', ".$soiree->getDate().", '".$soiree->getLieu()."', '".$soiree->getDescription()."', ".$soiree->getNbPlaces()." ,".$soiree->getPrix().", '".$soiree->getHeureDebut()."');");
         return $resultatDeLaRequete;
     }
     
