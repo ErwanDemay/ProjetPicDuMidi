@@ -1,88 +1,43 @@
-<?php
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Pic du midi application</title>
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="./main.css" rel="stylesheet"/>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pic du Mid</title>
+  <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-<!--Création de colonne-->
- <main class="text-center border" >
 
-   <div class="row align-items-stretch "> 
+  <nav>
 
-   <div class="col-12 p_colonne_gauche "> <!-- Colonne principale  -->
-   
-   <div id="ImagePic">
-   <img src="./Images/PicduMidi.png" class="rounded-circle mx-auto d-block" width="20%" alt="image Pic">
-   </div>
-   
-   <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark"   >
-  <div class="container-fluid">
-    
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-    
-    <div class="col-3">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.php">Retourner à l'accueil</a>
-        </li>
-      </ul>
+    <li class="navButton">
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <!--<i class="fas fa-bars"></i> element for the hamburger icon-->
+        <p id="btnGestion">Gestion ⯆ </p>
+      </label>
+      <div class="navMobile">
+        <a class="navButton">Soirées</a>
+        <a class="navButton">Matériels</a>
       </div>
+    </li>
 
-      <div class="col-3">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Prochaines soirées</a>
-        </li>
-      </ul>
-      </div>
-
-      <div class="col-3">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Option3</a>
-        </li>
-      </ul>
-      </div>
-
-      <div class="col-3">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="./index.php?controleur=soiree">Gérer les soirées</a>
-        </li>
-      </ul>
-      </div>
+    <li><a class="navButton" href="./index2.php?controleur=soiree">Gérer soirée</a></li>
+    <li><a class="navButton" href="./index2.php?controleur=materiel">Gérer matériels</a></li>
+    <li><a class="navButton" href="./index2.php?controleur=soiree&action=prochainesSoirees">Prochaines soirées</a></li>
+    <li><a class="navButton" href="./index2.php">Accueil</a></li>
+  
+  </nav>
 
 
-
-    </div>
+  <div id="txtAccueil">
+    <h1>LE PIC DU MIDI 2877M</h1>
+    <h2>Le Balcon des Pyrénées</h2>
+    <br>
+    <p class="pAccueil">Venez vivre un moment hors du temps en contemplant la vue à couper le souffle qui s'offre à vous. Bienvenue au Pic du Midi…</p>
+    <br>
+    <button class="buttonBilleterie">Billeterie</button>
   </div>
-</nav>
 
-<?php
-            if (isset($_GET['controleur']))
-				$controleur=filter_var($_GET['controleur'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-			else
-				$controleur= "general";
-                    
-            switch ($controleur){
-                    case 'soiree' : 
-                            include("./controleurs/controleurSoirees.php"); 
-                            break;
-              }
-?>
-
-
-
-</main>
 </body>
 </html>
