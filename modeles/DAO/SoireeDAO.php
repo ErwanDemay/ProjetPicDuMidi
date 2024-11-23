@@ -9,7 +9,7 @@ class SoireeDAO extends Base{
     }
     
     public function getLesSoirees(){
-        $resultatDeLaRequete=$this->query("SELECT * FROM soirees ORDER BY date_soiree;");
+        $resultatDeLaRequete=$this->query("SELECT * FROM soirees ORDER BY date_soiree DESC;");
         $tableauSoirees = $resultatDeLaRequete->fetchAll();
         $lesObjSoirees = array();
         foreach($tableauSoirees as $uneLigneUneSoiree){
