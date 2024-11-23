@@ -36,7 +36,7 @@
 
 <h2>Voici la liste des matériels enregistrées : </h2>
 <table>
-    <tr> <th>Nom</th> <th>État</th></tr>
+    <tr> <th>Nom</th> <th>État</th> <th>Suppimer</th> <th>Modifier</th></tr>
 	<?php
 		foreach ($lesMateriels as $Materiel) {
             
@@ -45,8 +45,8 @@
                                 "<td><p>Nom : ".$Materiel->getNom()."</p></td>".
                                 "<td><p>État : ".$Materiel->getEtat()."</p></td>";
 
-                    echo "<button><a href='index2.php?controleur=materiel&action=supprimerMateriel&id=".$Materiel->getId()."'><img src='Images/supprimer.png' width='25px' height='25px'></a></button>";
-                    echo "<button><a href='index2.php?controleur=materiel&action=modifierMateriel&id=".$Materiel->getId()."'><img src='Images/modifier.png' width='25px' height='25px'></a></button>";
+                    echo "<td><button><a href='index2.php?controleur=materiel&action=supprimerMateriel&id=".$Materiel->getId()."'><img src='Images/supprimer.png' width='25px' height='25px'></a></button></td>";
+                    echo "<td><button><a href='index2.php?controleur=materiel&action=modifierMateriel&id=".$Materiel->getId()."'><img src='Images/modifier.png' width='25px' height='25px'></a></button></td>";
                     //Pas d'envoi d'autre infos que l'id, on récupèrera tout dans le formulaire de modification
 
                     //Alinéas pour séparer les soirées
