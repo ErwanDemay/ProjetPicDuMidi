@@ -8,13 +8,22 @@
 </head>
 <body>
 
+<!--diaporama fond-->
+<div class="diaporama">
+    <div class="diaporamaContenu">
+      <img class="diapo" src="../Images/PicduMidi1.png" alt="Image 1">
+      <img class="diapo" src="../Images/PicduMidi2.png" alt="Image 2">
+      <img class="diapo" src="../Images/PicduMidi3.png" alt="Image 3">
+    </div>
+  </div>
+
   <nav>
     <ul>
-      <li><a class="navButton" href="./index2.php">Accueil</a></li>
-      <li><a class="navButton" href="./index2.php?controleur=soiree&action=prochainesSoirees">Prochaines soirées</a></li>
-      <li class="dropdown">
-        <a class="navButton" href="#">Gestion</a>
-        <ul class="dropdown-menu">
+      <li><a class="navBoutton" href="./index2.php">Accueil</a></li>
+      <li><a class="navBoutton" href="./index2.php?controleur=soiree&action=prochainesSoirees">Prochaines soirées</a></li>
+      <li class="sousMenu">
+        <a class="navBoutton" href="#">Gestion</a>
+        <ul class="sousMenuUl">
           <li><a class="" href="./index2.php?controleur=soiree">Soirées</a></li>
           <li><a class="" href="./index2.php?controleur=materiel">Matériels</a></li>
         </ul>

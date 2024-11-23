@@ -1,3 +1,4 @@
+/*tout n'est pas commenté mais c'est déjà bien celui qui râle je le couche*/
 /*style de la navbar*/
 nav {
     background-color: #333;
@@ -14,7 +15,7 @@ nav li {
     position: relative; /*ça évite que la barre de scroll pop quand on survol Gestion*/
 }
 
-.navButton {
+.navBoutton {
     display: block;
     color: white;
     text-align: center;
@@ -22,13 +23,13 @@ nav li {
     text-decoration: none; /*pour pas qu'il y ai le sous ligné dégeulasse*/
 }
 
-.navButton:hover {
+.navBoutton:hover {
     background-color: #111;
     border-radius: 15px;
 }
 
 /*style du sous-menu*/
-.dropdown-menu {
+.sousMenuUl {
     display: none;
     position: absolute;
     top: 100%;
@@ -42,18 +43,63 @@ nav li {
     text-align: center;
 }
 
-.dropdown-menu a {
+.sousMenuUl a {
     display: block;
     padding: 10px 15px;
     color: white;
     text-decoration: none;
 }
 
-.dropdown-menu a:hover {
+.sousMenuUl a:hover {
     color: #fa5300;
 }
 
 /*pour afficher le sous menu au survol*/
-.dropdown:hover .dropdown-menu {
+.sousMenu:hover .sousMenuUl {
     display: block;
+}
+
+
+/*c pr afficher le diapo en fond*/
+/*ce qui suit relève de l'ésotérisme, prière de ne pas toucher*/
+.diaporama {
+    z-index: -159561561; /*sah au moins on est sûr qu'il est au fond*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.diaporama .diaporamaContenu {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    animation: diaporama 16s infinite;
+}
+
+.diaporama .diaporamaContenu .diapo {
+    position: relative;
+    width: 33.33333333%;
+    height: 100%;
+    float: left;
+    overflow: hidden
+}
+
+.diaporama .diaporamaContenu .diapo img {
+  display: block;
+  width: 100%;
+  height: 100%
+}
+
+/*animation pour changer les images du diapo*/
+@keyframes diaporama {
+    0%, 25%, 100%{left: 0}
+    
+    30%, 55%{left: -100%}
+    
+    60%, 85%{left: -200%}
 }
