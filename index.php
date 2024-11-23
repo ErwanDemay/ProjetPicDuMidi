@@ -23,6 +23,15 @@
     </ul>
   </nav>
 
+  <div class='diaporama'>
+    <div class='diaporamaContenu'>
+      <img class='diapo' src="../Images/PicduMidi1.png" alt='Image 1'>
+      <img class='diapo' src="../Images/PicduMidi2.png" alt='Image 2'>
+      <img class='diapo' src="../Images/PicduMidi3.png" alt='Image 3'>
+    </div>
+  </div>
+
+  <div id='contenuIndex'>
 
 <?php
             if (isset($_GET['controleur']))
@@ -32,23 +41,14 @@
                     
             switch ($controleur){
                     case 'general':
-                        echo    "<div class='diaporama'>".
-                                "<div class='diaporamaContenu'>".
-                                  "<img class='diapo' src=\"../Images/PicduMidi1.png\" alt='Image 1'>".
-                                  "<img class='diapo' src=\"../Images/PicduMidi2.png\" alt='Image 2'>".
-                                  "<img class='diapo' src=\"../Images/PicduMidi3.png\" alt='Image 3'>".
-                                "</div>".
-                              "</div>".
-                              "<div id='contenuIndex'>".
-                                "<div id='txtAccueil'>".
+                        echo    "<div id='txtAccueil'>".
                                   "<img src='./Images/PicduMidiLogo.png' alt='Logo du Pic du Midi'>".
                                   "<h1>LE PIC DU MIDI 2877M</h1>".
                                   "<h2>Le Balcon des Pyrénées</h2>".
                                   "<p class='pAccueil'>Venez vivre un moment hors du temps en contemplant la vue à couper le souffle qui s'offre à vous. Bienvenue au Pic du Midi…</p>".
                                   "<br>".
                                   "<button id='buttonBilleterie'>Billeterie</button>".
-                                "</div>".
-                              "</div>";
+                                "</div>";
                         break;
                     case 'soiree' : 
                             include("./controleurs/controleurSoirees.php"); 
@@ -59,6 +59,6 @@
               }
 ?>
 </div>
-
+</div>
 </body>
 </html>

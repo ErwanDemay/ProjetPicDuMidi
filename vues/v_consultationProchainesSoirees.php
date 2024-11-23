@@ -1,18 +1,12 @@
-<br><br><br><br><br><br><br><br>
-<style>
-    /* define styles here */
-    * {text-align: center; overflow-y: auto;}
-    p { font-size: 18px; color: #000; }
-    h2 { font-size: 36px; color: #00698f; }
-    .consultation{height: 100%;}
-    th {color:black;}
-</style>
-<div class="consultation">
-<div id="description">
+<link rel="stylesheet" href="css/consultation.css">
 
+<div class="consultation">
 <h2>Voici la liste des prochaines soirées : </h2>
 <table>
+    <thead>
     <tr> <th>Nom</th> <th>Date</th> <th>Lieu</th> <th>Description</th> <th>Nombre de places</th> <th>Nombre de places restantes</th> <th>Prix</th> <th>Heure de début</th></tr>
+    </thead>
+    <tbody>
 	<?php
 		foreach ($lesSoirees as $Soiree) {
 
@@ -32,6 +26,6 @@
 
         }
 	?>
+    </tbody>
     </table>
-</div>
 </div>

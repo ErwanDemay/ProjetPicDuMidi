@@ -4,7 +4,7 @@
     label, input { font-size: 18px; color: #000; }
 </style>
 
-<form action='/index2.php?controleur=materiel&action=materielModifiee' method="POST">
+<form action='/index.php?controleur=materiel&action=materielModifiee' method="POST">
   <div>
     <input type="hidden" name="id" id="id" value=' "<?php echo $leMateriel->getId(); ?>" '/>
   </div>

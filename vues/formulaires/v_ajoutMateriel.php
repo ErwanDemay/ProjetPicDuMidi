@@ -3,7 +3,7 @@
     * {text-align: center; overflow-y: auto;}
     label, input { font-size: 18px; color: #000; }
 </style>
-<form action='/index2.php?controleur=materiel&action=materielAjoutee' method="POST">
+<form action='/index.php?controleur=materiel&action=materielAjoutee' method="POST">
   <div>
     <label for="nom">Nom :</label>
     <input name="nom" id="nom" >
