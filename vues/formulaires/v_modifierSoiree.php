@@ -4,7 +4,7 @@
   <h2>Modification d'une soirée</h2>
   <table>
       <form action='/index.php?controleur=soiree&action=soireeModifiee' method="POST">
-        <input type="hidden" name="id" id="id" value=' "<?php echo $laSoiree->getId(); ?>" '/>
+        <input type="hidden" name="id" id="id" value='<?php echo $laSoiree->getId(); ?>'/>
       <tr>
         <div>
           <td><label for="nom">Nom :</label></td>
@@ -18,7 +18,7 @@
           $nextYear = date('Y-m-d', strtotime('+1 year'));
           ?>
           <td><label for="Calendar">Date :</label></td>
-          <td><input type="date" name="date" value="<?php echo $laSoiree->getDate(); ?>" min="<?php echo $today; ?>" max="<?php echo $nextYear; ?>" /></td>
+          <td><input type="date" name="date" value="<?php echo $laSoiree->getDate(); ?>" min="<?php echo $today; ?>" max="<?php echo $nextYear; ?>" /></td> <!-- C'est nécessaire d'imposer une date comme ça ? -->
         </div>
       </tr>
       <tr>

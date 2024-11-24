@@ -26,5 +26,9 @@ class Base {
     protected function exec(string $sql) {
         return $this->db->exec($sql);
     }
+
+    protected function prepare(string $sql) {
+        return $this->db->prepare($sql);
+    }
 }
 

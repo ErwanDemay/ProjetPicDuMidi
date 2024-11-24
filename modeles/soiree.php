@@ -10,52 +10,47 @@
 class Soiree {
     /**
      * 
-     * @var int $id identifiant unique de la soirée 
+     * @var $id identifiant unique de la soirée 
      */
     private $id;
 
     /**
      * Summary of nom
-     * @var string $nom nom unique de la soirée
+     * @var  $nom nom unique de la soirée
      */
-    private String $nom;
+    private  $nom;
     /**
      * Summary of date
-     * @var string $date date unique de la soirée
+     * @var  $date date unique de la soirée
      */
-    private String $date;
+    private  $date;
     /**
      * Summary of lieu
-     * @var string $lieu lieu unique de la soirée
+     * @var  $lieu lieu unique de la soirée
      */
-    private String $lieu;
+    private  $lieu;
     /**
      * Summary of description
-     * @var string $description description unique de la soirée
+     * @var  $description description unique de la soirée
      */
-    private String $description;
+    private  $description;
 
     /**
      * Summary of nbPlaces
-     * @var int $nbPlaces le nombre de places de la soirée
+     * @var  $nbPlaces le nombre de places de la soirée
      */
-    private int $nbPlaces;
+    private  $nbPlaces;
     /**
      * Summary of prix
-     * @var int $prix  prix de la soirée
+     * @var  $prix  prix de la soirée
      */
-    private int $prix;
+    private  $prix;
     /**
      * Summary of  heureDebut
-     * @var string $heureDebut heure de début de la soirée
+     * @var  $heureDebut heure de début de la soirée
      */
 
-    private String $heureDebut;
-
-   
-    
-
-
+    private  $heureDebut;
 
     /**
      * Construit un objet soirée    
@@ -69,7 +64,11 @@ class Soiree {
      * @param mixed $heureDebut
      */
     public function __construct($id, $nom, $date, $lieu, $description, $nbPlaces, $prix , $heureDebut){
-        $this->id = $id;
+        if($id == null){
+            $this->id = null;
+        }else{
+            $this->id = $id;
+        }
         $this->nom = $nom;
         $this->date = $date;
         $this->lieu = $lieu;

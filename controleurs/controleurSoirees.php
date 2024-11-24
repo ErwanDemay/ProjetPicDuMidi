@@ -35,9 +35,8 @@ switch ($action){
                         $nbPlaces = $_POST['nbPlaces'];
                         $prix = $_POST['prix'];
                         $heureDebut = $_POST['heureDebut'];
-                        
 
-                        $laSoiree = new Soiree($id, $nom, $date, $lieu, $description, $nbPlaces, $prix,$heureDebut);
+                        $laSoiree = new Soiree($id, $nom, $date, $lieu, $description, $nbPlaces, $prix, $heureDebut);
 
                         $resultat = $connexionBD->editSoiree($laSoiree);
 
@@ -50,18 +49,7 @@ switch ($action){
                         $connexionBD->deleteSoiree($id);
                         $lesSoirees = $connexionBD->getLesSoirees();
                         include("./vues/v_consultationSoirees.php");
-                        break;                        
-    case 'soireeModifiee'  :
-                        $connexionBD = new SoireeDAO();
-
-                        $id = $_POST['id'];
-                        
-                        $resultat = $connexionBD->deleteSoiree($id);
-    
-                        $lesSoirees = $connexionBD->getLesSoirees();
-                        include("  ./vues/v_consultationSoirees.php");
                         break;
-
     case 'ajouterSoiree' :  
         $connexionBD = new SoireeDAO();
         $lesSoirees = $connexionBD->getLesSoirees();
@@ -69,9 +57,8 @@ switch ($action){
         break;
 
     case 'soireeAjoutee' : 
-        $connexionBD = new SoireeDAO();
+                        $connexionBD = new SoireeDAO();
 
-                       
                         $nom = $_POST['nom'];
                         $date = $_POST['date'];
                         $lieu = $_POST['lieu'];
@@ -81,11 +68,11 @@ switch ($action){
                         $heureDebut = $_POST['heureDebut'];
                         
 
-                        $laSoiree = new Soiree(null, $nom, $date, $lieu, $description, $nbPlaces,$prix, $heureDebut);
+                        $laSoiree = new Soiree(null, $nom, $date, $lieu, $description, $nbPlaces, $prix, $heureDebut);
 
                         $resultat = $connexionBD->addSoiree($laSoiree);
 
-                        $lesSoirees = $connexionBD->getLesSoirees();
+                        //$lesSoirees = $connexionBD->getLesSoirees();
                         include("./vues/v_validationAjout.php");
                         break;
 }
