@@ -134,28 +134,93 @@ class SoireeDAO extends Base{
         return $resultatDeLaRequete;
     }
 
+    /**
+     * Récupère les informations d'une seule soirée
+     * @param $id    identifiant de la soirée à récupérer
+     * @return $unObjSoiree    objet soiree contenant toutes les informations de la soirée correspondant à l'id fourni en paramètre
+     */
     public function getUneSoiree($id){
-        $resultatDeLaRequete=$this->query("SELECT * FROM soirees WHERE id_soiree='".$id."';");
-        $uneSoiree = $resultatDeLaRequete->fetch();
-        $unObjSoiree = new Soiree($uneSoiree["id_soiree"],$uneSoiree["nom_soiree"],$uneSoiree["date_soiree"],$uneSoiree["lieu"],$uneSoiree["description"],$uneSoiree["nbPlaces"],$uneSoiree["prix"],$uneSoiree["heureDebut"]);
-        return $unObjSoiree;
-    }
+        $ordreSQL = "SELECT * FROM soirees WHERE id_soiree = :id;";
 
-    public function getProchainesLesSoirees(){
-        $resultatDeLaRequete=$this->query("SELECT * FROM soirees WHERE date_soiree>curdate() ORDER BY date_soiree;");
-        $tableauSoirees = $resultatDeLaRequete->fetchAll();
-        $lesObjSoirees = array();
-        foreach($tableauSoirees as $uneLigneUneSoiree){
-            $uneSoiree = new Soiree($uneLigneUneSoiree["id_soiree"],$uneLigneUneSoiree["nom_soiree"],$uneLigneUneSoiree["date_soiree"],$uneLigneUneSoiree["lieu"],$uneLigneUneSoiree["description"],$uneLigneUneSoiree["nbPlaces"],$uneLigneUneSoiree["prix"],$uneLigneUneSoiree["heureDebut"]);
-            $lesObjSoirees[] = $uneSoiree;
+        $reqPrepa = $this->prepare($ordreSQL);
+
+        $reqPrepa->bindValue(':id', $id, PDO::PARAM_INT);
+
+        $reqPrepa->execute();
+
+        $uneSoiree = $reqPrepa->fetch(PDO::FETCH_ASSOC);
+
+        if ($uneSoiree) {
+            $unObjSoiree = new Soiree(
+                $uneSoiree["id_soiree"],
+                $uneSoiree["nom_soiree"],
+                $uneSoiree["date_soiree"],
+                $uneSoiree["lieu"],
+                $uneSoiree["description"],
+                $uneSoiree["nbPlaces"],
+                $uneSoiree["prix"],
+                $uneSoiree["heureDebut"]
+            );
+            return $unObjSoiree;
+        } else {
+            return null; 
         }
-        return $lesObjSoirees;
     }
 
+    /**
+     * Récupère toutes les soirées dont la date de début est supérieur à la date actuelle
+     * @param
+     * @return $lesObjSoiree    collection d'objet contenant toutes les soirées récupérées
+     */
+    public function getProchainesLesSoirees(){
+        //mm remarque que getLesSoirées()
+        $ordreSQL = "SELECT * FROM soirees WHERE date_soiree > CURDATE() ORDER BY date_soiree;";
+        
+        $reqPrepa = $this->prepare($ordreSQL);
+        $reqPrepa->execute();
+    
+        $tableauSoirees = $reqPrepa->fetchAll();
+        $lesObjSoirees = array();
+        
+        foreach ($tableauSoirees as $uneLigneUneSoiree) {
+            $uneSoiree = new Soiree(
+                $uneLigneUneSoiree["id_soiree"],
+                $uneLigneUneSoiree["nom_soiree"],
+                $uneLigneUneSoiree["date_soiree"],
+                $uneLigneUneSoiree["lieu"],
+                $uneLigneUneSoiree["description"],
+                $uneLigneUneSoiree["nbPlaces"],
+                $uneLigneUneSoiree["prix"],
+                $uneLigneUneSoiree["heureDebut"]
+            );
+            $lesObjSoiree[] = $uneSoiree;
+        }
+    
+        return $lesObjSoiree;
+    }
+
+    /**
+     * Retourne le nombre de places restantes d'une soirée fourni en paramètre
+     * @param $soiree    objet soirée dont on cherche le nombre de places restantes
+     * @return $resultatDeLaRequete    entier correspondant au nombre de places restantes
+     */
     public function getNbPlacesRestantes($soiree){
-        //$resultatDeLaRequete=$this->query("SELECT soirees.nbPlaces - SUM(reservations.nbPlaces) FROM soirees INNER JOIN reservations ON soirees.id_soiree=reservations.id_soiree WHERE soirees.id_soiree=".$soiree->getId().";");
-        //REQUÊTE OK, pas le temps d'adapter le retour vers String
-        $resultatDeLaRequete = 2;
-        return $resultatDeLaRequete;
+        $ordreSQL ="SELECT soirees.nbPlaces - SUM(reservations.nbPlaces) AS placesRestantes
+                    FROM soirees
+                    INNER JOIN reservations ON soirees.id_soiree = reservations.id_soiree
+                    WHERE soirees.id_soiree = :id";
+    
+        $reqPrepa = $this->prepare($ordreSQL);
+        $id = $soiree->getId();
+        $reqPrepa->bindParam(':id', $id);
+        $reqPrepa->execute();
+    
+        $resultatDeLaRequete = $reqPrepa->fetch(PDO::FETCH_ASSOC);
+    
+        if ($resultatDeLaRequete) {
+            return $resultatDeLaRequete['placesRestantes'];
+        } else {
+            return 0;
+        }
     }
 }

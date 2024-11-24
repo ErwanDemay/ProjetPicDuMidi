@@ -15,7 +15,7 @@
             $nextYear = date('Y-m-d', strtotime('+1 year'));
             ?>
             <label for="Calendar">Date :</label></td>
-            <td><input type="date" name="date" value="<?php echo $today; ?>" min="<?php echo $today; ?>" max="<?php echo $nextYear; ?>"/></td>
+            <td><input type="date" name="date" value="<?php echo $today; ?>"/></td>
         </tr>
         <tr>
             <td><label for="lieu">Lieu :</label></td>
