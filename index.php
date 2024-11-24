@@ -1,3 +1,9 @@
+<?php
+session_start();
+include('./modeles/DAO/UtilisateurDAO.php');
+include('./modeles/Utilisateur.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,10 +20,18 @@
       <li><a class="navBoutton" href="./index.php">Accueil</a></li>
       <li><a class="navBoutton" href="./index.php?controleur=soiree&action=prochainesSoirees">Prochaines soirées</a></li>
       <li class="sousMenu">
-        <a class="navBoutton" href="#">Gestion</a>
+        <a class="navBoutton">Gestion</a>
         <ul class="sousMenuUl">
-          <li><a class="" href="./index.php?controleur=soiree">Soirées</a></li>
-          <li><a class="" href="./index.php?controleur=materiel">Matériels</a></li>
+          <li><a href="./index.php?controleur=soiree">Soirées</a></li>
+          <li><a href="./index.php?controleur=materiel">Matériels</a></li>
+        </ul>
+      </li>
+      <!--<li><a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a></li>-->
+      <li class="sousMenu">
+        <a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a>
+        <ul class="sousMenuUl">
+          <li><a href="./index.php?controleur=utilisateurs">Profil</a></li>
+          <li><a href="./index.php?controleur=utilisateurs&action=logout">Se déconnecter</a></li>
         </ul>
       </li>
     </ul>
@@ -47,7 +61,7 @@
                                   "<h2>Le Balcon des Pyrénées</h2>".
                                   "<p class='pAccueil'>Venez vivre un moment hors du temps en contemplant la vue à couper le souffle qui s'offre à vous. Bienvenue au Pic du Midi…</p>".
                                   "<br>".
-                                  "<button id='buttonBilleterie'>Billeterie</button>".
+                                  "<button id='buttonBilleterie'>Billetterie</button>".
                                 "</div>";
                         break;
                     case 'soiree' : 
@@ -56,6 +70,8 @@
                     case 'materiel' : 
                             include("./controleurs/controleurMateriel.php"); 
                             break;
+                    case'utilisateurs':
+                            include("./controleurs/controleurUtilisateurs.php");
               }
 ?>
 </div>

@@ -72,7 +72,6 @@ switch ($action){
 
                         $resultat = $connexionBD->addSoiree($laSoiree);
 
-                        //$lesSoirees = $connexionBD->getLesSoirees();
                         include("./vues/v_validationAjout.php");
                         break;
 }

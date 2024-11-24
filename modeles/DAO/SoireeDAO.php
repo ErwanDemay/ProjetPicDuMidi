@@ -130,7 +130,7 @@ class SoireeDAO extends Base{
         $reqPrepa->bindParam(':id', $id, PDO::PARAM_INT);
 
         $resultatDeLaRequete = $reqPrepa->execute();
-    //$reqPrepa->debugDumpParams();
+    //$reqPrepa->debugDumpParams(); -- requête goatesque qui fait que de me sauver la vie
         return $resultatDeLaRequete;
     }
 
@@ -205,7 +205,7 @@ class SoireeDAO extends Base{
      * @return $resultatDeLaRequete    entier correspondant au nombre de places restantes
      */
     public function getNbPlacesRestantes($soiree){
-        $ordreSQL ="SELECT soirees.nbPlaces - SUM(reservations.nbPlaces) AS placesRestantes
+        $ordreSQL ="SELECT soirees.nbPlaces - SUM(reservations.nbPlacesReservees) AS placesRestantes
                     FROM soirees
                     INNER JOIN reservations ON soirees.id_soiree = reservations.id_soiree
                     WHERE soirees.id_soiree = :id";

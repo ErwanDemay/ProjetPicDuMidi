@@ -1,6 +1,9 @@
 <?php
 class Base {
    protected PDO $db;
+
+   protected $poivre = '48_dfs}]^18j=#kg3h]165ds';  //équivalent du sel mais fixe pour tout le monde
+                                                    //avec sel + poivre, un hacker doit voler la BDD et le code source
  
    protected function __construct() {         
     }
@@ -29,6 +32,15 @@ class Base {
 
     protected function prepare(string $sql) {
         return $this->db->prepare($sql);
+    }
+
+    /**
+     * retourne le poivre commun à toute l'application
+     * @param
+     * @return $poivre    retourne la chaîne de caractères servant de poivre
+     */
+    protected function getPoivre(){
+        return $this->poivre;
     }
 }
 
