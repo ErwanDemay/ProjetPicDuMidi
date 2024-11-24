@@ -1,3 +1,9 @@
+<?php
+session_start();
+include('./modeles/DAO/UtilisateurDAO.php');
+include('./modeles/Utilisateur.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

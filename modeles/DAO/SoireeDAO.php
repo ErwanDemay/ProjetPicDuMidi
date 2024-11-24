@@ -130,7 +130,7 @@ class SoireeDAO extends Base{
         $reqPrepa->bindParam(':id', $id, PDO::PARAM_INT);
 
         $resultatDeLaRequete = $reqPrepa->execute();
-    //$reqPrepa->debugDumpParams();
+    //$reqPrepa->debugDumpParams(); -- requête goatesque qui fait que de me sauver la vie
         return $resultatDeLaRequete;
     }
 

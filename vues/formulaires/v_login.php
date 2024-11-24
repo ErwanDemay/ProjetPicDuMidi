@@ -17,4 +17,5 @@
           <button class="bouton">Se connecter</button>
         </div>
     </form>
+    <h4><a href="/index.php?controleur=utilisateurs&action=signup">Vous n'avez pas encore de compte ?</a></h4>
 </div>

@@ -3,7 +3,7 @@
 <div class="formulaire">
   <h2>Créez votre compte :</h2>
   <table>
-    <form action='/index.php?controleur=utilisateurs&action=utilisateurCree' method="POST">
+    <form action='/index.php?controleur=utilisateurs&action=signupEncours' method="POST">
         <tr>
           <td><label for="nom">Nom :</label></td>
           <td><input name="nom" id="nom"></td>
@@ -18,11 +18,12 @@
         </tr>
         <tr>
             <td><label for="motDePasse">Mot de passe :</label></td>
-            <td><input name="motDePasse" id="motDePasse"></td>
+            <td><input name="motDePasse" id="motDePasse" type="password"></td>
         </tr>
   </table>
         <div>
           <button class="bouton">Créer son compte</button>
         </div>
     </form>
+    <h4><a href="/index.php?controleur=utilisateurs&action=login">Vous avez déjà un compte ?</a></h4>
 </div>
