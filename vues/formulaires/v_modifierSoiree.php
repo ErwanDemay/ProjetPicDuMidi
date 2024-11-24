@@ -18,7 +18,7 @@
           $nextYear = date('Y-m-d', strtotime('+1 year'));
           ?>
           <td><label for="Calendar">Date :</label></td>
-          <td><input type="date" name="date" value="<?php echo $laSoiree->getDate(); ?>"/></td> <!-- C'est nécessaire d'imposer une date comme ça ? -->
+          <td><input type="date" name="date" value="<?php echo $laSoiree->getDate(); ?>"/></td>
         </div>
       </tr>
       <tr>

@@ -20,13 +20,20 @@ include('./modeles/Utilisateur.php');
       <li><a class="navBoutton" href="./index.php">Accueil</a></li>
       <li><a class="navBoutton" href="./index.php?controleur=soiree&action=prochainesSoirees">Prochaines soirées</a></li>
       <li class="sousMenu">
-        <a class="navBoutton" href="#">Gestion</a>
+        <a class="navBoutton">Gestion</a>
         <ul class="sousMenuUl">
-          <li><a class="" href="./index.php?controleur=soiree">Soirées</a></li>
-          <li><a class="" href="./index.php?controleur=materiel">Matériels</a></li>
+          <li><a href="./index.php?controleur=soiree">Soirées</a></li>
+          <li><a href="./index.php?controleur=materiel">Matériels</a></li>
         </ul>
       </li>
-      <li><a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a></li>
+      <!--<li><a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a></li>-->
+      <li class="sousMenu">
+        <a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a>
+        <ul class="sousMenuUl">
+          <li><a href="./index.php?controleur=utilisateurs">Profil</a></li>
+          <li><a href="./index.php?controleur=utilisateurs&action=logout">Se déconnecter</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
 

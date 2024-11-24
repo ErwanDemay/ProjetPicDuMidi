@@ -18,19 +18,29 @@ class UtilisateurDAO extends Base{
     public function estConnecte(){
         $estConnecte = false;
         if(isset($_SESSION['utilisateurConnecte'])){
-            $id = $_SESSION['utilisateurConnecte']->getId();
+            $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
 
-            $ordreSQL = "SELECT * FROM utilisateurs WHERE id = :id";
-
+            $id = $utilisateurConnecte->getId();
+            $nom = $utilisateurConnecte->getNom();
+            $prenom = $utilisateurConnecte->getPrenom();
+            $email = $utilisateurConnecte->getEmail();
+            $motDePasse = $utilisateurConnecte->getMotDePasse();
+            
+            $ordreSQL = "SELECT * FROM utilisateurs WHERE id = :id AND nom = :nom AND prenom = :prenom AND email = :email AND motDePasse = :motDePasse";
             $reqPrepa = $this->prepare($ordreSQL);
+            
             $reqPrepa->bindParam(':id', $id);
-            $resultatDeLaRequete = $reqPrepa->execute();
+            $reqPrepa->bindParam(':nom', $nom);
+            $reqPrepa->bindParam(':prenom', $prenom);
+            $reqPrepa->bindParam(':email', $email);
+            $reqPrepa->bindParam(':motDePasse', $motDePasse);
+            
+            $reqPrepa->execute();
+            $resultatDeLaRequete = $reqPrepa->fetch();
 
-            if($resultatDeLaRequete && mysqli_num_rows($resultatDeLaRequete) > 0){
+            if($resultatDeLaRequete > 0){
                 $estConnecte = true;
             }
-        }else{
-            $estConnecte = false;
         }
         return $estConnecte;
     }
