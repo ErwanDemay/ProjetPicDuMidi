@@ -177,3 +177,14 @@ nav li {
 #buttonBilleterie:hover::before {
     width: 9em;
 }
+
+#logoUtilisateur {
+    height: 40px;
+    width: 40px;
+    padding: 10%;
+    margin-left: 10px;
+}
+#logoUtilisateur:hover {
+    background-color: #111;
+    border-radius: 15px;
+}

@@ -79,9 +79,10 @@ class UtilisateurDAO extends Base{
 
             $reqPrepa = $this->prepare($ordreSQL);
             $reqPrepa->bindParam(':email', $email);
-            $resultatDeLaRequete = $reqPrepa->execute();
+            $reqPrepa->execute();
+            $resultatDeLaRequete = $reqPrepa->fetch();
 
-            return $resultatDeLaRequete;
+            return (string)$resultatDeLaRequete['sel'];
     }
 
     /**
@@ -98,5 +99,58 @@ class UtilisateurDAO extends Base{
         $resultatDeLaRequete = $reqPrepa->fetch(PDO::FETCH_ASSOC);
 
         return (int)$resultatDeLaRequete['existeDeja'];
+    }
+
+    /**
+     * vérifie si les identifiant passés en paramètres sont valides
+     * @param $email    adresse email du supposé compte
+     * @param $motDePasse    mot de passe sans sel ni poivre ni ash du supposé compte
+     * @return $unObjUtilisateur    objet utilisateur du compte trouvé
+     * @return false    retourne false si identifiants incorrects
+     */
+    public function verifConnection($email, $motDePasse){
+        if($this->existeDeja($email)){ //si l'email appartient bien à un utilisateur, alors on vérifie le mot de passe
+            $sel = $this->getSel($email); //on récupère le sel utilisé pour cet email
+
+            $motDePasseSelEtPoivre = $sel.$motDePasse.$this->getPoivre();
+
+            $ordreSQL = "SELECT motDePasse FROM utilisateurs WHERE email = :email";
+
+            $ordreSQL = "SELECT motDePasse FROM utilisateurs WHERE email = :email"; //récupération du hash de mot de passe stocké
+            $reqPrepa = $this->prepare($ordreSQL);
+            $reqPrepa->bindParam(':email', $email);
+            $reqPrepa->execute();
+            $resultatDeLaRequete = $reqPrepa->fetch();
+
+            if ($resultatDeLaRequete) {
+                $motDePasseStocke = $resultatDeLaRequete['motDePasse'];
+    
+                if (password_verify($motDePasseSelEtPoivre, $motDePasseStocke)) { //vérifie si le mot de passe est correct, alors on récupère les informations de l'utilisateur
+
+                    $ordreSQL = "SELECT * FROM utilisateurs WHERE email = :email";
+                    $reqPrepa = $this->prepare($ordreSQL);
+                    $reqPrepa->bindParam(':email', $email);
+                    $reqPrepa->execute();
+                    $unUtilisateur = $reqPrepa->fetch();
+    
+                    $unObjUtilisateur = new Utilisateur(
+                        $unUtilisateur['id'],
+                        $unUtilisateur['nom'],
+                        $unUtilisateur['prenom'],
+                        $unUtilisateur['email'],
+                        $unUtilisateur['motDePasse'],
+                        $unUtilisateur['habilitation']
+                    );
+    
+                    return $unObjUtilisateur;
+                } else {
+                    return false;
+                }
+            } else {
+                return false;
+            }
+        }else{
+            return false;
+        }
     }
 }

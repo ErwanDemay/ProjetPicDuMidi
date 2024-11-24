@@ -26,6 +26,7 @@ include('./modeles/Utilisateur.php');
           <li><a class="" href="./index.php?controleur=materiel">Matériels</a></li>
         </ul>
       </li>
+      <li><a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a></li>
     </ul>
   </nav>
 
@@ -53,7 +54,7 @@ include('./modeles/Utilisateur.php');
                                   "<h2>Le Balcon des Pyrénées</h2>".
                                   "<p class='pAccueil'>Venez vivre un moment hors du temps en contemplant la vue à couper le souffle qui s'offre à vous. Bienvenue au Pic du Midi…</p>".
                                   "<br>".
-                                  "<button id='buttonBilleterie'>Billeterie</button>".
+                                  "<button id='buttonBilleterie'>Billetterie</button>".
                                 "</div>";
                         break;
                     case 'soiree' : 

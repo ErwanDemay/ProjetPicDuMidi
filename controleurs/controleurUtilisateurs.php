@@ -10,10 +10,11 @@ if (isset($_GET['action'])){
 
 switch ($action){
     case 'defaut'               :
-                        if ($utilisateurDAO->estConnecte()){ //si un utilisateur est connecté alors on va sur le profil, sinon sur la page de login
-                            $action="profil";
+                        $estConnecte = $utilisateurDAO->estConnecte();
+                        if ($estConnecte == true){ //si un utilisateur est connecté alors on va sur le profil, sinon sur la page de login
+                            header("Location: ./index.php?controleur=utilisateurs&action=profil");
                         }else {
-                            $action= "login";
+                            header("Location: ./index.php?controleur=utilisateurs&action=login");
                         }
                         break;
     case 'login'                :
@@ -34,9 +35,21 @@ switch ($action){
                             $lUtilisateur = new Utilisateur(null, $nom, $prenom, $email, $motDePasse, null);
 
                             $resultat = $utilisateurDAO->addUtilisateur($lUtilisateur);
-                            header("./index.php/controleur=utilisateurs&action=profil");
+                            header("Location: ./index.php?controleur=utilisateurs&action=profil");
                         }else{
                             echo "<h1 style='color:white;'>Un compte existe déjà avec cette adresse email.</h1>";
+                        }
+                        break;
+    case 'loginEncours'        :
+                        $email = $_POST['email'];
+                        $motDePasse = $_POST['motDePasse'];
+
+                        $connectionUtilisateur = $utilisateurDAO->verifConnection($email, $motDePasse);
+                        if($connectionUtilisateur == false){
+                            echo "<h1 style='color:white;'>Il y a une erreur dans l'adrese email ou le mot de passe</h1>";
+                        }else{
+                            $_SESSION['utilisateurConnecte'] = $connectionUtilisateur;
+                            header("Location: ./index.php?controleur=utilisateurs&action=profil");
                         }
                         break;
     case 'profil'               :
