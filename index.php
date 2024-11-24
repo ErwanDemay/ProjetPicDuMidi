@@ -56,6 +56,8 @@
                     case 'materiel' : 
                             include("./controleurs/controleurMateriel.php"); 
                             break;
+                    case'utilisateurs':
+                            include("./controleurs/controleurUtilisateurs.php");
               }
 ?>
 </div>
