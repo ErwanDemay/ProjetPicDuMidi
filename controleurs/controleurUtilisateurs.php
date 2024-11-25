@@ -66,6 +66,15 @@ switch ($action){
                         include("./vues/v_profilUtilisateur.php");
                         break;
     case 'consultationGestionnaire':
+                        if($_SESSION['utilisateurConnecte']){ //si un utilisateur est connecté, on passe au deuxième if
+                            $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']); //on récupère l'utilisateur connecté pour demander son habilitation dans la condition qui suit
+                            if($utilisateurConnecte->getHabilitation() < 2){ //si le niveau d'habilitation est inférieur à 2 (donc 0 ou 1), on renvoi l'utilisateur à l'accueil
+                                header('Location: ./index.php');
+                            }
+                        }else{ //si il n'y a pas d'utilisateur connecté, on renvoi à l'accueil
+                            header('Location: ./index.php');
+                        }
+
                         $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
                         $lesUtilisateurs = $utilisateurDAO->getLesUtilisateurs();
                         include("./vues/v_consultationUtilisateurs.php");
