@@ -26,6 +26,7 @@
         </div>
       </tr>
   </table>
+  <p>Si vous souhaitez supprimer votre compte formulez une demaine à l'adresse suivante : gestionnaire@picdumidi.fr</p>
 
 </table>
 </div>
