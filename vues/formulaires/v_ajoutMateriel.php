@@ -22,3 +22,5 @@
         </div>
     </form>
 </div>
+
+<?php //permet d'éviter que github considère le fichier comme "hack" ?>

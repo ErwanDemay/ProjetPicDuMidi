@@ -19,3 +19,5 @@
     </form>
     <h4><a href="/index.php?controleur=utilisateurs&action=signup">Vous n'avez pas encore de compte ?</a></h4>
 </div>
+
+<?php //permet d'éviter que github considère le fichier comme "hack" ?>

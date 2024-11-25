@@ -6,3 +6,5 @@
     <br>
     <a class="bouton" href='/index.php?controleur=soiree'>Retour à la gestion des soirées</a>
 </div>
+
+<?php //permet d'éviter que github considère le fichier comme "hack" ?>
