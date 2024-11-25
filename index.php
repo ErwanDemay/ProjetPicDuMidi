@@ -24,6 +24,7 @@ include('./modeles/Utilisateur.php');
         <ul class="sousMenuUl">
           <li><a href="./index.php?controleur=soiree">Soirées</a></li>
           <li><a href="./index.php?controleur=materiel">Matériels</a></li>
+          <li><a href="./index.php?controleur=utilisateurs&action=consultationGestionnaire">Utilisateurs</a></li>
         </ul>
       </li>
       <!--<li><a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a></li>-->

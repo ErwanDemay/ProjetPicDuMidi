@@ -163,4 +163,33 @@ class UtilisateurDAO extends Base{
             return false;
         }
     }
+
+    /**
+     * récupère tous les utilisateurs pour les retourner dans une collection
+     * @param
+     * @return $lesObjUtilisateurs    collection d'objets utilisateurs contenant tous les utilisateurs
+     */
+    public function getLesUtilisateurs(){
+        $ordreSQL = "SELECT * FROM utilisateurs ORDER BY nom DESC;";
+        
+        $reqPrepa = $this->prepare($ordreSQL);
+        $reqPrepa->execute();
+    
+        $tableauUtilisateurs = $reqPrepa->fetchAll();
+        $lesObjUtilisateurs = array();
+
+        foreach($tableauUtilisateurs as $uneLigneUnUtilisateur){
+            $unUtilisateur = new Utilisateur(
+                $uneLigneUnUtilisateur['id'],
+                $uneLigneUnUtilisateur['nom'],
+                $uneLigneUnUtilisateur['prenom'],
+                $uneLigneUnUtilisateur['email'],
+                $uneLigneUnUtilisateur['motDePasse'],
+                $uneLigneUnUtilisateur['habilitation']
+            );
+            $lesObjUtilisateurs[] = $unUtilisateur;
+        }
+    
+        return $lesObjUtilisateurs;
+    }
 }

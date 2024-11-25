@@ -62,4 +62,14 @@ switch ($action){
                         $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
                         include("./vues/v_profilUtilisateur.php");
                         break;
+    case 'consultationGestionnaire':
+                        $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+                        $lesUtilisateurs = $utilisateurDAO->getLesUtilisateurs();
+                        include("./vues/v_consultationUtilisateurs.php");
+                        break;
+    case 'modifierUtilisateurGestionnaire':
+                        $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+                        $lesUtilisateurs = $utilisateurDAO->getLesUtilisateurs();
+                        include("./vues/formulaires/v_modifierUtilisateurs.php");
+                        break;
 }
