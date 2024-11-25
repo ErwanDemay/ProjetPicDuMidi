@@ -14,7 +14,7 @@
         </tr>
         <tr>
             <td><label for="email">Email :</label></td>
-            <td><input name="email" id="email" ></td>
+            <td><input type="email" name="email" id="email" ></td>
         </tr>
         <tr>
             <td><label for="motDePasse">Mot de passe :</label></td>
