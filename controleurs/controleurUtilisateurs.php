@@ -35,7 +35,8 @@ switch ($action){
                             $lUtilisateur = new Utilisateur(null, $nom, $prenom, $email, $motDePasse, null);
 
                             $resultat = $utilisateurDAO->addUtilisateur($lUtilisateur);
-                            header("Location: ./index.php?controleur=utilisateurs&action=profil");
+                            
+                            header("Location: ./index.php?controleur=utilisateurs&action=login");
                         }else{
                             echo "<h1 style='color:white;'>Un compte existe déjà avec cette adresse email.</h1>";
                         }
@@ -71,5 +72,13 @@ switch ($action){
                         $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
                         $lesUtilisateurs = $utilisateurDAO->getLesUtilisateurs();
                         include("./vues/formulaires/v_modifierUtilisateurs.php");
+                        break;
+    case 'supprimerUtilisateurGestionnaire':
+                        $id=$_GET['id'];
+                        $utilisateurDAO->deleteUtilisateur($id);
+
+                        $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+                        $lesUtilisateurs = $utilisateurDAO->getLesUtilisateurs();
+                        include("./vues/v_consultationUtilisateurs.php");
                         break;
 }

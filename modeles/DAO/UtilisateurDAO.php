@@ -192,4 +192,19 @@ class UtilisateurDAO extends Base{
     
         return $lesObjUtilisateurs;
     }
+
+    /**
+     * Supprime du SGBD l'utilisateur dont l'id correspond à celui fourni en paramètre
+     * @param $id    identifiant, sensé correspondre à un utilisateur
+     * @return $resultatDeLaRequete    valeur numérique indiquant le nombre de lignes supprimées (0 ou 1)
+     */
+    public function deleteUtilisateur($id){
+        $ordreSQL = "DELETE FROM utilisateurs WHERE id = :id";
+        
+        $reqPrepa = $this->prepare($ordreSQL);
+        $reqPrepa->bindParam(':id', $id, PDO::PARAM_INT);
+        $resultatDeLaRequete = $reqPrepa->execute();
+    
+        return $resultatDeLaRequete;
+    }
 }
