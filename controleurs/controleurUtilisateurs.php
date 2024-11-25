@@ -8,6 +8,8 @@ if (isset($_GET['action'])){
     $action= "defaut";
 }   
 
+//la fonction unserialize($_SESSION['utilisateurConnecte']) est appliqué au cas par cas car il ne faut pas qu'elle soit appelé avant la connection
+
 switch ($action){
     case 'defaut'               :
                         $estConnecte = $utilisateurDAO->estConnecte();
@@ -69,16 +71,28 @@ switch ($action){
                         include("./vues/v_consultationUtilisateurs.php");
                         break;
     case 'modifierUtilisateurGestionnaire':
-                        $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
-                        $lesUtilisateurs = $utilisateurDAO->getLesUtilisateurs();
-                        include("./vues/formulaires/v_modifierUtilisateurs.php");
+                        $id=$_GET['id'];
+                        $lUtilisateur = $utilisateurDAO->getUnUtilisateur($id);
+                        include("./vues/formulaires/v_modifierUtilisateur.php");
+                        break;
+    case 'modifierUtilisateurGestionnaireEncours':
+                        $id = $_POST['id'];
+                        $nom = $_POST['nom'];
+                        $prenom = $_POST['prenom'];
+                        $email = $_POST['email'];
+                        $motDePasse = $_POST['motDePasse'];
+                        $habilitation = $_POST['habilitation'];
+
+                        $lUtilisateur = new Utilisateur($id, $nom, $prenom, $email, $motDePasse, $habilitation); //objet contenant les nouvelles informations de l'utilisateur
+
+                        $resultat = $utilisateurDAO->editUtilisateur($lUtilisateur);
+
+                        header('Location: ./index.php?controleur=utilisateurs&action=consultationGestionnaire');//on renvoi per la page de consultation pour éviter de l'afficher de façon par propre avec un simple include
                         break;
     case 'supprimerUtilisateurGestionnaire':
                         $id=$_GET['id'];
                         $utilisateurDAO->deleteUtilisateur($id);
 
-                        $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
-                        $lesUtilisateurs = $utilisateurDAO->getLesUtilisateurs();
-                        include("./vues/v_consultationUtilisateurs.php");
+                        header('Location: ./index.php?controleur=utilisateurs&action=consultationGestionnaire');
                         break;
 }

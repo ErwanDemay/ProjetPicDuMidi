@@ -96,8 +96,6 @@ class SoireeDAO extends Base{
      * @return $resultatDeLaRequete    booléen représentant la bonne exécution de la requête
      */
     public function editSoiree($soiree){
-        /*$resultatDeLaRequete=$this->exec("UPDATE soirees SET `nom_soiree`='".$soiree->getNom()."', `date_soiree`='".$soiree->getDate()."',`lieu`='".$soiree->getLieu()."',`description`='".$soiree->getDescription()."',`nbPlaces`=".$soiree->getNbPlaces().",`prix` = '".$soiree->getPrix()."', `heureDebut`= '".$soiree->getHeureDebut()."'  WHERE id_soiree=".$soiree->getId().";");
-        return $resultatDeLaRequete;*/
 
         $ordreSQL = "UPDATE soirees 
                      SET nom_soiree = :nom, 

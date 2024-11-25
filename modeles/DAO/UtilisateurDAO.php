@@ -207,4 +207,74 @@ class UtilisateurDAO extends Base{
     
         return $resultatDeLaRequete;
     }
+
+    /**
+     * Fonction qui modifie un utilisateur et le trouvant par son id et appliquant les informations fournies dans le paramètre utilisateur
+     * @param $utilisateur    objet de la classe utilisateur contenant les nouvelles informations, avec l'ancien id
+     * @return $resultatDeLaRequete    valeur numérique indiquant le nombre de lignes modifiées (0 ou 1)
+     */
+    public function editUtilisateur($utilisateur){
+        $ordreSQL = "UPDATE utilisateurs 
+                     SET nom = :nom, 
+                         prenom = :prenom, 
+                         email = :email, 
+                         motDePasse = :motDePasse, 
+                         habilitation = :habilitation
+                     WHERE id = :id";
+        
+        $reqPrepa = $this->prepare($ordreSQL);
+        
+        $id = $utilisateur->getId();
+        $nom = $utilisateur->getNom();
+        $prenom =  $utilisateur->getPrenom();
+        $email = $utilisateur->getEmail();
+        $motDePasse = $utilisateur->getMotDePasse();
+        $habilitation = $utilisateur->getHabilitation();
+
+        $sel = $this->getSel($email); //lors d'un changement de mot de passe, le sel reste le même
+        $motDePasseSelEtPoivre = $sel.$motDePasse.$this->getPoivre();
+        $nouveauMotDePasseHashe = password_hash($motDePasseSelEtPoivre, PASSWORD_ARGON2ID, ['memory_cost' => 2048, 'time_cost' => 4, 'threads' => 3]);
+
+        $reqPrepa->bindParam(':id', $id);
+        $reqPrepa->bindParam(':nom', $nom);
+        $reqPrepa->bindParam(':prenom', $prenom);
+        $reqPrepa->bindParam(':email', $email);
+        $reqPrepa->bindParam(':motDePasse', $nouveauMotDePasseHashe);
+        $reqPrepa->bindParam(':habilitation', $habilitation);
+
+        $resultatDeLaRequete = $reqPrepa->execute();
+        
+        return $resultatDeLaRequete;
+    }
+
+    /**
+     * Récupère les informations d'un seul utilisateur
+     * @param $id    identifiant de l'utilisateur' à récupérer
+     * @return $unObjUtilisateur    objet utilisateur contenant toutes les informations de l'utilisateur correspondant à l'id fourni en paramètre
+     */
+    public function getUnUtilisateur($id){
+        $ordreSQL = "SELECT * FROM utilisateurs WHERE id = :id;";
+
+        $reqPrepa = $this->prepare($ordreSQL);
+
+        $reqPrepa->bindValue(':id', $id);
+
+        $reqPrepa->execute();
+
+        $unUtilisateur = $reqPrepa->fetch();
+
+        if ($unUtilisateur) {
+            $unObjUtilisateur = new Utilisateur(
+                $unUtilisateur["id"],
+                $unUtilisateur["nom"],
+                $unUtilisateur["prenom"],
+                $unUtilisateur["email"],
+                $unUtilisateur["motDePasse"],
+                $unUtilisateur["habilitation"],
+            );
+            return $unObjUtilisateur;
+        } else {
+            return null; 
+        }
+    }
 }

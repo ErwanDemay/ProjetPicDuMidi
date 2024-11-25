@@ -39,16 +39,15 @@ switch ($action){
                         $laSoiree = new Soiree($id, $nom, $date, $lieu, $description, $nbPlaces, $prix, $heureDebut);
 
                         $resultat = $connexionBD->editSoiree($laSoiree);
-
-                        $lesSoirees = $connexionBD->getLesSoirees();
-                        include("./vues/v_consultationSoirees.php");
+        
+                        header('Location: ./index.php?controleur=soiree');
                         break;
     case 'supprimerSoiree' :
                         $id=$_GET['id'];
                         $connexionBD = new SoireeDAO();
                         $connexionBD->deleteSoiree($id);
-                        $lesSoirees = $connexionBD->getLesSoirees();
-                        include("./vues/v_consultationSoirees.php");
+                        
+                        header('Location: ./index.php?controleur=soiree');
                         break;
     case 'ajouterSoiree' :  
         $connexionBD = new SoireeDAO();
