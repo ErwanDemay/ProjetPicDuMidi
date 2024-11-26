@@ -11,6 +11,8 @@ include('./modeles/Utilisateur.php');
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pic du Midi</title>
   <link rel="stylesheet" href="css/index.css">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
 </head>
 <body>
 <div id='ombre'>
@@ -32,7 +34,7 @@ include('./modeles/Utilisateur.php');
         <a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a>
         <ul class="sousMenuUl">
           <li><a href="./index.php?controleur=utilisateurs">Profil</a></li>
-          <li><a href="./index.php?controleur=utilisateurs&action=logout">Se déconnecter</a></li>
+          <li><a href="./index.php?controleur=utilisateurs&action=logout">Déconnexion</a></li>
         </ul>
       </li>
     </ul>

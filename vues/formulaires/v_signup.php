@@ -25,7 +25,7 @@
           <button class="bouton">Créer son compte</button>
         </div>
     </form>
-    <h4><a href="/index.php?controleur=utilisateurs&action=login">Vous avez déjà un compte ?</a></h4>
+    <p>Vous avez déjà un compte ? <a href="/index.php?controleur=utilisateurs&action=login">Se connecter</a></p>
 </div>
 
 <?php //permet d'éviter que github considère le fichier comme "hack" ?>

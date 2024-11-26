@@ -12,15 +12,15 @@ class Utilisateur {
     private $id;
 
     /**
-     * @var  $nom nom unique de la soirée
+     * @var  $nom nom unique de l'utilisateur
      */
     private $nom;
     /**
-     * @var  $date date unique de la soirée
+     * @var  $prenom prenom unique de l'utilisateur
      */
     private $prenom;
     /**
-     * @var  $lieu lieu unique de la soirée
+     * @var  $email email unique de l'utilisateur
      */
     private $email;
     /**

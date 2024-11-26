@@ -64,7 +64,7 @@ class UtilisateurDAO extends Base{
         $sel = bin2hex(random_bytes(16));   //génère un sel aléatoire de 16-byte
                                             //l'intérêt d'un sel aléatoire et qu'un seul brute force ne compromet pas tous les comptes
 
-        $motDePasseSelEtPoivre = $sel.$motDePasse.$this->getPoivre(); //donne la chaîne de caractère à haser, composée du sel aléatoire, du mot de passe saisi et du poivre
+        $motDePasseSelEtPoivre = $sel.$motDePasse.$this->getPoivre(); //donne la chaîne de caractère à hasher, composée du sel aléatoire, du mot de passe saisi et du poivre
 
         $motDePasseHashe = password_hash($motDePasseSelEtPoivre, PASSWORD_ARGON2ID, ['memory_cost' => 2048, 'time_cost' => 4, 'threads' => 3]); //fonction permettant de hasher le mot de passe avec l'algorithme argon2id, recommandé par OWASP
 
