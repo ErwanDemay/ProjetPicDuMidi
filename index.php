@@ -21,6 +21,7 @@ include('./modeles/Utilisateur.php');
     <ul>
       <li><a class="navBoutton" href="./index.php">Accueil</a></li>
       <li><a class="navBoutton" href="./index.php?controleur=soiree&action=prochainesSoirees">Prochaines soirées</a></li>
+      <li><a class="navBoutton" href="./index.php?controleur=Parking&action=consultationParking">Parking</a></li>
       <li class="sousMenu">
         <a class="navBoutton">Gestion</a>
         <ul class="sousMenuUl">
@@ -75,6 +76,8 @@ include('./modeles/Utilisateur.php');
                             break;
                     case'utilisateurs':
                             include("./controleurs/controleurUtilisateurs.php");
+                            case'parking':
+                              include("./controleurs/controleurParking.php");
               }
 ?>
 </div>
