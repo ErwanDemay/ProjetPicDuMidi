@@ -4,7 +4,7 @@
   <h2>Modification d'un matériel :</h2>
   <table>
       <form action='/index.php?controleur=materiel&action=materielModifiee' method="POST">
-          <input type="hidden" name="id" id="id" value=' "<?php echo $leMateriel->getId(); ?>" '/>
+          <input type="hidden" name="id" id="id" value='<?php echo $leMateriel->getId(); ?>'/>
       <tr>
         <div>
           <label for="nom">Nom :</label>

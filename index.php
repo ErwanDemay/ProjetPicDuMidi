@@ -29,6 +29,7 @@ include('./modeles/Utilisateur.php');
           <li><a href="./index.php?controleur=utilisateurs&action=consultationGestionnaire">Utilisateurs</a></li>
         </ul>
       </li>
+      <li><a class="navBoutton" href="./index.php?controleur=incident">Signaler un incident</a></li>
       <!--<li><a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a></li>-->
       <li class="sousMenu">
         <a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a>
