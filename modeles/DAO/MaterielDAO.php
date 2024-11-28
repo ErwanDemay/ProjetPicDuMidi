@@ -9,7 +9,10 @@ class MaterielDAO extends Base{
     }
     
     public function getLesMateriels(){
-        $resultatDeLaRequete=$this->query("SELECT * FROM materiel;");
+        $ordreSQL="SELECT * FROM materiel;";
+
+        $resultatDeLaRequete=$this->prepare($ordreSQL);
+        $resultatDeLaRequete->execute();
 
         if($resultatDeLaRequete->fetch() == 0){
             return null;
@@ -26,35 +29,62 @@ class MaterielDAO extends Base{
     }
     
     public function deleteMateriel($id){
-        $resultatDeLaRequete=$this->exec("DELETE FROM materiel WHERE id_materiel=".$id.";");
+        $ordreSQL="DELETE FROM materiel WHERE id_materiel=:id";
+        $resultatDeLaRequete=$this->prepare($ordreSQL);
+        
+        $resultatDeLaRequete->bindParam(':id', $id, PDO::PARAM_INT);
+        $resultatDeLaRequete = $resultatDeLaRequete->execute();
+
         return $resultatDeLaRequete;
     }
     
     public function addMateriel($materiel) {
-        $resultatDeLaRequete = $this->exec(
-            "INSERT INTO materiel (`nom_materiel`, `etat_materiel`) 
-             VALUES ('".$materiel->getNom()."', '".$materiel->getEtat()."');");
+        $ordreSQL="INSERT INTO materiel (`nom_materiel`, `etat_materiel`) VALUES (:nom , :etat)";
+        $resultatDeLaRequete = $this->prepare($ordreSQL);
+        
+        $nom = $materiel->getNom();
+        $etat = $materiel->getEtat();
+
+        $resultatDeLaRequete->bindParam(':nom', $nom);
+        $resultatDeLaRequete->bindParam(':etat', $etat);
+
+        $resultatDeLaRequete = $resultatDeLaRequete->execute();
+
         return $resultatDeLaRequete;
     }
     
-    
     public function editMateriel($materiel){
-        $req = "UPDATE materiel SET `nom_materiel`='".$materiel->getNom()."', `etat_materiel`='".$materiel->getEtat()."' WHERE materiel.id_materiel=".$materiel->getId().";";
-        echo $req;
-        $resultatDeLaRequete=$this->exec($req);
+        $ordreSQL="UPDATE materiel SET `nom_materiel`=:nom, `etat_materiel`=:etat WHERE materiel.id_materiel=:id";
+        $resultatDeLaRequete=$this->prepare($ordreSQL);
+
+        $nom = $materiel->getNom();
+        $etat = $materiel->getEtat();
+        $id = $materiel->getId();
+
+        $resultatDeLaRequete->bindParam(':nom', $nom);
+        $resultatDeLaRequete->bindParam(':etat', $etat);
+        $resultatDeLaRequete->bindParam(':id', $id);
+
+        $resultatDeLaRequete = $resultatDeLaRequete->execute();
+
         return $resultatDeLaRequete;
     }
 
     public function getUnMateriel($id){
-        $resultatDeLaRequete=$this->query("SELECT * FROM materiel WHERE id_materiel='".$id."';");
+        $ordreSQL = "SELECT * FROM materiel WHERE id_materiel=:id;";
+        $resultatDeLaRequete=$this->prepare($ordreSQL);
+
+        $reqPrepa->bindParam(':id', $id, PDO::PARAM_INT);
+
+        $resultatDeLaRequete = $resultatDeLaRequete->execute();
 
         $unMateriel = $resultatDeLaRequete->fetch();
         $unObjMateriel = new Materiel($unMateriel["id_materiel"],$unMateriel["nom_materiel"],$unMateriel["etat_materiel"]);
         return $unObjMateriel;
     }
 
-    public function estEnPanne($materiel){
+    /*public function estEnPanne($materiel){
         $resultatDeLaRequete = $this->exec("SELECT COUNT(*) FROM materiel INNER JOIN panne on materiel.id_materiel = panne.id_materiel WHERE materiel.id_materiel = ".$materiel->getId().";");
         echo var_dump($resultatDeLaRequete);
-    }
+    }*/
 }
