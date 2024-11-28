@@ -11,14 +11,6 @@ h2 {
   color: #00698f;
 }
 
-.header_consultation {
-  overflow: hidden;
-}
-
-.donnees {
-  overflow: auto;
-}
-
 .consultation {
   background-color: rgba(255, 255, 255, 1);
   border-radius: 15px;
@@ -27,6 +19,7 @@ h2 {
   padding-top: 20px;
   max-height: 70%;
   max-width: 90%;
+  overflow: auto;
 }
 
 .bouton {

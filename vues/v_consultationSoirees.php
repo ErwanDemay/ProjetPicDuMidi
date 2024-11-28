@@ -2,13 +2,14 @@
 
 <div class="consultation">
 
-<table id="description">
+<div class="tableau_header">
+
 <a href="index.php?controleur=soiree&action=ajouterSoiree" class="bouton">
     <i class="bi bi-plus-circle"></i> Créer une soirée
 </a>
 
 <h2>Voici la liste des soirées enregistrées : </h2>
-
+</div>
 <table>
     <tr> <th>Nom</th> <th>Date</th> <th>Lieu</th> <th>Description</th> <th>Nombre de places</th> <th>Nombre de places restantes</th> <th>Prix</th> <th>Heure de début</th> <th>Supprimer</th> <th>Modifier</th></tr>
     <div class="donnees">
@@ -42,7 +43,5 @@
 	?>
     </div>
     </div>
-</table>
-
 </table>
 </div>
