@@ -5,40 +5,40 @@ include("./modeles/DAO/IncidentDAO.php");
 if (isset($_GET['action'])){
     $action=filter_var($_GET['action'], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 }else {
-$action= "consultationMateriel";}
+$action= "consultationIncident";}
 
 switch ($action){
-    case 'consultationMateriel'  :
-                       $MaterielDAO = new MaterielDAO();
-                       $lesMateriels = $MaterielDAO->getLesMateriels();
-                       include("./vues/v_consultationMateriel.php");
+    case 'consultationIncident'  :
+                       $IncidentDAO = new IncidentDAO();
+                       $lesIncidents = $IncidentDAO->getLesIncidents();
+                       include("./vues/v_consultationIncident.php");
                        break;
-    case 'modifierMateriel' : 
+    case 'modifierIncident' : 
                        $id=$_GET['id'];
-                       $MaterielDAO = new MaterielDAO();
-                       $leMateriel = $MaterielDAO->getUnMateriel($id);
-                       include("./vues/formulaires/v_modifierMateriel.php");
+                       $IncidentDAO = new IncidentDAO();
+                       $leIncident = $IncidentDAO->getUnIncident($id);
+                       include("./vues/formulaires/v_modifierIncident.php");
                        break;
-    case 'materielModifiee'  :
-                        $MaterielDAO = new MaterielDAO();
+    case 'IncidentModifiee'  :
+                        $IncidentDAO = new IncidentDAO();
 
                         $id =  $_POST['id'];
                         $nom = $_POST['nom'];
                         $etat = $_POST['etat'];
 
-                        $leMateriel = new Materiel($id, $nom, $etat);
+                        $leIncident = new Incident($id, $nom, $etat);
 
-                        $resultat = $MaterielDAO->editMateriel($leMateriel);
+                        $resultat = $IncidentDAO->editIncident($leIncident);
 
-                        $lesMateriels = $MaterielDAO->getLesMateriels();
-                        include("./vues/v_consultationMateriel.php");
+                        $lesIncidents = $IncidentDAO->getLesIncidents();
+                        include("./vues/v_consultationIncident.php");
                         break;
-    case 'supprimerMateriel' :
+    case 'supprimerIncident' :
                         $id=$_GET['id'];
-                        $MaterielDAO = new MaterielDAO();
-                        $MaterielDAO->deleteMateriel($id);
-                        $lesMateriels = $MaterielDAO->getLesMateriels();
-                        include("./vues/v_consultationMateriel.php");
+                        $IncidentDAO = new IncidentDAO();
+                        $IncidentDAO->deleteIncident($id);
+                        $lesIncidents = $IncidentDAO->getLesIncidents();
+                        include("./vues/v_consultationIncident.php");
                         break;                        
     /*case 'soireeModifiee'  :
                         $connexionBD = new SoireeDAO();
@@ -51,24 +51,24 @@ switch ($action){
                         include("  ./vues/v_consultationSoirees.php");
                         break;*/
 
-    case 'ajouterMateriel' :  
-        $MaterielDAO = new MaterielDAO();
-        $lesMateriels = $MaterielDAO->getLesMateriels();
-        include("./vues/formulaires/v_ajoutmateriel.php");
+    case 'ajouterIncident' :  
+        $IncidentDAO = new IncidentDAO();
+        $lesIncidents = $IncidentDAO->getLesIncidents();
+        include("./vues/formulaires/v_ajoutIncident.php");
         break;
 
-    case 'materielAjoutee' : 
-        $MaterielDAO = new MaterielDAO();
+    case 'IncidentAjoutee' : 
+        $IncidentDAO = new IncidentDAO();
 
                        
                         $nom = $_POST['nom'];
                         $etat = $_POST['etat'];
 
-                        $leMateriel = new Materiel(null, $nom, $etat);
+                        $leIncident = new Incident(null, $nom, $etat);
 
-                        $resultat = $MaterielDAO->addMateriel($leMateriel);
+                        $resultat = $IncidentDAO->addIncident($leIncident);
 
-                        $lesMateriels = $MaterielDAO->getLesMateriels();
-                        include("./vues/v_consultationMateriel.php");
+                        $lesIncidents = $IncidentDAO->getLesIncidents();
+                        include("./vues/v_consultationIncident.php");
                         break;
 }
