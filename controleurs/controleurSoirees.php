@@ -14,17 +14,44 @@ switch ($action){
                         include("./vues/v_consultationProchainesSoirees.php");
                         break;
     case 'consultationSoirees'  :
+                       if($_SESSION['utilisateurConnecte']){
+                           $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+                           if($utilisateurConnecte->getHabilitation() < 2){
+                               header('Location: ./index.php');
+                           }
+                       }else{
+                           header('Location: ./index.php');
+                       }
+
                        $connexionBD = new SoireeDAO();
                        $lesSoirees = $connexionBD->getLesSoirees();
                        include("./vues/v_consultationSoirees.php");
                        break;
     case 'modifierSoiree' : 
+                       if($_SESSION['utilisateurConnecte']){
+                           $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+                           if($utilisateurConnecte->getHabilitation() < 2){
+                               header('Location: ./index.php');
+                           }
+                       }else{
+                           header('Location: ./index.php');
+                       }
+
                        $id=$_GET['id'];
                        $connexionBD = new SoireeDAO();
                        $laSoiree = $connexionBD->getUneSoiree($id);
                        include("./vues/formulaires/v_modifierSoiree.php");
                        break;
     case 'soireeModifiee'  :
+                        if($_SESSION['utilisateurConnecte']){
+                            $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+                            if($utilisateurConnecte->getHabilitation() < 2){
+                                header('Location: ./index.php');
+                            }
+                        }else{
+                            header('Location: ./index.php');
+                        }
+
                         $connexionBD = new SoireeDAO();
 
                         $id =  $_POST['id'];
@@ -43,6 +70,15 @@ switch ($action){
                         header('Location: ./index.php?controleur=soiree');
                         break;
     case 'supprimerSoiree' :
+                        if($_SESSION['utilisateurConnecte']){
+                            $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+                            if($utilisateurConnecte->getHabilitation() < 2){
+                                header('Location: ./index.php');
+                            }
+                        }else{
+                            header('Location: ./index.php');
+                        }
+
                         $id=$_GET['id'];
                         $connexionBD = new SoireeDAO();
                         $connexionBD->deleteSoiree($id);
@@ -50,12 +86,30 @@ switch ($action){
                         header('Location: ./index.php?controleur=soiree');
                         break;
     case 'ajouterSoiree' :  
-        $connexionBD = new SoireeDAO();
-        $lesSoirees = $connexionBD->getLesSoirees();
-        include("./vues/formulaires/v_ajoutSoiree.php");
-        break;
+                        if($_SESSION['utilisateurConnecte']){
+                            $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+                            if($utilisateurConnecte->getHabilitation() < 2){
+                                header('Location: ./index.php');
+                            }
+                        }else{
+                            header('Location: ./index.php');
+                        }
+
+                        $connexionBD = new SoireeDAO();
+                        $lesSoirees = $connexionBD->getLesSoirees();
+                        include("./vues/formulaires/v_ajoutSoiree.php");
+                        break;
 
     case 'soireeAjoutee' : 
+                        if($_SESSION['utilisateurConnecte']){
+                            $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+                            if($utilisateurConnecte->getHabilitation() < 2){
+                                header('Location: ./index.php');
+                            }
+                        }else{
+                            header('Location: ./index.php');
+                        }
+
                         $connexionBD = new SoireeDAO();
 
                         $nom = $_POST['nom'];

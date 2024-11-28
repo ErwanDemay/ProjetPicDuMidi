@@ -264,11 +264,7 @@ class UtilisateurDAO extends Base{
         $reqPrepa->bindValue(':id', $id);
 
         $reqPrepa->execute();
-
-        if($reqPrepa->fetch() == 0){
-            return null;
-        }
-
+        
         $unUtilisateur = $reqPrepa->fetch();
 
         if ($unUtilisateur) {

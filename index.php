@@ -21,15 +21,23 @@ include('./modeles/Utilisateur.php');
     <ul>
       <li><a class="navBoutton" href="./index.php">Accueil</a></li>
       <li><a class="navBoutton" href="./index.php?controleur=soiree&action=prochainesSoirees">Prochaines soirées</a></li>
-      <li class="sousMenu">
-        <a class="navBoutton">Gestion</a>
-        <ul class="sousMenuUl">
-          <li><a href="./index.php?controleur=soiree">Soirées</a></li>
-          <li><a href="./index.php?controleur=materiel">Matériels</a></li>
-          <li><a href="./index.php?controleur=utilisateurs&action=consultationGestionnaire">Utilisateurs</a></li>
-        </ul>
-      </li>
-      <!--<li><a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a></li>-->
+      
+      <?php
+      if(isset($_SESSION['utilisateurConnecte'])){ 
+        $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+        if($utilisateurConnecte->getHabilitation() > 1){
+          echo "".
+              "<li class='sousMenu'>".
+                "<a class='navBoutton'>Gestion</a>".
+                "<ul class='sousMenuUl'>".
+                  "<li><a href='./index.php?controleur=soiree'>Soirées</a></li>".
+                  "<li><a href='./index.php?controleur=materiel'>Matériels</a></li>".
+                  "<li><a href='./index.php?controleur=utilisateurs&action=consultationGestionnaire'>Utilisateurs</a></li>".
+                "</ul>".
+              "</li>";
+        }
+      }?>
+
       <li class="sousMenu">
         <a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a>
         <ul class="sousMenuUl">

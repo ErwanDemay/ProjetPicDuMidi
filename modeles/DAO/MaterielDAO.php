@@ -11,7 +11,7 @@ class MaterielDAO extends Base{
     public function getLesMateriels(){
         $resultatDeLaRequete=$this->query("SELECT * FROM materiel;");
 
-        if($reqPrepa->fetch() == 0){
+        if($resultatDeLaRequete->fetch() == 0){
             return null;
         }
 

@@ -10,7 +10,7 @@
     <tr> <th>Id</th> <th>Nom</th> <th>Prenom</th> <th>Email</th> <th>Habilitation</th> </tr>
 	<?php
 
-        if($lesSoirees == null){
+        if($lesUtilisateurs == null){
             echo "<h3>Aucun utilisateur dans la base de données</h3>";
         }else{
 

@@ -80,11 +80,29 @@ switch ($action){
                         include("./vues/v_consultationUtilisateurs.php");
                         break;
     case 'modifierUtilisateurGestionnaire':
+                        if($_SESSION['utilisateurConnecte']){
+                            $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+                            if($utilisateurConnecte->getHabilitation() < 2){
+                                header('Location: ./index.php');
+                            }
+                        }else{
+                            header('Location: ./index.php');
+                        }
+
                         $id=$_GET['id'];
                         $lUtilisateur = $utilisateurDAO->getUnUtilisateur($id);
                         include("./vues/formulaires/v_modifierUtilisateur.php");
                         break;
     case 'modifierUtilisateurGestionnaireEncours':
+                        if($_SESSION['utilisateurConnecte']){
+                            $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+                            if($utilisateurConnecte->getHabilitation() < 2){
+                                header('Location: ./index.php');
+                            }
+                        }else{
+                            header('Location: ./index.php');
+                        }
+
                         $id = $_POST['id'];
                         $nom = $_POST['nom'];
                         $prenom = $_POST['prenom'];
@@ -99,6 +117,15 @@ switch ($action){
                         header('Location: ./index.php?controleur=utilisateurs&action=consultationGestionnaire');//on renvoi per la page de consultation pour éviter de l'afficher de façon par propre avec un simple include
                         break;
     case 'supprimerUtilisateurGestionnaire':
+                        if($_SESSION['utilisateurConnecte']){
+                            $utilisateurConnecte = unserialize($_SESSION['utilisateurConnecte']);
+                            if($utilisateurConnecte->getHabilitation() < 2){
+                                header('Location: ./index.php');
+                            }
+                        }else{
+                            header('Location: ./index.php');
+                        }
+
                         $id=$_GET['id'];
                         $utilisateurDAO->deleteUtilisateur($id);
 

@@ -150,10 +150,6 @@ class SoireeDAO extends Base{
 
         $reqPrepa->execute();
 
-        if($reqPrepa->fetch() == 0){
-            return null;
-        }
-
         $uneSoiree = $reqPrepa->fetch(PDO::FETCH_ASSOC);
 
         if ($uneSoiree) {
