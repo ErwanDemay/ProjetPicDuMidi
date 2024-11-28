@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="css/formulaires.css">
+
+<div class="formulaire">
+  <h2>Ajout d'un nouveau matériel :</h2>
+  <table>
+    <form action='/index.php?controleur=incident&action=incidentAjoutee' method="POST">
+      <tr>
+        <div>
+          <td><label for="nom">Nom :</label></td>
+          <td><input name="nom" id="nom" ></td>
+        </div>
+      </tr>
+      <tr>
+        <div>
+          <td><label for="etat">Personne :</label></td>
+          <td><input name="etat" id="etat"></td>
+        </div>
+      </tr>
+  </table>
+        <div>
+          <button>Ajouter la soirée </button>
+        </div>
+    </form>
+</div>
+
+<?php //permet d'éviter que github considère le fichier comme "hack" ?>
