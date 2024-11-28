@@ -48,10 +48,6 @@ class MaterielDAO extends Base{
     public function getUnMateriel($id){
         $resultatDeLaRequete=$this->query("SELECT * FROM materiel WHERE id_materiel='".$id."';");
 
-        if($reqPrepa->fetch() == 0){
-            return null;
-        }
-
         $unMateriel = $resultatDeLaRequete->fetch();
         $unObjMateriel = new Materiel($unMateriel["id_materiel"],$unMateriel["nom_materiel"],$unMateriel["etat_materiel"]);
         return $unObjMateriel;
