@@ -27,7 +27,7 @@ include('./modeles/Utilisateur.php');
           <li><a href="./index.php?controleur=soiree">Soirées</a></li>
           <li><a href="./index.php?controleur=materiel">Matériels</a></li>
           <li><a href="./index.php?controleur=utilisateurs&action=consultationGestionnaire">Utilisateurs</a></li>
-          <li><a href="./index.php?controleur=typeMateriel&action=consultationTypeMateriel">Type de matériel</a></li>
+          <li><a href="./index.php?controleur=typeMateriel">Type de matériel</a></li>
 
         </ul>
       </li>
