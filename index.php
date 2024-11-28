@@ -27,6 +27,8 @@ include('./modeles/Utilisateur.php');
           <li><a href="./index.php?controleur=soiree">Soirées</a></li>
           <li><a href="./index.php?controleur=materiel">Matériels</a></li>
           <li><a href="./index.php?controleur=utilisateurs&action=consultationGestionnaire">Utilisateurs</a></li>
+          <li><a href="./index.php?controleur=typeMateriel&action=consultationTypeMateriel">Type de matériel</a></li>
+
         </ul>
       </li>
       <!--<li><a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a></li>-->
@@ -75,6 +77,9 @@ include('./modeles/Utilisateur.php');
                             break;
                     case'utilisateurs':
                             include("./controleurs/controleurUtilisateurs.php");
+
+                    case'typeMateriel':
+                      include("./controleurs/controleurTypeMateriel.php");
               }
 ?>
 </div>

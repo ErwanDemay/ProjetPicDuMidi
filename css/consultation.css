@@ -1,66 +1,74 @@
+body {
+  overflow: hidden;
+}
+
 p {
-    font-size: 18px; color: #000;
+  font-size: 18px;
+  color: #000;
 }
 h2 {
-    font-size: 36px; color: #00698f;
+  font-size: 36px;
+  color: #00698f;
 }
-.consultation{
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 15px;
-    text-align: center;
-    overflow-y: auto;
+.consultation {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 15px;
+  text-align: center;
+  overflow-y: auto;
+  margin-top: 50px;
+  max-height: 90%;
 }
 
 .bouton {
-	background:linear-gradient(to bottom, #4d4d4d 5%, #000000 100%);
-	background-color:#4d4d4d;
-	border-radius:28px;
-	border:1px solid #000000;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-    margin-top: 20px;
+  background: linear-gradient(to bottom, #4d4d4d 5%, #000000 100%);
+  background-color: #4d4d4d;
+  border-radius: 28px;
+  border: 1px solid #000000;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  margin-top: 20px;
 }
 .bouton:hover {
-    background:linear-gradient(to bottom, #000000 5%, #4d4d4d 100%);
-    background-color:#000000;
+  background: linear-gradient(to bottom, #000000 5%, #4d4d4d 100%);
+  background-color: #000000;
 }
 .bouton:active {
-    position:relative;
-    top:1px;
+  position: relative;
+  top: 1px;
 }
 
 table {
-	border-collapse: collapse;
-    font-family: Tahoma, Geneva, sans-serif;
+  border-collapse: collapse;
+  font-family: Tahoma, Geneva, sans-serif;
 }
-table th{
-    color: #636363;
-	border: 1px solid #dddfe1;
-    padding: 6px;
+table th {
+  color: #636363;
+  border: 1px solid #dddfe1;
+  padding: 6px;
 }
 table td {
-	padding: 15px;
+  padding: 15px;
 }
 table thead td {
-	background-color: #54585d;
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 13px;
-	border: 1px solid #54585d;
+  background-color: #54585d;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 13px;
+  border: 1px solid #54585d;
 }
 table tbody td {
-	color: #636363;
-	border: 1px solid #dddfe1;
+  color: #636363;
+  border: 1px solid #dddfe1;
 }
 table tbody tr {
-	background-color: #f9fafb;
+  background-color: #f9fafb;
 }
 table tbody tr:nth-child(odd) {
-	background-color: #ffffff;
+  background-color: #ffffff;
 }
