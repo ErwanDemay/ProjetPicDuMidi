@@ -23,6 +23,10 @@ class SoireeDAO extends Base{
         $reqPrepa = $this->prepare($ordreSQL);
         $reqPrepa->execute();
     
+        if($reqPrepa->fetch() == 0){
+            return null;
+        }
+
         $tableauSoirees = $reqPrepa->fetchAll();
         $lesObjSoirees = array();
 
@@ -146,6 +150,10 @@ class SoireeDAO extends Base{
 
         $reqPrepa->execute();
 
+        if($reqPrepa->fetch() == 0){
+            return null;
+        }
+
         $uneSoiree = $reqPrepa->fetch(PDO::FETCH_ASSOC);
 
         if ($uneSoiree) {
@@ -176,6 +184,10 @@ class SoireeDAO extends Base{
         
         $reqPrepa = $this->prepare($ordreSQL);
         $reqPrepa->execute();
+
+        if($reqPrepa->fetch() == 0){
+            return null;
+        }
 
         $tableauSoirees = $reqPrepa->fetchAll();
         $lesObjSoirees = array();

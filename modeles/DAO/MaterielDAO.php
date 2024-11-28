@@ -10,6 +10,11 @@ class MaterielDAO extends Base{
     
     public function getLesMateriels(){
         $resultatDeLaRequete=$this->query("SELECT * FROM materiel;");
+
+        if($reqPrepa->fetch() == 0){
+            return null;
+        }
+
         $tableauMateriels = $resultatDeLaRequete->fetchAll();
         $lesObjMateriels = array();
         foreach($tableauMateriels as $uneLigneUnMateriel){
@@ -42,6 +47,11 @@ class MaterielDAO extends Base{
 
     public function getUnMateriel($id){
         $resultatDeLaRequete=$this->query("SELECT * FROM materiel WHERE id_materiel='".$id."';");
+
+        if($reqPrepa->fetch() == 0){
+            return null;
+        }
+
         $unMateriel = $resultatDeLaRequete->fetch();
         $unObjMateriel = new Materiel($unMateriel["id_materiel"],$unMateriel["nom_materiel"],$unMateriel["etat_materiel"]);
         return $unObjMateriel;
@@ -51,13 +61,4 @@ class MaterielDAO extends Base{
         $resultatDeLaRequete = $this->exec("SELECT COUNT(*) FROM materiel INNER JOIN panne on materiel.id_materiel = panne.id_materiel WHERE materiel.id_materiel = ".$materiel->getId().";");
         echo var_dump($resultatDeLaRequete);
     }
-
-    /*
-    public function getUneSoiree($id){
-        $resultatDeLaRequete=$this->query("SELECT * FROM soirees WHERE id_soiree='".$id."';");
-        $uneSoiree = $resultatDeLaRequete->fetch();
-        $unObjSoiree = new Soiree($uneSoiree["id_soiree"],$uneSoiree["nom_soiree"],$uneSoiree["date_soiree"],$uneSoiree["lieu"],$uneSoiree["description"],$uneSoiree["nbPlaces"]);
-        return $unObjSoiree;
-    }
-    */
 }

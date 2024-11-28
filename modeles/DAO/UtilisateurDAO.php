@@ -175,6 +175,10 @@ class UtilisateurDAO extends Base{
         $reqPrepa = $this->prepare($ordreSQL);
         $reqPrepa->execute();
     
+        if($reqPrepa->fetch() == 0){
+            return null;
+        }
+
         $tableauUtilisateurs = $reqPrepa->fetchAll();
         $lesObjUtilisateurs = array();
 
@@ -260,6 +264,10 @@ class UtilisateurDAO extends Base{
         $reqPrepa->bindValue(':id', $id);
 
         $reqPrepa->execute();
+
+        if($reqPrepa->fetch() == 0){
+            return null;
+        }
 
         $unUtilisateur = $reqPrepa->fetch();
 

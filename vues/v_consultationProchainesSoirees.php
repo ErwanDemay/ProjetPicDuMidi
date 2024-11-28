@@ -8,22 +8,28 @@
     </thead>
     <tbody>
 	<?php
-		foreach ($lesSoirees as $Soiree) {
 
-            $date_bdd = $Soiree->getDate(); // Format AAAA-MM-JJ
-            $date_affichage = DateTime::createFromFormat('Y-m-d', $date_bdd)->format('d-m-Y'); // Format JJ-MM-AAAA
-            
-                    //Affichage des informations de la soirées
-                    echo        "<tr>".
-                                "<td><p>".$Soiree->getNom()."</p></td>".
-                                "<td><p>".$date_affichage."</p></td>".
-                                "<td><p>".$Soiree->getLieu()."</p></td>".
-                                "<td><p>".$Soiree->getDescription()."</p></td>".
-                                "<td><p>".$Soiree->getNbPlaces()."</p></td>".
-                                "<td><p>".$connexionBD->getNbPlacesRestantes($Soiree)."</p></td>".
-                                "<td><p>".$Soiree->getPrix()."</p></td>".
-                                "<td><p>".$Soiree->getHeureDebut()."</p></td>";
+        if($lesSoirees == null){
+            echo "<h3>Aucune soirée à venir</h3>";
+        }else{
 
+            foreach ($lesSoirees as $Soiree) {
+
+                $date_bdd = $Soiree->getDate(); // Format AAAA-MM-JJ
+                $date_affichage = DateTime::createFromFormat('Y-m-d', $date_bdd)->format('d-m-Y'); // Format JJ-MM-AAAA
+                
+                        //Affichage des informations de la soirées
+                        echo        "<tr>".
+                                    "<td><p>".$Soiree->getNom()."</p></td>".
+                                    "<td><p>".$date_affichage."</p></td>".
+                                    "<td><p>".$Soiree->getLieu()."</p></td>".
+                                    "<td><p>".$Soiree->getDescription()."</p></td>".
+                                    "<td><p>".$Soiree->getNbPlaces()."</p></td>".
+                                    "<td><p>".$connexionBD->getNbPlacesRestantes($Soiree)."</p></td>".
+                                    "<td><p>".$Soiree->getPrix()."</p></td>".
+                                    "<td><p>".$Soiree->getHeureDebut()."</p></td>";
+
+            }
         }
 	?>
     </tbody>
