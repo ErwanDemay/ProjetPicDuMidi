@@ -1,0 +1,113 @@
+/* Reset général pour enlever les marges et les paddings par défaut */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Police moderne et claire */
+    background-color: #f4f4f4; /* Couleur de fond neutre */
+    color: #333; /* Texte sombre pour une meilleure lisibilité */
+    line-height: 1.6; /* Meilleure lisibilité des paragraphes */
+}
+
+/* Style de la navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;  /* s'assurer que la navbar est toujours au-dessus du contenu */
+    background-color: #2c3e50; /* Couleur de fond de la navbar (bleu foncé) */
+    color: white; /* Texte blanc pour contraster */
+    padding: 15px 20px; /* Plus de padding pour une meilleure hauteur de navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre portée pour un effet de profondeur */
+    font-size: 18px; /* Taille de police plus grande pour la navbar */
+    transition: background-color 0.3s ease; /* Animation de transition pour le hover */
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Effet de survol pour les liens */
+}
+
+.navbar a:hover {
+    background-color: #1abc9c; /* Couleur au survol */
+    color: white;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Contenu principal de la page */
+.content {
+    padding-top: 80px; /* Décalage du contenu sous la navbar */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre discrète pour séparer du fond */
+    border-radius: 8px; /* Bords arrondis */
+}
+
+h1, h2 {
+    color: #2c3e50; /* Couleur des titres */
+    font-weight: 700;
+}
+
+/* Sections spécifiques : Mentions légales, RGPD, etc. */
+.mentions-legales, .rgpd {
+    background-color: #ecf0f1;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre douce pour chaque section */
+}
+
+.mentions-legales h2, .rgpd h2 {
+    color: #2980b9; /* Couleur spécifique pour les titres des sections */
+}
+
+/* Liens dans les sections */
+a {
+    color: #2980b9; /* Liens avec une couleur bleue */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Sous-lignage des liens au survol */
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+/* Responsive design pour les petits écrans */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        padding: 15px;
+        margin-top: 120px;
+    }
+}

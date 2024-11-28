@@ -83,9 +83,14 @@ include('./modeles/Utilisateur.php');
                             break;
                     case'utilisateurs':
                             include("./controleurs/controleurUtilisateurs.php");
+                            break;
+                    case'Mentions' :
+                            include("./controleurs/controleurMentions.php");
+                            break;
               }
 ?>
+</div class='ml'><a href='./index.php?controleur=Mentions&action=consultationMentions'>Mentions Légales</a>
 </div>
-</div>
+
 </body>
 </html>
