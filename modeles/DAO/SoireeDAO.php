@@ -172,11 +172,11 @@ class SoireeDAO extends Base{
      */
     public function getProchainesLesSoirees(){
         //mm remarque que getLesSoirées()
-        $ordreSQL = "SELECT * FROM soirees WHERE date_soiree > CURDATE() ORDER BY date_soiree;";
+        $ordreSQL = "SELECT * FROM soirees WHERE date_soiree >= CURDATE() ORDER BY date_soiree;";
         
         $reqPrepa = $this->prepare($ordreSQL);
         $reqPrepa->execute();
-    
+
         $tableauSoirees = $reqPrepa->fetchAll();
         $lesObjSoirees = array();
         
