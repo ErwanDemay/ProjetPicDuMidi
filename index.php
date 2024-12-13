@@ -72,7 +72,7 @@ include('./modeles/Utilisateur.php');
                                   "<h2>Le Balcon des Pyrénées</h2>".
                                   "<p class='pAccueil'>Venez vivre un moment hors du temps en contemplant la vue à couper le souffle qui s'offre à vous. Bienvenue au Pic du Midi…</p>".
                                   "<br>".
-                                  "<button id='buttonBilleterie'>Billetterie</button>".
+                                  "<a href='index.php?controleur=soiree&action=prochainesSoirees'><button class='boutons'>Billetterie</button></a>".
                                 "</div>";
                         break;
                     case 'soiree' : 

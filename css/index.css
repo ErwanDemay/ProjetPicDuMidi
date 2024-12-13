@@ -151,8 +151,8 @@ nav li {
   text-align: center;
 }
 
-/*style du bouton billeterie*/
-#buttonBilleterie {
+/*style des boutons*/
+.boutons {
   width: 9em;
   height: 3em;
   border-radius: 30em;
@@ -164,7 +164,7 @@ nav li {
   z-index: 1;
 }
 
-#buttonBilleterie::before {
+.boutons::before {
   content: "";
   width: 0;
   height: 3em;
@@ -177,7 +177,7 @@ nav li {
   display: block;
   z-index: -1;
 }
-#buttonBilleterie:hover::before {
+.boutons:hover::before {
   width: 9em;
 }
 
