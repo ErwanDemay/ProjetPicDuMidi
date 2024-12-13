@@ -265,9 +265,9 @@ class SoireeDAO extends Base{
 
             $resultatDeLaRequete = $reqPrepa->execute();
 
-            return $resultatDeLaRequete;
+            return "soiree reservee";
         }else{
-            return "pas assez de places"; //retoune toujours ça je comprends pas
+            return "pas assez de places";
         }
     }
 }

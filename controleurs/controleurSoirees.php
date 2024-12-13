@@ -139,9 +139,9 @@ switch ($action){
                             $nbPlaces= (int) $_POST['nbPlacesReservees']; //Cast en int car sinon c'est considéré comme un string et ça fait échouer la condition de la méthode reserverSoiree()
                             $connexionBD = new SoireeDAO();
                             $resultatDeLaRequete = $connexionBD->reserverSoiree($idSoiree, $idUtilisateur, $nbPlaces);
-   
-                            if($resultatDeLaRequete == true){ //Pour mettre le bouton sous le texte, un <br> ne suffit, la gestion du contenu en CSS bloque
-                                                              //Pour éviter de me risquer à retravailler le CSS, j'utilise un tableau, c'est pas propre mais qu'est-ce que ça marche bien
+
+                            if($resultatDeLaRequete == "soiree reservee"){  //Pour mettre le bouton sous le texte, un <br> ne suffit, la gestion du contenu en CSS bloque
+                                                                            //Pour éviter de me risquer à retravailler le CSS, j'utilise un tableau, c'est pas propre mais qu'est-ce que ça marche bien
                                 echo "<table>".
                                      "<tr> <td> <h1 style='color:white;'>Soirée réservée !</h1> </td> </tr>".
                                      "<tr> <td style='text-align: center;'> <a href='/index.php'><button class='boutons'>Retour accueil</button></a> </td> </tr>".
