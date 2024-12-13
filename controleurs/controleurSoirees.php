@@ -136,16 +136,16 @@ switch ($action){
         case 'soireeReservee' :
                             $idSoiree=$_POST['idSoiree'];
                             $idUtilisateur=$_POST['idUtilisateur'];
-                            $nbPlaces=$_POST['nbPlacesReservees'];
+                            $nbPlaces= (int) $_POST['nbPlacesReservees']; //Cast en int car sinon c'est considéré comme un string et ça fait échouer la condition de la méthode reserverSoiree()
                             $connexionBD = new SoireeDAO();
                             $resultatDeLaRequete = $connexionBD->reserverSoiree($idSoiree, $idUtilisateur, $nbPlaces);
-    // retourne "pas assez de place quoi qu'il arrive je comprends pas
-                            if($resultatDeLaRequete == "pas assez de places"){
-                                echo "<h1 style='color:white;'>Il ne reste pas assez de places.</h1>";
-                                echo "<p>la réservation a fonctionnée mais la fonction retourne qu'il y a pas assez de places je câble</p>";
+   
+                            if($resultatDeLaRequete == true){
+                                echo "<h1 style='color:white;'>Soirée réservée !</h1>".
+                                     "<br>".
+                                     "<a href='/index.php'><button class='boutons'>Retour accueil</button></a>";
                             }else{
-                                echo "<h1 style='color:white;'>Soirée réservée !</h1>";
-                                echo "<a class='boutons' href='/index.php?controleur=soiree&action=consultationSoirees'>Retour accueil</a>";
+                                echo "<h1 style='color:white;'>Il ne reste pas assez de places.</h1>";
                             }
                             break;
 }

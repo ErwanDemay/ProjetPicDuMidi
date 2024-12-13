@@ -235,7 +235,7 @@ class SoireeDAO extends Base{
         }
     
         if ($resultatDeLaRequete) {
-            return $resultatDeLaRequete['placesRestantes'];
+            return (int) $resultatDeLaRequete['placesRestantes']; //Je cast en int pour éviter que le nombre de place soit considéré comme string
         } else {
             return 0;
         }

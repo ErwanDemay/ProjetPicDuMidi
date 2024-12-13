@@ -2,7 +2,7 @@
 
 <div class="formulaire">
     <h2>La soirée a bien été ajoutée</h2>
-    <a class="bouton" href='/index.php?controleur=soiree&action=consultationSoirees'>Retour accueil</a>
+    <a class="bouton" href='/index.php'>Retour accueil</a>
     <br>
     <a class="bouton" href='/index.php?controleur=soiree'>Retour à la gestion des soirées</a>
 </div>
