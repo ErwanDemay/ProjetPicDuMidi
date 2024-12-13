@@ -220,13 +220,54 @@ class SoireeDAO extends Base{
         $id = $soiree->getId();
         $reqPrepa->bindParam(':id', $id);
         $reqPrepa->execute();
+        $resultatDeLaRequete = $reqPrepa->fetch(); //MySQL retourne null si il n'y a pas de reservation
+
+        if($resultatDeLaRequete['placesRestantes'] == null){ //Donc si on retourne null, on récupère le nombre de places seul dans soiree
+            $ordreSQL ="SELECT nbPlaces AS placesRestantes
+                        FROM soirees
+                        WHERE soirees.id_soiree = :id";
     
-        $resultatDeLaRequete = $reqPrepa->fetch(PDO::FETCH_ASSOC);
+            $reqPrepa = $this->prepare($ordreSQL);
+            $id = $soiree->getId();
+            $reqPrepa->bindParam(':id', $id);
+            $reqPrepa->execute();
+            $resultatDeLaRequete = $reqPrepa->fetch();
+        }
     
         if ($resultatDeLaRequete) {
             return $resultatDeLaRequete['placesRestantes'];
         } else {
             return 0;
+        }
+    }
+
+    /**
+     * Réserve une soirée à partir de l'id de la soirée passé en paramètre et de l'id de l'utilisateur passé en paramètre
+     * @param $idSoiree    id de la soirée à réserver
+     * @param $idUtilisateur    id de l'utilisateur qui reserve la soirée
+     * @param $nbPlaces    nombre de places que l'utilisateur veut réserver
+     * @return $resultatDeLaRequete    booléen représentant la bonne exécution de la requête
+     */
+    public function reserverSoiree($idSoiree, $idUtilisateur, $nbPlaces){
+        $laSoiree = $this->getUneSoiree($idSoiree);
+
+        $nbPlacesRestantes = $this->getNbPlacesRestantes($laSoiree);
+
+        if($nbPlacesRestantes >= $nbPlaces){
+            $ordreSQL = "INSERT INTO reservations (`id_client`, `id_soiree`, `nbPlacesReservees`) 
+                        VALUES (:id_client, :id_soiree, :nbPlacesReservees)";
+        
+            $reqPrepa = $this->prepare($ordreSQL);
+
+            $reqPrepa->bindParam(':id_client', $idUtilisateur);
+            $reqPrepa->bindParam(':id_soiree', $idSoiree);
+            $reqPrepa->bindParam(':nbPlacesReservees', $nbPlaces);
+
+            $resultatDeLaRequete = $reqPrepa->execute();
+
+            return $resultatDeLaRequete;
+        }else{
+            return "pas assez de places"; //retoune toujours ça je comprends pas
         }
     }
 }

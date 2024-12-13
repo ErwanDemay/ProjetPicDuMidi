@@ -127,4 +127,25 @@ switch ($action){
 
                         include("./vues/v_validationAjout.php");
                         break;
+        case 'reserverSoiree' :
+                            $id=$_GET['id'];
+                            $connexionBD = new SoireeDAO();
+                            $laSoiree = $connexionBD->getUneSoiree($id);
+                            include("./vues/formulaires/v_reservationSoiree.php");
+                            break;
+        case 'soireeReservee' :
+                            $idSoiree=$_POST['idSoiree'];
+                            $idUtilisateur=$_POST['idUtilisateur'];
+                            $nbPlaces=$_POST['nbPlacesReservees'];
+                            $connexionBD = new SoireeDAO();
+                            $resultatDeLaRequete = $connexionBD->reserverSoiree($idSoiree, $idUtilisateur, $nbPlaces);
+    // retourne "pas assez de place quoi qu'il arrive je comprends pas
+                            if($resultatDeLaRequete == "pas assez de places"){
+                                echo "<h1 style='color:white;'>Il ne reste pas assez de places.</h1>";
+                                echo "<p>la réservation a fonctionnée mais la fonction retourne qu'il y a pas assez de places je câble</p>";
+                            }else{
+                                echo "<h1 style='color:white;'>Soirée réservée !</h1>";
+                                echo "<a class='boutons' href='/index.php?controleur=soiree&action=consultationSoirees'>Retour accueil</a>";
+                            }
+                            break;
 }
