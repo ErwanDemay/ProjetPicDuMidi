@@ -7,7 +7,7 @@
 
 <h2>Voici la liste des utilisateurs : </h2>
 <table style="justify-content:center;">
-    <tr> <th>Id</th> <th>Nom</th> <th>Prenom</th> <th>Email</th> <th>Habilitation</th> </tr>
+    <tr> <th>Id</th> <th>Nom</th> <th>Prenom</th> <th>Email</th> <th>Habilitation</th>  <th>Supprimer</th> <th>Modifier</th></tr>
 	<?php
 
         if($lesUtilisateurs == null){
