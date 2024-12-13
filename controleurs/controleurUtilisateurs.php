@@ -71,7 +71,7 @@ switch ($action){
                             if($utilisateurConnecte->getHabilitation() < 2){ //si le niveau d'habilitation est inférieur à 2 (donc 0 ou 1), on renvoi l'utilisateur à l'accueil
                                 header('Location: ./index.php');
                             }
-                        }else{ //si il n'y a pas d'utilisateur connecté, on renvoi à l'accueil
+                        }else{ //si il n'y a pas d'utilisateur connecté, on renvoie à l'accueil
                             header('Location: ./index.php');
                         }
 

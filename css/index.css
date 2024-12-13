@@ -1,190 +1,193 @@
-/*tout n'est pas commenté mais c'est déjà bien celui qui râle je le couche*/
-
 body {
-    overflow-x: hidden; /*désactive le scroll horizontal*/
-    width: 100vw;
-    height: 100vh;
+  overflow-x: hidden; /*désactive le scroll horizontal*/
+  width: 100vw;
+  height: 100vh;
 }
-html{
-    width: 100%;
-    height: 100%;
+html {
+  width: 100%;
+  height: 100%;
 }
 #ombre {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    background-color: #00000081;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #00000081;
 }
 
 /*style de la navbar*/
 nav {
-    position: absolute;
-    width: 100%;
-    background-color: #333;
+  position: absolute;
+  width: 100%;
+  background-color: #333;
 }
 
 nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 5%;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 5%;
 }
 
 nav li {
-    position: relative; /*ça évite que la barre de scroll pop quand on survol Gestion*/
+  position: relative;
 }
 
 .navBoutton {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none; /*pour pas qu'il y ai le sous ligné dégeulasse*/
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none; /*pour pas qu'il y ai le sous ligné */
 }
 
 .navBoutton:hover {
-    background-color: #111;
-    border-radius: 15px;
+  background-color: #111;
+  border-radius: 15px;
 }
 
 /*style du sous-menu*/
 .sousMenuUl {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0; /*sinon le menu est aligné au coté gauche de gestion et sort de l'écran*/
-    background-color: #444;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    border-radius: 25px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    text-align: center;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0; /*sinon le menu est aligné au coté gauche de gestion et sort de l'écran*/
+  background-color: #444;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 25px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 .sousMenuUl a {
-    display: block;
-    padding: 10px 15px;
-    color: white;
-    text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
 }
 
 .sousMenuUl a:hover {
-    color: #fa5300;
+  color: #fa5300;
 }
 
 /*pour afficher le sous menu au survol*/
 .sousMenu:hover .sousMenuUl {
-    display: block;
+  display: block;
 }
 
-
-/*c pr afficher le diapo en fond*/
-/*ce qui suit relève de l'ésotérisme, prière de ne pas toucher*/
+/*le diapo en fond*/
 .diaporama {
-    z-index: -159561561; /*sah au moins on est sûr qu'il est au fond*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+  z-index: -159561561;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 .diaporama .diaporamaContenu {
-    position: absolute;
-    width: 300%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    animation: diaporama 16s infinite;
+  position: absolute;
+  width: 300%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  animation: diaporama 16s infinite;
 }
 
 .diaporama .diaporamaContenu .diapo {
-    position: relative;
-    width: 33.33333333%;
-    height: 100%;
-    float: left;
-    overflow: hidden
+  position: relative;
+  width: 33.33333333%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
 }
 
 .diaporama .diaporamaContenu .diapo img {
   display: block;
   width: 100%;
-  height: 100%
+  height: 100%;
 }
 
 /*animation pour changer les images du diapo*/
 @keyframes diaporama {
-    0%, 25%, 100%{left: 0}
-    
-    30%, 55%{left: -100%}
-    
-    60%, 85%{left: -200%}
+  0%,
+  25%,
+  100% {
+    left: 0;
+  }
+
+  30%,
+  55% {
+    left: -100%;
+  }
+
+  60%,
+  85% {
+    left: -200%;
+  }
 }
 
 /*style pour la le contenu de l'index */
 #contenuIndex {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #txtAccueil {
-    color: white;
-    width: 60%;
-    height: 30%;
-    /*background-color: #00000081;*/
-    border-radius: 10px;
-    /*box-shadow: 0 10px 10px #00000081;*/
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  color: white;
+  width: 60%;
+  height: 30%;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-  /*style du bouton billeterie*/
+/*style du bouton billeterie*/
 #buttonBilleterie {
-    width: 9em;
-    height: 3em;
-    border-radius: 30em;
-    font-size: 15px;
-    font-family: inherit;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    
+  width: 9em;
+  height: 3em;
+  border-radius: 30em;
+  font-size: 15px;
+  font-family: inherit;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
-   
+
 #buttonBilleterie::before {
-    content: '';
-    width: 0;
-    height: 3em;
-    border-radius: 30em;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(to right, #0f92d8 0%, #0d2ecf 100%);
-    transition: .5s ease;
-    display: block;
-    z-index: -1;
+  content: "";
+  width: 0;
+  height: 3em;
+  border-radius: 30em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to right, #0f92d8 0%, #0d2ecf 100%);
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
 }
 #buttonBilleterie:hover::before {
-    width: 9em;
+  width: 9em;
 }
 
 #logoUtilisateur {
-    height: 40px;
-    width: 40px;
-    padding: 10%;
-    margin-left: 10px;
+  height: 40px;
+  width: 40px;
+  padding: 10%;
+  margin-left: 10px;
 }
 #logoUtilisateur:hover {
-    background-color: #111;
-    border-radius: 15px;
+  background-color: #111;
+  border-radius: 15px;
 }

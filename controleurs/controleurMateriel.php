@@ -40,16 +40,6 @@ switch ($action){
                         $lesMateriels = $MaterielDAO->getLesMateriels();
                         include("./vues/v_consultationMateriel.php");
                         break;                        
-    /*case 'soireeModifiee'  :
-                        $connexionBD = new SoireeDAO();
-
-                        $id = $_POST['id'];
-                        
-                        $resultat = $connexionBD->deleteSoiree($id);
-    
-                        $lesSoirees = $connexionBD->getLesSoirees();
-                        include("  ./vues/v_consultationSoirees.php");
-                        break;*/
 
     case 'ajouterMateriel' :  
         $MaterielDAO = new MaterielDAO();

@@ -17,10 +17,7 @@
 
             foreach ($lesSoirees as $Soiree) {
 
-                //Je laisse ça au cas où mais ça empêchait d'afficher si la date était null (grosse erreur pas belle), à la place dans le tableau j'ai juste appelé getDate()
-                /*$date_bdd = $Soiree->getDate(); // Format AAAA-MM-JJ
-                $date_affichage = DateTime::createFromFormat('Y-m-d', $date_bdd)->format('d-m-Y');*/ // Format JJ-MM-AAAA
-
+                
                         //Affichage des informations de la soirées
                         echo        "<tr>".
                                     "<td><p>".$Soiree->getNom()."</p></td>".
