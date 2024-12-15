@@ -87,9 +87,14 @@ include('./modeles/Utilisateur.php');
                             break;
                     case'utilisateurs':
                             include("./controleurs/controleurUtilisateurs.php");
+                            break;
+                    case 'mentionsLegales':
+                            include("./vues/v_mentionsLegales.php");
+                            break;
               }
 ?>
 </div>
+<a href='./index.php?controleur=mentionsLegales'>Cliquez ici pour voir nos mentions légales</a>
 </div>
 </body>
 </html>
