@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="css/consultation.css">
 
-<div class="consultation">
+<div class="consultation" style='color:black;'>
 <table id="description">
 
 <h2>Ici il sera possible de visualiser et modifier ses informations</h2>
@@ -26,7 +26,7 @@
         </div>
       </tr>
   </table>
-  <p>Si vous souhaitez supprimer votre compte formulez une demaine à l'adresse suivante : gestionnaire@picdumidi.fr</p>
+  <p>Si vous souhaitez changer votre mot de passe ou supprimer votre compte formulez une demaine à l'adresse suivante : gestionnaire@picdumidi.fr</p>
 
 </table>
 </div>
