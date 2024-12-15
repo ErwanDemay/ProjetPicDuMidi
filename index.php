@@ -38,12 +38,16 @@ include('./modeles/Utilisateur.php');
         }
       }?>
 
-      <li class="sousMenu">
-        <a href="./index.php?controleur=utilisateurs" ><img src="./Images/utilisateur.png" alt="icône d'utilisateur" id="logoUtilisateur"></a>
-        <ul class="sousMenuUl">
-          <li><a href="./index.php?controleur=utilisateurs">Profil</a></li>
-          <li><a href="./index.php?controleur=utilisateurs&action=logout">Déconnexion</a></li>
-        </ul>
+      <li class='sousMenu'>
+        <a href='./index.php?controleur=utilisateurs'><img src='./Images/utilisateur.png' alt='icône d'utilisateur' id='logoUtilisateur'></a>
+        <ul class='sousMenuUl'>
+        <?php
+        if(isset($_SESSION['utilisateurConnecte'])){ //Si personne n'est connecté, le menu des options de compte n'apparaît pas
+          echo    "<li><a href='./index.php?controleur=utilisateurs'>Profil</a></li>".
+                    "<li><a href='./index.php?controleur=utilisateurs&action=logout'>Déconnexion</a></li>".
+                  "</ul>";
+        }
+        ?>
       </li>
     </ul>
   </nav>
@@ -83,9 +87,14 @@ include('./modeles/Utilisateur.php');
                             break;
                     case'utilisateurs':
                             include("./controleurs/controleurUtilisateurs.php");
+                            break;
+                    case 'mentionsLegales':
+                            include("./vues/v_mentionsLegales.php");
+                            break;
               }
 ?>
 </div>
+<a href='./index.php?controleur=mentionsLegales'>Cliquez ici pour voir nos mentions légales</a>
 </div>
 </body>
 </html>
