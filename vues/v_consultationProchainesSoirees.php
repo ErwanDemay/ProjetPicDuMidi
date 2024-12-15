@@ -38,7 +38,7 @@
                                         "<td><p>".$Soiree->getHeureDebut()."</p></td>".
                                         "<td><p>".$Soiree->getPrix()."</p></td>";
                         if(isset($_SESSION['utilisateurConnecte'])){ //Si personne n'est connecté, le bouton réserver ne s'affiche pas            
-                            echo        "<td><a href='index.php?controleur=soiree&action=reserverSoiree&id=".$Soiree->getId()."'><button class='boutons'>Réserver</button></a></td>";
+                        echo        "<td><a href='index.php?controleur=soiree&action=reserverSoiree&id=".$Soiree->getId()."'><button class='boutons'>Réserver</button></a></td>";
                         }
                         echo        "</tr>";
 
