@@ -140,14 +140,15 @@ switch ($action){
                             $connexionBD = new SoireeDAO();
                             $resultatDeLaRequete = $connexionBD->reserverSoiree($idSoiree, $idUtilisateur, $nbPlaces);
 
-                            if($resultatDeLaRequete == "soiree reservee"){  //Pour mettre le bouton sous le texte, un <br> ne suffit, la gestion du contenu en CSS bloque
-                                                                            //Pour éviter de me risquer à retravailler le CSS, j'utilise un tableau, c'est pas propre mais qu'est-ce que ça marche bien
-                                echo "<table>".
+                            if($resultatDeLaRequete == "impossible de reserver 0 place"){  
+                                echo "<h1 style='color:white;'>Il est impossible de réserver 0 place.</h1>";
+                            }else if ($resultatDeLaRequete == 'pas assez de places'){
+                                echo "<h1 style='color:white;'>Il ne reste pas assez de places.</h1>";
+                            }else{                      //Pour mettre le bouton sous le texte, un <br> ne suffit, la gestion du contenu en CSS bloque
+                                echo "<table>".         //Pour éviter de me risquer à retravailler le CSS, j'utilise un tableau, c'est pas propre mais qu'est-ce que ça marche bien
                                      "<tr> <td> <h1 style='color:white;'>Soirée réservée !</h1> </td> </tr>".
                                      "<tr> <td style='text-align: center;'> <a href='/index.php'><button class='boutons'>Retour accueil</button></a> </td> </tr>".
                                      "</table>";
-                            }else{
-                                echo "<h1 style='color:white;'>Il ne reste pas assez de places.</h1>";
                             }
                             break;
 }

@@ -253,7 +253,9 @@ class SoireeDAO extends Base{
 
         $nbPlacesRestantes = $this->getNbPlacesRestantes($laSoiree);
 
-        if($nbPlacesRestantes >= $nbPlaces){
+        if ($nbPlaces == 0){
+            return "impossible de reserver 0 place";
+        }else if($nbPlacesRestantes >= $nbPlaces){
             $ordreSQL = "INSERT INTO reservations (`id_client`, `id_soiree`, `nbPlacesReservees`) 
                         VALUES (:id_client, :id_soiree, :nbPlacesReservees)";
         
