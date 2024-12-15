@@ -1,66 +1,85 @@
-p {
-    font-size: 18px; color: #000;
-}
-h2 {
-    font-size: 36px; color: #00698f;
-}
-.consultation{
-    background-color: rgba(255, 255, 255, 1);
-    border-radius: 15px;
-    text-align: center;
-    overflow-y: auto;
+/* Général */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden; /* Pas de scroll sur tout le body */
 }
 
-.bouton {
-	background:linear-gradient(to bottom, #4d4d4d 5%, #000000 100%);
-	background-color:#4d4d4d;
-	border-radius:28px;
-	border:1px solid #000000;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:17px;
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #2f6627;
-    margin-top: 20px;
-}
-.bouton:hover {
-    background:linear-gradient(to bottom, #000000 5%, #4d4d4d 100%);
-    background-color:#000000;
-}
-.bouton:active {
-    position:relative;
-    top:1px;
+/* Conteneur principal */
+.consultation {
+  background-color: transparent;
+  max-width: 90%; /* Largeur limitée */
+  margin: 20px auto; /* Centré horizontalement et espacé verticalement */
+  padding: 0px; /* Padding réduit pour éviter l'effet "boîte" */
+  background-color: #f9f9f9; /* Couleur douce pour un fond léger */
+  border: none; /* On enlève les bordures visibles */
+  box-shadow: none; /* Retrait de l'effet d'ombre si non désiré */
+  border-radius: 0; /* Enlever les coins arrondis si ça simplifie visuellement */
+  overflow: hidden; /* Toujours pour éviter tout débordement */
 }
 
+/* En-tête du tableau */
+.tableau_header {
+  position: sticky;
+  top: 20; /* Fixé en haut */
+  background: #fff; /* Fond blanc pour masquer le contenu derrière */
+  z-index: 10; /* Au-dessus du tableau scrollable */
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+/* Conteneur pour le tableau scrollable */
+.tableau_scroll {
+  max-height: 60vh; /* Hauteur du tableau limitée */
+  overflow-y: auto; /* Scroll vertical */
+  margin: 0; /* Suppression des marges supplémentaires */
+  border: 1px solid #dddfe1; /* Bordure légère pour délimiter uniquement le tableau */
+  border-radius: 8px; /* Coins légèrement arrondis */
+  background-color: #ffffff; /* Fond blanc pour bien démarquer le tableau */
+}
+
+/* Style du tableau */
 table {
-	border-collapse: collapse;
-    font-family: Tahoma, Geneva, sans-serif;
+  width: 100%; /* Prend toute la largeur */
+  border-collapse: collapse;
+  text-align: left;
 }
-table th{
-    color: #636363;
-	border: 1px solid #dddfe1;
-    padding: 6px;
-}
+
+table th,
 table td {
-	padding: 15px;
+  padding: 10px;
+  border: 1px solid #dddfe1;
+  text-align: center;
 }
-table thead td {
-	background-color: #54585d;
-	color: #ffffff;
-	font-weight: bold;
-	font-size: 13px;
-	border: 1px solid #54585d;
+
+table thead th {
+  background-color: #54585d;
+  color: #ffffff;
 }
-table tbody td {
-	color: #636363;
-	border: 1px solid #dddfe1;
-}
-table tbody tr {
-	background-color: #f9fafb;
-}
+
 table tbody tr:nth-child(odd) {
-	background-color: #ffffff;
+  background-color: #f9fafb;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+
+/* Bouton stylisé */
+.bouton {
+  display: inline-block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #4d4d4d;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.bouton:hover {
+  background-color: #000;
 }
