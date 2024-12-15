@@ -4,7 +4,16 @@
 <h2>Voici la liste des prochaines soirées : </h2>
 <table>
     <thead>
-    <tr> <th>Nom</th> <th>Date</th> <th>Lieu</th> <th>Description</th> <th>Nombre de places</th> <th>Nombre de places restantes</th> <th>Prix</th> <th>Heure de début</th> <th>Réserver</th></tr>
+    <tr> <th>Nom</th> <th>Date</th> <th>Lieu</th> <th>Description</th> <th>Nombre de places</th> <th>Nombre de places restantes</th> <th>Prix</th> <th>Heure de début</th> 
+    
+    <?php
+    if(isset($_SESSION['utilisateurConnecte'])){ //Si personne n'est connecté, la colonne réserver ne s'affiche pas
+        echo "<th>Réserver</th>";
+    }
+    ?>
+
+    </tr>
+
     </thead>
     <tbody>
 	<?php
@@ -27,8 +36,11 @@
                                         "<td><p>".$Soiree->getNbPlaces()."</p></td>".
                                         "<td><p>".$connexionBD->getNbPlacesRestantes($Soiree)."</p></td>".
                                         "<td><p>".$Soiree->getHeureDebut()."</p></td>".
-                                        "<td><p>".$Soiree->getPrix()."</p></td>".
+                                        "<td><p>".$Soiree->getPrix()."</p></td>";
+                        if(isset($_SESSION['utilisateurConnecte'])){ //Si personne n'est connecté, le bouton réserver ne s'affiche pas            
                                         "<td><a href='index.php?controleur=soiree&action=reserverSoiree&id=".$Soiree->getId()."'><button class='boutons'>Réserver</button></a></td>";
+                        }
+                        echo        "</tr>";
 
             }
         }
