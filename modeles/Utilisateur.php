@@ -25,7 +25,7 @@ class Utilisateur {
     private $email;
     /**
      * le mot de passe étant hashé, salé et poivré, il ne me semble pas dangereux de l'avoir dans l'application web
-     * @var $motDePasse description unique de la soirée
+     * @var $motDePasse description unique de la Utilisateur
      */
     private $motDePasse;
     /**
@@ -34,7 +34,7 @@ class Utilisateur {
     private $habilitation;
 
     /**
-     * Construit un objet soirée    
+     * Construit un objet Utilisateur    
      * @param mixed $id
      * @param mixed $nom
      * @param mixed $prenom

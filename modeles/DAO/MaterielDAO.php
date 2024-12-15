@@ -82,9 +82,4 @@ class MaterielDAO extends Base{
         $unObjMateriel = new Materiel($unMateriel["id_materiel"],$unMateriel["nom_materiel"],$unMateriel["etat_materiel"]);
         return $unObjMateriel;
     }
-
-    /*public function estEnPanne($materiel){
-        $resultatDeLaRequete = $this->exec("SELECT COUNT(*) FROM materiel INNER JOIN panne on materiel.id_materiel = panne.id_materiel WHERE materiel.id_materiel = ".$materiel->getId().";");
-        echo var_dump($resultatDeLaRequete);
-    }*/
 }
