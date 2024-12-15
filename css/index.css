@@ -185,6 +185,10 @@ nav li {
   width: 9em;
 }
 
+.boutons:hover {
+  color: white;
+}
+
 #logoUtilisateur {
   height: 40px;
   width: 40px;
