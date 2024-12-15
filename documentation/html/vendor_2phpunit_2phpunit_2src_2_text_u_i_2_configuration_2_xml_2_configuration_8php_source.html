@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetPicDuMidiDoc:  Fichier source de C:/wamp64/www/ProjetPicDuMidi/vendor/phpunit/phpunit/src/TextUI/Configuration/Xml/Configuration.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetPicDuMidiDoc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_690cb576a7a137b13a3c790099da7d93.html">wamp64</a></li><li class="navelem"><a class="el" href="dir_6d4ed096fb3f4baa8acf47e3b339ffc6.html">www</a></li><li class="navelem"><a class="el" href="dir_17d949868782b00a0fb995f52b18ae45.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_a5d39cea70582ed997324fb386642b0a.html">vendor</a></li><li class="navelem"><a class="el" href="dir_dcb1b1b890826a0d2eec6601101ed11f.html">phpunit</a></li><li class="navelem"><a class="el" href="dir_c1d7e5f97085fc2a51cf0e05dc0ff04a.html">phpunit</a></li><li class="navelem"><a class="el" href="dir_cf639a6bc4088313d607cfc086c88866.html">src</a></li><li class="navelem"><a class="el" href="dir_f43317608df45211962b0da04d7e6f25.html">TextUI</a></li><li class="navelem"><a class="el" href="dir_7dd59653a440593618f3fcc8884cb17a.html">Configuration</a></li><li class="navelem"><a class="el" href="dir_40c66bb37b61b179f0ddc455190ff2b5.html">Xml</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Configuration.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_xml_2_configuration_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php declare(strict_types=1);</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * This file is part of PHPUnit.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * (c) Sebastian Bergmann &lt;sebastian@phpunit.de&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * For the full copyright and license information, please view the LICENSE</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * file that was distributed with this source code.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration.html">PHPUnit\TextUI\XmlConfiguration</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_extension_bootstrap_collection.html">PHPUnit\TextUI\Configuration\ExtensionBootstrapCollection</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_php.html">PHPUnit\TextUI\Configuration\Php</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_test_suite_collection.html">PHPUnit\TextUI\Configuration\TestSuiteCollection</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_code_coverage_1_1_code_coverage.html">PHPUnit\TextUI\XmlConfiguration\CodeCoverage\CodeCoverage</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_logging_1_1_logging.html">PHPUnit\TextUI\XmlConfiguration\Logging\Logging</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="};">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html">   23</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html">Configuration</a></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">private</span> readonly <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_extension_bootstrap_collection.html">ExtensionBootstrapCollection</a> $extensions;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">private</span> readonly <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_code_coverage_1_1_code_coverage.html">CodeCoverage</a> $codeCoverage;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">private</span> readonly <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_groups.html">Groups</a> $groups;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">private</span> readonly <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_logging_1_1_logging.html">Logging</a> $logging;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">private</span> readonly <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_php.html">Php</a> $php;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">private</span> readonly <a class="code hl_namespace" href="namespace_p_h_p_unit.html">PHPUnit</a> $phpunit;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">private</span> readonly <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_test_suite_collection.html">TestSuiteCollection</a> $testSuite;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="foldopen" id="foldopen00033" data-start="{" data-end="}">
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a6f28ecdc51a86348c0cc4d228ae0bf88">   33</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a6f28ecdc51a86348c0cc4d228ae0bf88">__construct</a>(<a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_extension_bootstrap_collection.html">ExtensionBootstrapCollection</a> $extensions, <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_code_coverage_1_1_code_coverage.html">CodeCoverage</a> $codeCoverage, <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_groups.html">Groups</a> $groups, <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_logging_1_1_logging.html">Logging</a> $logging, <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_php.html">Php</a> $php, <a class="code hl_namespace" href="namespace_p_h_p_unit.html">PHPUnit</a> $phpunit, <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_test_suite_collection.html">TestSuiteCollection</a> $testSuite)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    {</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        $this-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#af370c86216bfb350107ff8c7cbbb9e0d">extensions</a>   = $extensions;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        $this-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a87dd379bb57e648f601a012c9e01ab03">codeCoverage</a> = $codeCoverage;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        $this-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a588875f15c8c2e84bf94a6a3b75cf562">groups</a>       = $groups;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        $this-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a2a752acae09abac67b6c8de3bb8ab21e">logging</a>      = $logging;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        $this-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#adeb6a7ed92e5ec4bb8a924083645e9cf">php</a>          = $php;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        $this-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#ab7cc3cdf5bf06c5703c8f87b61e56883">phpunit</a>      = $phpunit;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        $this-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a5755b406e2caaa5393479d5792c787f3">testSuite</a>    = $testSuite;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
+</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#af370c86216bfb350107ff8c7cbbb9e0d">   44</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#af370c86216bfb350107ff8c7cbbb9e0d">extensions</a>(): <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_extension_bootstrap_collection.html">ExtensionBootstrapCollection</a></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keywordflow">return</span> $this-&gt;extensions;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="foldopen" id="foldopen00049" data-start="{" data-end="}">
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a87dd379bb57e648f601a012c9e01ab03">   49</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a87dd379bb57e648f601a012c9e01ab03">codeCoverage</a>(): <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_code_coverage_1_1_code_coverage.html">CodeCoverage</a></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> $this-&gt;codeCoverage;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
+</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a588875f15c8c2e84bf94a6a3b75cf562">   54</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a588875f15c8c2e84bf94a6a3b75cf562">groups</a>(): <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_groups.html">Groups</a></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> $this-&gt;groups;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00059" data-start="{" data-end="}">
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a2a752acae09abac67b6c8de3bb8ab21e">   59</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a2a752acae09abac67b6c8de3bb8ab21e">logging</a>(): <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_logging_1_1_logging.html">Logging</a></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    {</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> $this-&gt;logging;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#adeb6a7ed92e5ec4bb8a924083645e9cf">   64</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#adeb6a7ed92e5ec4bb8a924083645e9cf">php</a>(): <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_php.html">Php</a></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">return</span> $this-&gt;php;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
+</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#ab7cc3cdf5bf06c5703c8f87b61e56883">   69</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#ab7cc3cdf5bf06c5703c8f87b61e56883">phpunit</a>(): <a class="code hl_namespace" href="namespace_p_h_p_unit.html">PHPUnit</a></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> $this-&gt;phpunit;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a5755b406e2caaa5393479d5792c787f3">   74</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a5755b406e2caaa5393479d5792c787f3">testSuite</a>(): <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_test_suite_collection.html">TestSuiteCollection</a></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> $this-&gt;testSuite;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    }</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a087ac7a1de40f76639dfc225e6e3f8ca">   82</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a087ac7a1de40f76639dfc225e6e3f8ca">isDefault</a>(): bool</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    }</div>
+</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="foldopen" id="foldopen00090" data-start="{" data-end="}">
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#afa4d0012036ac66ee73983bd280d25f7">   90</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#afa4d0012036ac66ee73983bd280d25f7">wasLoadedFromFile</a>(): bool</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
+</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>}</div>
+</div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_extension_bootstrap_collection_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_extension_bootstrap_collection.html">PHPUnit\TextUI\Configuration\ExtensionBootstrapCollection</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_value_2_extension_bootstrap_collection_8php_source.html#l00021">ExtensionBootstrapCollection.php:22</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_php_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_php.html">PHPUnit\TextUI\Configuration\Php</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_value_2_p_h_p_8php_source.html#l00017">Php.php:18</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_test_suite_collection_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_test_suite_collection.html">PHPUnit\TextUI\Configuration\TestSuiteCollection</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_value_2_test_suite_collection_8php_source.html#l00023">TestSuiteCollection.php:24</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_code_coverage_1_1_code_coverage_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_code_coverage_1_1_code_coverage.html">PHPUnit\TextUI\XmlConfiguration\CodeCoverage\CodeCoverage</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_xml_2_code_coverage_2_code_coverage_8php_source.html#l00030">CodeCoverage.php:31</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html">PHPUnit\TextUI\XmlConfiguration\Configuration</a></div><div class="ttdef"><b>Definition</b> <a href="#l00023">Configuration.php:24</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration_html_a087ac7a1de40f76639dfc225e6e3f8ca"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a087ac7a1de40f76639dfc225e6e3f8ca">PHPUnit\TextUI\XmlConfiguration\Configuration\isDefault</a></div><div class="ttdeci">isDefault()</div><div class="ttdef"><b>Definition</b> <a href="#l00082">Configuration.php:82</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration_html_a2a752acae09abac67b6c8de3bb8ab21e"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a2a752acae09abac67b6c8de3bb8ab21e">PHPUnit\TextUI\XmlConfiguration\Configuration\logging</a></div><div class="ttdeci">logging()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_xml_2_configuration_8php_source.html#l00059">Configuration.php:59</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration_html_a5755b406e2caaa5393479d5792c787f3"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a5755b406e2caaa5393479d5792c787f3">PHPUnit\TextUI\XmlConfiguration\Configuration\testSuite</a></div><div class="ttdeci">testSuite()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_xml_2_configuration_8php_source.html#l00074">Configuration.php:74</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration_html_a588875f15c8c2e84bf94a6a3b75cf562"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a588875f15c8c2e84bf94a6a3b75cf562">PHPUnit\TextUI\XmlConfiguration\Configuration\groups</a></div><div class="ttdeci">groups()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_xml_2_configuration_8php_source.html#l00054">Configuration.php:54</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration_html_a6f28ecdc51a86348c0cc4d228ae0bf88"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a6f28ecdc51a86348c0cc4d228ae0bf88">PHPUnit\TextUI\XmlConfiguration\Configuration\__construct</a></div><div class="ttdeci">__construct(ExtensionBootstrapCollection $extensions, CodeCoverage $codeCoverage, Groups $groups, Logging $logging, Php $php, PHPUnit $phpunit, TestSuiteCollection $testSuite)</div><div class="ttdef"><b>Definition</b> <a href="#l00033">Configuration.php:33</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration_html_a87dd379bb57e648f601a012c9e01ab03"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#a87dd379bb57e648f601a012c9e01ab03">PHPUnit\TextUI\XmlConfiguration\Configuration\codeCoverage</a></div><div class="ttdeci">codeCoverage()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_xml_2_configuration_8php_source.html#l00049">Configuration.php:49</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration_html_ab7cc3cdf5bf06c5703c8f87b61e56883"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#ab7cc3cdf5bf06c5703c8f87b61e56883">PHPUnit\TextUI\XmlConfiguration\Configuration\phpunit</a></div><div class="ttdeci">phpunit()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_xml_2_configuration_8php_source.html#l00069">Configuration.php:69</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration_html_adeb6a7ed92e5ec4bb8a924083645e9cf"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#adeb6a7ed92e5ec4bb8a924083645e9cf">PHPUnit\TextUI\XmlConfiguration\Configuration\php</a></div><div class="ttdeci">php()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_xml_2_configuration_8php_source.html#l00064">Configuration.php:64</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration_html_af370c86216bfb350107ff8c7cbbb9e0d"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#af370c86216bfb350107ff8c7cbbb9e0d">PHPUnit\TextUI\XmlConfiguration\Configuration\extensions</a></div><div class="ttdeci">extensions()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_xml_2_configuration_8php_source.html#l00044">Configuration.php:44</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration_html_afa4d0012036ac66ee73983bd280d25f7"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_configuration.html#afa4d0012036ac66ee73983bd280d25f7">PHPUnit\TextUI\XmlConfiguration\Configuration\wasLoadedFromFile</a></div><div class="ttdeci">wasLoadedFromFile()</div><div class="ttdef"><b>Definition</b> <a href="#l00090">Configuration.php:90</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_groups_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_groups.html">PHPUnit\TextUI\XmlConfiguration\Groups</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_xml_2_groups_8php_source.html#l00019">Groups.php:20</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_logging_1_1_logging_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_1_1_logging_1_1_logging.html">PHPUnit\TextUI\XmlConfiguration\Logging\Logging</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_xml_2_logging_2_logging_8php_source.html#l00021">Logging.php:22</a></div></div>
+<div class="ttc" id="anamespace_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration_html"><div class="ttname"><a href="namespace_p_h_p_unit_1_1_text_u_i_1_1_xml_configuration.html">PHPUnit\TextUI\XmlConfiguration</a></div></div>
+<div class="ttc" id="anamespace_p_h_p_unit_html"><div class="ttname"><a href="namespace_p_h_p_unit.html">PHPUnit</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

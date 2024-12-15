@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetPicDuMidiDoc:  Fichier source de C:/wamp64/www/ProjetPicDuMidi/vendor/phpunit/phpunit/src/TextUI/ShellExitCodeCalculator.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetPicDuMidiDoc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_690cb576a7a137b13a3c790099da7d93.html">wamp64</a></li><li class="navelem"><a class="el" href="dir_6d4ed096fb3f4baa8acf47e3b339ffc6.html">www</a></li><li class="navelem"><a class="el" href="dir_17d949868782b00a0fb995f52b18ae45.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_a5d39cea70582ed997324fb386642b0a.html">vendor</a></li><li class="navelem"><a class="el" href="dir_dcb1b1b890826a0d2eec6601101ed11f.html">phpunit</a></li><li class="navelem"><a class="el" href="dir_c1d7e5f97085fc2a51cf0e05dc0ff04a.html">phpunit</a></li><li class="navelem"><a class="el" href="dir_cf639a6bc4088313d607cfc086c88866.html">src</a></li><li class="navelem"><a class="el" href="dir_f43317608df45211962b0da04d7e6f25.html">TextUI</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">ShellExitCodeCalculator.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_shell_exit_code_calculator_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php declare(strict_types=1);</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * This file is part of PHPUnit.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * (c) Sebastian Bergmann &lt;sebastian@phpunit.de&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * For the full copyright and license information, please view the LICENSE</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * file that was distributed with this source code.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_p_h_p_unit_1_1_text_u_i.html">PHPUnit\TextUI</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html">PHPUnit\TestRunner\TestResult\TestResult</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00017" data-start="{" data-end="};">
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_shell_exit_code_calculator.html">   17</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_shell_exit_code_calculator.html">ShellExitCodeCalculator</a></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>{</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">private</span> <span class="keyword">const</span> SUCCESS_EXIT = 0;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">private</span> <span class="keyword">const</span> FAILURE_EXIT = 1;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">private</span> <span class="keyword">const</span> EXCEPTION_EXIT = 2;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_shell_exit_code_calculator.html#aa95cbefaa21e5c3619e379445b2c2171">   25</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_shell_exit_code_calculator.html#aa95cbefaa21e5c3619e379445b2c2171">calculate</a>(<span class="keywordtype">bool</span> $failOnEmptyTestSuite, <span class="keywordtype">bool</span> $failOnRisky, <span class="keywordtype">bool</span> $failOnWarning, <span class="keywordtype">bool</span> $failOnIncomplete, <span class="keywordtype">bool</span> $failOnSkipped, <a class="code hl_class" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html">TestResult</a> $result): int</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        $returnCode = self::FAILURE_EXIT;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">if</span> ($result-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#a67c6a2016948e9b4abadfb46ed5dd5ea">wasSuccessful</a>()) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            $returnCode = self::SUCCESS_EXIT;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">if</span> ($failOnEmptyTestSuite &amp;&amp; $result-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#aad5c94bcd4248a3d677aed49e55718b7">numberOfTests</a>() === 0) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            $returnCode = self::FAILURE_EXIT;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">if</span> ($result-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#a52a793e4bfd512b900d2c85a65a10a62">wasSuccessfulIgnoringPhpunitWarnings</a>()) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            <span class="keywordflow">if</span> ($failOnRisky &amp;&amp; $result-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#af0208c10c9fc63eea701b4479456b609">hasTestConsideredRiskyEvents</a>()) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                $returnCode = self::FAILURE_EXIT;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            <span class="keywordflow">if</span> ($failOnWarning &amp;&amp; $result-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#a5b963d2a626b77b1d57bc3780e881df9">hasWarningEvents</a>()) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                $returnCode = self::FAILURE_EXIT;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            <span class="keywordflow">if</span> ($failOnIncomplete &amp;&amp; $result-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#ac8948bbea8c7d04d40f22783a2289990">hasTestMarkedIncompleteEvents</a>()) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                $returnCode = self::FAILURE_EXIT;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">if</span> ($failOnSkipped &amp;&amp; $result-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#aaa684f244e05df3f8ef654cf3bbfe698">hasTestSkippedEvents</a>()) {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                $returnCode = self::FAILURE_EXIT;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">if</span> ($result-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#a959ff8ab46dbd9688ced4c478de1a83f">hasTestErroredEvents</a>()) {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            $returnCode = self::EXCEPTION_EXIT;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">return</span> $returnCode;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+</div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html">PHPUnit\TestRunner\TestResult\TestResult</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_runner_2_test_result_2_test_result_8php_source.html#l00035">TestResult.php:36</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result_html_a52a793e4bfd512b900d2c85a65a10a62"><div class="ttname"><a href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#a52a793e4bfd512b900d2c85a65a10a62">PHPUnit\TestRunner\TestResult\TestResult\wasSuccessfulIgnoringPhpunitWarnings</a></div><div class="ttdeci">wasSuccessfulIgnoringPhpunitWarnings()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_runner_2_test_result_2_test_result_8php_source.html#l00534">TestResult.php:534</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result_html_a5b963d2a626b77b1d57bc3780e881df9"><div class="ttname"><a href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#a5b963d2a626b77b1d57bc3780e881df9">PHPUnit\TestRunner\TestResult\TestResult\hasWarningEvents</a></div><div class="ttdeci">hasWarningEvents()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_runner_2_test_result_2_test_result_8php_source.html#l00514">TestResult.php:514</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result_html_a67c6a2016948e9b4abadfb46ed5dd5ea"><div class="ttname"><a href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#a67c6a2016948e9b4abadfb46ed5dd5ea">PHPUnit\TestRunner\TestResult\TestResult\wasSuccessful</a></div><div class="ttdeci">wasSuccessful()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_runner_2_test_result_2_test_result_8php_source.html#l00527">TestResult.php:527</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result_html_a959ff8ab46dbd9688ced4c478de1a83f"><div class="ttname"><a href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#a959ff8ab46dbd9688ced4c478de1a83f">PHPUnit\TestRunner\TestResult\TestResult\hasTestErroredEvents</a></div><div class="ttdeci">hasTestErroredEvents()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_runner_2_test_result_2_test_result_8php_source.html#l00197">TestResult.php:197</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result_html_aaa684f244e05df3f8ef654cf3bbfe698"><div class="ttname"><a href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#aaa684f244e05df3f8ef654cf3bbfe698">PHPUnit\TestRunner\TestResult\TestResult\hasTestSkippedEvents</a></div><div class="ttdeci">hasTestSkippedEvents()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_runner_2_test_result_2_test_result_8php_source.html#l00251">TestResult.php:251</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result_html_aad5c94bcd4248a3d677aed49e55718b7"><div class="ttname"><a href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#aad5c94bcd4248a3d677aed49e55718b7">PHPUnit\TestRunner\TestResult\TestResult\numberOfTests</a></div><div class="ttdeci">numberOfTests()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_runner_2_test_result_2_test_result_8php_source.html#l00169">TestResult.php:169</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result_html_ac8948bbea8c7d04d40f22783a2289990"><div class="ttname"><a href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#ac8948bbea8c7d04d40f22783a2289990">PHPUnit\TestRunner\TestResult\TestResult\hasTestMarkedIncompleteEvents</a></div><div class="ttdeci">hasTestMarkedIncompleteEvents()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_runner_2_test_result_2_test_result_8php_source.html#l00269">TestResult.php:269</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result_html_af0208c10c9fc63eea701b4479456b609"><div class="ttname"><a href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#af0208c10c9fc63eea701b4479456b609">PHPUnit\TestRunner\TestResult\TestResult\hasTestConsideredRiskyEvents</a></div><div class="ttdeci">hasTestConsideredRiskyEvents()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_runner_2_test_result_2_test_result_8php_source.html#l00233">TestResult.php:233</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_shell_exit_code_calculator_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_shell_exit_code_calculator.html">PHPUnit\TextUI\ShellExitCodeCalculator</a></div><div class="ttdef"><b>Definition</b> <a href="#l00017">ShellExitCodeCalculator.php:18</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_shell_exit_code_calculator_html_aa95cbefaa21e5c3619e379445b2c2171"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_shell_exit_code_calculator.html#aa95cbefaa21e5c3619e379445b2c2171">PHPUnit\TextUI\ShellExitCodeCalculator\calculate</a></div><div class="ttdeci">calculate(bool $failOnEmptyTestSuite, bool $failOnRisky, bool $failOnWarning, bool $failOnIncomplete, bool $failOnSkipped, TestResult $result)</div><div class="ttdef"><b>Definition</b> <a href="#l00025">ShellExitCodeCalculator.php:25</a></div></div>
+<div class="ttc" id="anamespace_p_h_p_unit_1_1_text_u_i_html"><div class="ttname"><a href="namespace_p_h_p_unit_1_1_text_u_i.html">PHPUnit\TextUI</a></div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_application_8php_source.html#l00010">Application.php:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

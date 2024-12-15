@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetPicDuMidiDoc:  Fichier source de C:/wamp64/www/ProjetPicDuMidi/vendor/sebastian/diff/src/Line.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetPicDuMidiDoc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_690cb576a7a137b13a3c790099da7d93.html">wamp64</a></li><li class="navelem"><a class="el" href="dir_6d4ed096fb3f4baa8acf47e3b339ffc6.html">www</a></li><li class="navelem"><a class="el" href="dir_17d949868782b00a0fb995f52b18ae45.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_a5d39cea70582ed997324fb386642b0a.html">vendor</a></li><li class="navelem"><a class="el" href="dir_77b478d43b57275685885fbf9274d554.html">sebastian</a></li><li class="navelem"><a class="el" href="dir_10be0fea3d297cb0d3421ed3a637fa52.html">diff</a></li><li class="navelem"><a class="el" href="dir_d6a3385256f38866ed5de732f883f91a.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Line.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vendor_2sebastian_2diff_2src_2_line_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php declare(strict_types=1);</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * This file is part of sebastian/diff.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * (c) Sebastian Bergmann &lt;sebastian@phpunit.de&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * For the full copyright and license information, please view the LICENSE</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * file that was distributed with this source code.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_sebastian_bergmann_1_1_diff.html">SebastianBergmann\Diff</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00012" data-start="{" data-end="};">
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_sebastian_bergmann_1_1_diff_1_1_line.html">   12</a></span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="class_sebastian_bergmann_1_1_diff_1_1_line.html">Line</a></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">public</span> <span class="keyword">const</span> <a class="code hl_variable" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a9dcf44632176616f583582396a5d6ec9">ADDED</a>     = 1;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">public</span> <span class="keyword">const</span> <a class="code hl_variable" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a407d200e9f16e51a21be57a9fcec09f0">REMOVED</a>   = 2;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">public</span> <span class="keyword">const</span> <a class="code hl_variable" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a4aebc93452a080d340addea1ef92b4dc">UNCHANGED</a> = 3;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">private</span> <span class="keywordtype">int</span> $type;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">private</span> <span class="keywordtype">string</span> $content;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a41051575fc75105ff6f5d433fd4b2e60">   20</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a41051575fc75105ff6f5d433fd4b2e60">__construct</a>(<span class="keywordtype">int</span> $type = self::UNCHANGED, <span class="keywordtype">string</span> $content = <span class="stringliteral">&#39;&#39;</span>)</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        $this-&gt;<a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#adb1e1faec5bf612c1ffc08f75907ec18">type</a>    = $type;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        $this-&gt;<a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a9b80bb36f89498eac4f43bf08461240d">content</a> = $content;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    }</div>
+</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a9b80bb36f89498eac4f43bf08461240d">   26</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a9b80bb36f89498eac4f43bf08461240d">content</a>(): string</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">return</span> $this-&gt;content;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#adb1e1faec5bf612c1ffc08f75907ec18">   31</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#adb1e1faec5bf612c1ffc08f75907ec18">type</a>(): int</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    {</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">return</span> $this-&gt;type;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a7762633c7cba5e2ba0b9dcc52c8744e5">   36</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a7762633c7cba5e2ba0b9dcc52c8744e5">isAdded</a>(): bool</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#adb1e1faec5bf612c1ffc08f75907ec18">type</a> === <a class="code hl_variable" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a9dcf44632176616f583582396a5d6ec9">self::ADDED</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a3cbe60c4f5040428d38269aca811ef9a">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a3cbe60c4f5040428d38269aca811ef9a">isRemoved</a>(): bool</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#adb1e1faec5bf612c1ffc08f75907ec18">type</a> === <a class="code hl_variable" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a407d200e9f16e51a21be57a9fcec09f0">self::REMOVED</a>;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    }</div>
+</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="foldopen" id="foldopen00046" data-start="{" data-end="}">
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#ac694aa50ed54dc7ecd03d17ec5580a87">   46</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#ac694aa50ed54dc7ecd03d17ec5580a87">isUnchanged</a>(): bool</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">return</span> $this-&gt;<a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#adb1e1faec5bf612c1ffc08f75907ec18">type</a> === <a class="code hl_variable" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a4aebc93452a080d340addea1ef92b4dc">self::UNCHANGED</a>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00054" data-start="{" data-end="}">
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a58e43f09a06ce4e29b192c4e17ce7915">   54</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a58e43f09a06ce4e29b192c4e17ce7915">getContent</a>(): string</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> $this-&gt;content;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    }</div>
+</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="foldopen" id="foldopen00062" data-start="{" data-end="}">
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a830b5c75df72b32396701bc563fbe3c7">   62</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a830b5c75df72b32396701bc563fbe3c7">getType</a>(): int</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keywordflow">return</span> $this-&gt;type;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}</div>
+</div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_diff_1_1_line_html"><div class="ttname"><a href="class_sebastian_bergmann_1_1_diff_1_1_line.html">SebastianBergmann\Diff\Line</a></div><div class="ttdef"><b>Definition</b> <a href="#l00012">Line.php:13</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_diff_1_1_line_html_a3cbe60c4f5040428d38269aca811ef9a"><div class="ttname"><a href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a3cbe60c4f5040428d38269aca811ef9a">SebastianBergmann\Diff\Line\isRemoved</a></div><div class="ttdeci">isRemoved()</div><div class="ttdef"><b>Definition</b> <a href="#l00041">Line.php:41</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_diff_1_1_line_html_a407d200e9f16e51a21be57a9fcec09f0"><div class="ttname"><a href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a407d200e9f16e51a21be57a9fcec09f0">SebastianBergmann\Diff\Line\REMOVED</a></div><div class="ttdeci">const REMOVED</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2sebastian_2diff_2src_2_line_8php_source.html#l00015">Line.php:15</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_diff_1_1_line_html_a41051575fc75105ff6f5d433fd4b2e60"><div class="ttname"><a href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a41051575fc75105ff6f5d433fd4b2e60">SebastianBergmann\Diff\Line\__construct</a></div><div class="ttdeci">__construct(int $type=self::UNCHANGED, string $content='')</div><div class="ttdef"><b>Definition</b> <a href="#l00020">Line.php:20</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_diff_1_1_line_html_a4aebc93452a080d340addea1ef92b4dc"><div class="ttname"><a href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a4aebc93452a080d340addea1ef92b4dc">SebastianBergmann\Diff\Line\UNCHANGED</a></div><div class="ttdeci">const UNCHANGED</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2sebastian_2diff_2src_2_line_8php_source.html#l00016">Line.php:16</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_diff_1_1_line_html_a58e43f09a06ce4e29b192c4e17ce7915"><div class="ttname"><a href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a58e43f09a06ce4e29b192c4e17ce7915">SebastianBergmann\Diff\Line\getContent</a></div><div class="ttdeci">getContent()</div><div class="ttdef"><b>Definition</b> <a href="#l00054">Line.php:54</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_diff_1_1_line_html_a7762633c7cba5e2ba0b9dcc52c8744e5"><div class="ttname"><a href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a7762633c7cba5e2ba0b9dcc52c8744e5">SebastianBergmann\Diff\Line\isAdded</a></div><div class="ttdeci">isAdded()</div><div class="ttdef"><b>Definition</b> <a href="#l00036">Line.php:36</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_diff_1_1_line_html_a830b5c75df72b32396701bc563fbe3c7"><div class="ttname"><a href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a830b5c75df72b32396701bc563fbe3c7">SebastianBergmann\Diff\Line\getType</a></div><div class="ttdeci">getType()</div><div class="ttdef"><b>Definition</b> <a href="#l00062">Line.php:62</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_diff_1_1_line_html_a9b80bb36f89498eac4f43bf08461240d"><div class="ttname"><a href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a9b80bb36f89498eac4f43bf08461240d">SebastianBergmann\Diff\Line\content</a></div><div class="ttdeci">content()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2sebastian_2diff_2src_2_line_8php_source.html#l00026">Line.php:26</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_diff_1_1_line_html_a9dcf44632176616f583582396a5d6ec9"><div class="ttname"><a href="class_sebastian_bergmann_1_1_diff_1_1_line.html#a9dcf44632176616f583582396a5d6ec9">SebastianBergmann\Diff\Line\ADDED</a></div><div class="ttdeci">const ADDED</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2sebastian_2diff_2src_2_line_8php_source.html#l00014">Line.php:14</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_diff_1_1_line_html_ac694aa50ed54dc7ecd03d17ec5580a87"><div class="ttname"><a href="class_sebastian_bergmann_1_1_diff_1_1_line.html#ac694aa50ed54dc7ecd03d17ec5580a87">SebastianBergmann\Diff\Line\isUnchanged</a></div><div class="ttdeci">isUnchanged()</div><div class="ttdef"><b>Definition</b> <a href="#l00046">Line.php:46</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_diff_1_1_line_html_adb1e1faec5bf612c1ffc08f75907ec18"><div class="ttname"><a href="class_sebastian_bergmann_1_1_diff_1_1_line.html#adb1e1faec5bf612c1ffc08f75907ec18">SebastianBergmann\Diff\Line\type</a></div><div class="ttdeci">type()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2sebastian_2diff_2src_2_line_8php_source.html#l00031">Line.php:31</a></div></div>
+<div class="ttc" id="anamespace_sebastian_bergmann_1_1_diff_html"><div class="ttname"><a href="namespace_sebastian_bergmann_1_1_diff.html">SebastianBergmann\Diff</a></div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2sebastian_2diff_2src_2_chunk_8php_source.html#l00010">Chunk.php:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
