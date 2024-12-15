@@ -1,10 +1,14 @@
 <link rel="stylesheet" href="css/consultation.css">
 
 <div class="consultation">
-<table id="description">
-<a href="index.php?controleur=soiree&action=ajouterSoiree" class="bouton">
-    <i class="bi bi-plus-circle"></i> Créer une soirée
-</a>
+  <div class="tableau_header">
+    <!-- Bouton pour ajouter une soirée -->
+    <a href="index.php?controleur=soiree&action=ajouterSoiree" class="bouton">
+      <i class="bi bi-plus-circle"></i> Créer une soirée
+    </a>
+    <!-- Titre -->
+    <h2>Voici la liste des soirées enregistrées :</h2>
+  </div>
 
 <h2>Voici la liste des soirées enregistrées : </h2>
 <table>
@@ -39,8 +43,8 @@
                         //echo "<br><br> ------------------------------------ <br><br>";
             }
         }
-	?>
-</table>
-</table>
-</div>
+        ?>
+      </tbody>
+    </table>
+  </div>
 </div>
