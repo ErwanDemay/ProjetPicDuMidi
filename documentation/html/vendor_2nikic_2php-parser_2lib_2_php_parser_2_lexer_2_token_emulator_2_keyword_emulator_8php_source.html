@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetPicDuMidiDoc:  Fichier source de C:/wamp64/www/ProjetPicDuMidi/vendor/nikic/php-parser/lib/PhpParser/Lexer/TokenEmulator/KeywordEmulator.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetPicDuMidiDoc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_690cb576a7a137b13a3c790099da7d93.html">wamp64</a></li><li class="navelem"><a class="el" href="dir_6d4ed096fb3f4baa8acf47e3b339ffc6.html">www</a></li><li class="navelem"><a class="el" href="dir_17d949868782b00a0fb995f52b18ae45.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_a5d39cea70582ed997324fb386642b0a.html">vendor</a></li><li class="navelem"><a class="el" href="dir_5dcc88d987c0ec27747f0b3fd06c043c.html">nikic</a></li><li class="navelem"><a class="el" href="dir_29b7a58b19fe6a1130d8eb9ed2feefc7.html">php-parser</a></li><li class="navelem"><a class="el" href="dir_8f3ab2fe530b2cb5ef54dc2120f643cf.html">lib</a></li><li class="navelem"><a class="el" href="dir_07b98e9be706d4757986325750c5ee59.html">PhpParser</a></li><li class="navelem"><a class="el" href="dir_1514ef85b6f0d7ca5ccc06c8f1c57b72.html">Lexer</a></li><li class="navelem"><a class="el" href="dir_ac4341b5ae0c2cdf4bbc2641627d93e1.html">TokenEmulator</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">KeywordEmulator.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_lexer_2_token_emulator_2_keyword_emulator_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php declare(strict_types=1);</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_php_parser_1_1_lexer_1_1_token_emulator.html">PhpParser\Lexer\TokenEmulator</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>use <a class="code hl_class" href="class_php_parser_1_1_token.html">PhpParser\Token</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html">    7</a></span><span class="keyword">abstract</span> <span class="keyword">class </span><a class="code hl_class" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html">KeywordEmulator</a> <span class="keyword">extends</span> <a class="code hl_class" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator.html">TokenEmulator</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#a741f1cca644c5d5b30a6340b32fc54f4">    8</a></span>    <span class="keyword">abstract</span> <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#a741f1cca644c5d5b30a6340b32fc54f4">getKeywordString</a>(): string;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#ac7dedbb2924b08f9db7545fb95289d4a">    9</a></span>    <span class="keyword">abstract</span> <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#ac7dedbb2924b08f9db7545fb95289d4a">getKeywordToken</a>(): int;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="}">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#ab0087663ed946a09732df2270a8b5192">   11</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#ab0087663ed946a09732df2270a8b5192">isEmulationNeeded</a>(<span class="keywordtype">string</span> $code): bool {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        return strpos(strtolower($code), $this-&gt;<a class="code hl_function" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#a741f1cca644c5d5b30a6340b32fc54f4">getKeywordString</a>()) !== false;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }</div>
+</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#a73319ccbf5c35550711443f098832280">   16</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#a73319ccbf5c35550711443f098832280">isKeywordContext</a>(array $tokens, <span class="keywordtype">int</span> $pos): bool {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        $prevToken = $this-&gt;getPreviousNonSpaceToken($tokens, $pos);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">if</span> ($prevToken === <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        }</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordflow">return</span> $prevToken-&gt;id !== \T_OBJECT_OPERATOR</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>            &amp;&amp; $prevToken-&gt;id !== \T_NULLSAFE_OBJECT_OPERATOR;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
+</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#acceeb4bc65c6a28fc228c225577a2d4b">   25</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#acceeb4bc65c6a28fc228c225577a2d4b">emulate</a>(<span class="keywordtype">string</span> $code, array $tokens): array {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        $keywordString = $this-&gt;getKeywordString();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="keywordflow">foreach</span> ($tokens as $i =&gt; $token) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            <span class="keywordflow">if</span> ($token-&gt;id === T_STRING &amp;&amp; strtolower($token-&gt;text) === $keywordString</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                    &amp;&amp; $this-&gt;isKeywordContext($tokens, $i)) {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                $token-&gt;id = $this-&gt;getKeywordToken();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            }</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="keywordflow">return</span> $tokens;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
+</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">private</span> <span class="keyword">function</span> getPreviousNonSpaceToken(array $tokens, <span class="keywordtype">int</span> $start): ?<a class="code hl_class" href="class_php_parser_1_1_token.html">Token</a> {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        for ($i = $start - 1; $i &gt;= 0; --$i) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            <span class="keywordflow">if</span> ($tokens[$i]-&gt;<span class="keywordtype">id</span> === T_WHITESPACE) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>            }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>            <span class="keywordflow">return</span> $tokens[$i];</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="foldopen" id="foldopen00050" data-start="{" data-end="}">
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#ac580542e28f099e28efa0730c052454b">   50</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#ac580542e28f099e28efa0730c052454b">reverseEmulate</a>(<span class="keywordtype">string</span> $code, array $tokens): array {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        $keywordToken = $this-&gt;getKeywordToken();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">foreach</span> ($tokens as $token) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordflow">if</span> ($token-&gt;id === $keywordToken) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                $token-&gt;id = \T_STRING;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            }</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> $tokens;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
+</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>}</div>
+</div>
+<div class="ttc" id="aclass_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator_html"><div class="ttname"><a href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html">PhpParser\Lexer\TokenEmulator\KeywordEmulator</a></div><div class="ttdef"><b>Definition</b> <a href="#l00007">KeywordEmulator.php:7</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator_html_a73319ccbf5c35550711443f098832280"><div class="ttname"><a href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#a73319ccbf5c35550711443f098832280">PhpParser\Lexer\TokenEmulator\KeywordEmulator\isKeywordContext</a></div><div class="ttdeci">isKeywordContext(array $tokens, int $pos)</div><div class="ttdef"><b>Definition</b> <a href="#l00016">KeywordEmulator.php:16</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator_html_a741f1cca644c5d5b30a6340b32fc54f4"><div class="ttname"><a href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#a741f1cca644c5d5b30a6340b32fc54f4">PhpParser\Lexer\TokenEmulator\KeywordEmulator\getKeywordString</a></div><div class="ttdeci">getKeywordString()</div></div>
+<div class="ttc" id="aclass_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator_html_ab0087663ed946a09732df2270a8b5192"><div class="ttname"><a href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#ab0087663ed946a09732df2270a8b5192">PhpParser\Lexer\TokenEmulator\KeywordEmulator\isEmulationNeeded</a></div><div class="ttdeci">isEmulationNeeded(string $code)</div><div class="ttdef"><b>Definition</b> <a href="#l00011">KeywordEmulator.php:11</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator_html_ac580542e28f099e28efa0730c052454b"><div class="ttname"><a href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#ac580542e28f099e28efa0730c052454b">PhpParser\Lexer\TokenEmulator\KeywordEmulator\reverseEmulate</a></div><div class="ttdeci">reverseEmulate(string $code, array $tokens)</div><div class="ttdef"><b>Definition</b> <a href="#l00050">KeywordEmulator.php:50</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator_html_ac7dedbb2924b08f9db7545fb95289d4a"><div class="ttname"><a href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#ac7dedbb2924b08f9db7545fb95289d4a">PhpParser\Lexer\TokenEmulator\KeywordEmulator\getKeywordToken</a></div><div class="ttdeci">getKeywordToken()</div></div>
+<div class="ttc" id="aclass_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator_html_acceeb4bc65c6a28fc228c225577a2d4b"><div class="ttname"><a href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_keyword_emulator.html#acceeb4bc65c6a28fc228c225577a2d4b">PhpParser\Lexer\TokenEmulator\KeywordEmulator\emulate</a></div><div class="ttdeci">emulate(string $code, array $tokens)</div><div class="ttdef"><b>Definition</b> <a href="#l00025">KeywordEmulator.php:25</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator_html"><div class="ttname"><a href="class_php_parser_1_1_lexer_1_1_token_emulator_1_1_token_emulator.html">PhpParser\Lexer\TokenEmulator\TokenEmulator</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_lexer_2_token_emulator_2_token_emulator_8php_source.html#l00009">TokenEmulator.php:9</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_token_html"><div class="ttname"><a href="class_php_parser_1_1_token.html">PhpParser\Token</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_token_8php_source.html#l00008">Token.php:8</a></div></div>
+<div class="ttc" id="anamespace_php_parser_1_1_lexer_1_1_token_emulator_html"><div class="ttname"><a href="namespace_php_parser_1_1_lexer_1_1_token_emulator.html">PhpParser\Lexer\TokenEmulator</a></div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_lexer_2_token_emulator_2_asym39777a4917498499f0f1b15eae6c41d5_source.html#l00003">AsymmetricVisibilityTokenEmulator.php:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

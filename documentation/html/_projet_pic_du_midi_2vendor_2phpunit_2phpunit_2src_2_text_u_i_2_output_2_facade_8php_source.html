@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetPicDuMidiDoc:  Fichier source de C:/wamp64/www/ProjetPicDuMidi/ProjetPicDuMidi/vendor/phpunit/phpunit/src/TextUI/Output/Facade.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetPicDuMidiDoc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_690cb576a7a137b13a3c790099da7d93.html">wamp64</a></li><li class="navelem"><a class="el" href="dir_6d4ed096fb3f4baa8acf47e3b339ffc6.html">www</a></li><li class="navelem"><a class="el" href="dir_17d949868782b00a0fb995f52b18ae45.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_e9bc861d08190637e86535ea3220281a.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_7f3f8b7a37945c30d800d25a2881adbb.html">vendor</a></li><li class="navelem"><a class="el" href="dir_a6950b5282e7d409cd590ad60d8c902e.html">phpunit</a></li><li class="navelem"><a class="el" href="dir_9909a60d8c5f25a7b9102eedd6357a0a.html">phpunit</a></li><li class="navelem"><a class="el" href="dir_92bd967cff06fc97f9064d8721ee0fc6.html">src</a></li><li class="navelem"><a class="el" href="dir_077739736a82c37d72dbfb6a77847be3.html">TextUI</a></li><li class="navelem"><a class="el" href="dir_f0d7019cd26108c2a83370a24969dfec.html">Output</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Facade.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_output_2_facade_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php declare(strict_types=1);</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * This file is part of PHPUnit.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * (c) Sebastian Bergmann &lt;sebastian@phpunit.de&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * For the full copyright and license information, please view the LICENSE</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * file that was distributed with this source code.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_p_h_p_unit_1_1_text_u_i_1_1_output.html">PHPUnit\TextUI\Output</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_logging_1_1_team_city_1_1_team_city_logger.html">PHPUnit\Logging\TeamCity\TeamCityLogger</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_result_collection.html">PHPUnit\Logging\TestDox\TestResultCollection</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html">PHPUnit\TestRunner\TestResult\TestResult</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html">PHPUnit\TextUI\Configuration\Configuration</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_1_1_progress_printer_1_1_progress_printer.html">PHPUnit\TextUI\Output\Default\ProgressPrinter\ProgressPrinter</a> as DefaultProgressPrinter;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_1_1_result_printer.html">PHPUnit\TextUI\Output\Default\ResultPrinter</a> as DefaultResultPrinter;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_test_dox_1_1_result_printer.html">PHPUnit\TextUI\Output\TestDox\ResultPrinter</a> as TestDoxResultPrinter;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_util_1_1_directory_does_not_exist_exception.html">PHPUnit\Util\DirectoryDoesNotExistException</a>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>use <a class="code hl_class" href="class_p_h_p_unit_1_1_util_1_1_invalid_socket_exception.html">PHPUnit\Util\InvalidSocketException</a>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>use <a class="code hl_class" href="class_sebastian_bergmann_1_1_timer_1_1_resource_usage_formatter.html">SebastianBergmann\Timer\ResourceUsageFormatter</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="keyword">final</span> <span class="keyword">class </span>Facade</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">private</span> <span class="keyword">static</span> ?Printer $printer                    = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">private</span> <span class="keyword">static</span> ?DefaultResultPrinter $resultPrinter = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">private</span> <span class="keyword">static</span> ?SummaryPrinter $summaryPrinter      = <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> $colors                         = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keywordtype">bool</span> $defaultProgressPrinter         = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="foldopen" id="foldopen00034" data-start="{" data-end="}">
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_facade.html#a96f9fe4590da1aab7ae3b3bab2b1245f">   34</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_facade.html#a96f9fe4590da1aab7ae3b3bab2b1245f">init</a>(<a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html">Configuration</a> $configuration): <a class="code hl_interface" href="interface_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_printer.html">Printer</a></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        self::$printer = self::createPrinter($configuration);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keywordflow">if</span> (self::useDefaultProgressPrinter($configuration)) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keyword">new</span> DefaultProgressPrinter(</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                self::$printer,</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#af2e17f0bbc3d556fb28ba118fa198703">colors</a>(),</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#a0b00fa815a8b22735b1db79cd177ef45">columns</a>()</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            );</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>            self::$defaultProgressPrinter = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">if</span> (self::useDefaultResultPrinter($configuration)) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            self::$resultPrinter = <span class="keyword">new</span> DefaultResultPrinter(</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                self::$printer,</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#aa794ee13c6993e946014ccb818112620">displayDetailsOnIncompleteTests</a>(),</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#ac159bf95b4949e8fbd87a140c717fd83">displayDetailsOnSkippedTests</a>(),</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#a4a898fba744bae4714c84ccb3fdaea4c">displayDetailsOnTestsThatTriggerDeprecations</a>(),</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#a5d8598b4bb7f1157cc44d70fdadc3bae">displayDetailsOnTestsThatTriggerErrors</a>(),</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#aeddd5dbcaba5bf3e9bc71c8b93109210">displayDetailsOnTestsThatTriggerNotices</a>(),</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#a8fe562d7c89118153e9ecbc56ce58647">displayDetailsOnTestsThatTriggerWarnings</a>(),</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#acade7c3f2b579ca40fbaf38afee0f76a">reverseDefectList</a>()</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            );</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span> (self::useDefaultResultPrinter($configuration) || $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#aadda9d4e8c5440e8bd2401bf16a887a4">outputIsTestDox</a>()) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            self::$summaryPrinter = <span class="keyword">new</span> <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_summary_printer.html">SummaryPrinter</a>(</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                self::$printer,</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#af2e17f0bbc3d556fb28ba118fa198703">colors</a>(),</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            );</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <span class="keywordflow">if</span> ($configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#a9c1e7925d0a7e59e13bf8a073d3a078f">outputIsTeamCity</a>()) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>            <span class="keyword">new</span> <a class="code hl_class" href="class_p_h_p_unit_1_1_logging_1_1_team_city_1_1_team_city_logger.html">TeamCityLogger</a>(<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_printer.html#ac09ba2b63cd66f57c16175f000466d7a">DefaultPrinter::standardOutput</a>());</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        self::$colors = $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#af2e17f0bbc3d556fb28ba118fa198703">colors</a>();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        <span class="keywordflow">return</span> self::$printer;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    }</div>
+</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_facade.html#a191df1ee71efa4a0d6528a0f7be4816c">   80</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_facade.html#a191df1ee71efa4a0d6528a0f7be4816c">printResult</a>(<a class="code hl_class" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html">TestResult</a> $result, ?array $testDoxResult): void</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">if</span> ($result-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#aaf9b9fc02671980889c909c6725cf661">numberOfTestsRun</a>() &gt; 0) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>            <span class="keywordflow">if</span> (self::$defaultProgressPrinter) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>                self::$printer-&gt;print(PHP_EOL . PHP_EOL);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            }</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>            self::$printer-&gt;print((<span class="keyword">new</span> <a class="code hl_class" href="class_sebastian_bergmann_1_1_timer_1_1_resource_usage_formatter.html">ResourceUsageFormatter</a>)-&gt;resourceUsageSinceStartOfRequest() . PHP_EOL . PHP_EOL);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        <span class="keywordflow">if</span> (self::$resultPrinter !== <span class="keyword">null</span> &amp;&amp; self::$summaryPrinter !== <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            self::$resultPrinter-&gt;print($result);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            self::$summaryPrinter-&gt;print($result);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        }</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="keywordflow">if</span> ($testDoxResult !== <span class="keyword">null</span> &amp;&amp; self::$summaryPrinter !== <span class="keyword">null</span>) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            (<span class="keyword">new</span> TestDoxResultPrinter(self::$printer, self::$colors))-&gt;print(</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>                $testDoxResult</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            );</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>            self::$summaryPrinter-&gt;print($result);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        }</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
+</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
+<div class="foldopen" id="foldopen00108" data-start="{" data-end="}">
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_facade.html#a13c54fe75342cf3a9b47e7c11cbb5b5b">  108</a></span>    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">function</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_facade.html#a13c54fe75342cf3a9b47e7c11cbb5b5b">printerFor</a>(<span class="keywordtype">string</span> $target): <a class="code hl_interface" href="interface_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_printer.html">Printer</a></div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">if</span> ($target === <span class="stringliteral">&#39;php://stdout&#39;</span>) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="keywordflow">if</span> (!self::$printer instanceof <a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_null_printer.html">NullPrinter</a>) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                <span class="keywordflow">return</span> self::$printer;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_printer.html#ac09ba2b63cd66f57c16175f000466d7a">DefaultPrinter::standardOutput</a>();</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        }</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_printer.html#a1f52cd2cf763fcd83263e9f3d1227148">DefaultPrinter::from</a>($target);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    }</div>
+</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> createPrinter(<a class="code hl_class" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html">Configuration</a> $configuration): <a class="code hl_interface" href="interface_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_printer.html">Printer</a></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        <span class="keywordflow">if</span> (self::useDefaultProgressPrinter($configuration) ||</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>            self::useDefaultResultPrinter($configuration) ||</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            $configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#aadda9d4e8c5440e8bd2401bf16a887a4">outputIsTestDox</a>()) {</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>            <span class="keywordflow">if</span> ($configuration-&gt;<a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#ae49fdc2aa11f5718d52aac9b432ac3da">outputToStandardErrorStream</a>()) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>                <span class="keywordflow">return</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_printer.html#ac8b2fa3d479b554d10a211f59d822401">DefaultPrinter::standardError</a>();</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>            }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_printer.html#ac09ba2b63cd66f57c16175f000466d7a">DefaultPrinter::standardOutput</a>();</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keywordflow">return</span> <span class="keyword">new</span> NullPrinter;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    }</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> useDefaultProgressPrinter(Configuration $configuration): bool</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keywordflow">if</span> ($configuration-&gt;noOutput()) {</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        }</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>        <span class="keywordflow">if</span> ($configuration-&gt;noProgress()) {</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        }</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>        <span class="keywordflow">if</span> ($configuration-&gt;outputIsTeamCity()) {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>        }</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">function</span> useDefaultResultPrinter(Configuration $configuration): bool</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>        <span class="keywordflow">if</span> ($configuration-&gt;noOutput()) {</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>        }</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> </div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>        <span class="keywordflow">if</span> ($configuration-&gt;noResults()) {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>        }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span> </div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <span class="keywordflow">if</span> ($configuration-&gt;outputIsTeamCity()) {</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        }</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">if</span> ($configuration-&gt;outputIsTestDox()) {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        }</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span> </div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>}</div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_logging_1_1_team_city_1_1_team_city_logger_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_logging_1_1_team_city_1_1_team_city_logger.html">PHPUnit\Logging\TeamCity\TeamCityLogger</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_logging_2_team_city_2_team_city_logger_8php_source.html#l00045">TeamCityLogger.php:46</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_result_collection_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_logging_1_1_test_dox_1_1_test_result_collection.html">PHPUnit\Logging\TestDox\TestResultCollection</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_logging_2_test_dox_2_test_method_2_test_result_collection_8php_source.html#l00021">TestResultCollection.php:22</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html">PHPUnit\TestRunner\TestResult\TestResult</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_runner_2_test_result_2_test_result_8php_source.html#l00035">TestResult.php:36</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result_html_aaf9b9fc02671980889c909c6725cf661"><div class="ttname"><a href="class_p_h_p_unit_1_1_test_runner_1_1_test_result_1_1_test_result.html#aaf9b9fc02671980889c909c6725cf661">PHPUnit\TestRunner\TestResult\TestResult\numberOfTestsRun</a></div><div class="ttdeci">numberOfTestsRun()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_runner_2_test_result_2_test_result_8php_source.html#l00174">TestResult.php:174</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html">PHPUnit\TextUI\Configuration\Configuration</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00017">Configuration.php:18</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html_a0b00fa815a8b22735b1db79cd177ef45"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#a0b00fa815a8b22735b1db79cd177ef45">PHPUnit\TextUI\Configuration\Configuration\columns</a></div><div class="ttdeci">columns()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00640">Configuration.php:640</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html_a4a898fba744bae4714c84ccb3fdaea4c"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#a4a898fba744bae4714c84ccb3fdaea4c">PHPUnit\TextUI\Configuration\Configuration\displayDetailsOnTestsThatTriggerDeprecations</a></div><div class="ttdeci">displayDetailsOnTestsThatTriggerDeprecations()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00788">Configuration.php:788</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html_a5d8598b4bb7f1157cc44d70fdadc3bae"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#a5d8598b4bb7f1157cc44d70fdadc3bae">PHPUnit\TextUI\Configuration\Configuration\displayDetailsOnTestsThatTriggerErrors</a></div><div class="ttdeci">displayDetailsOnTestsThatTriggerErrors()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00793">Configuration.php:793</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html_a8fe562d7c89118153e9ecbc56ce58647"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#a8fe562d7c89118153e9ecbc56ce58647">PHPUnit\TextUI\Configuration\Configuration\displayDetailsOnTestsThatTriggerWarnings</a></div><div class="ttdeci">displayDetailsOnTestsThatTriggerWarnings()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00803">Configuration.php:803</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html_a9c1e7925d0a7e59e13bf8a073d3a078f"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#a9c1e7925d0a7e59e13bf8a073d3a078f">PHPUnit\TextUI\Configuration\Configuration\outputIsTeamCity</a></div><div class="ttdeci">outputIsTeamCity()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00973">Configuration.php:973</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html_aa794ee13c6993e946014ccb818112620"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#aa794ee13c6993e946014ccb818112620">PHPUnit\TextUI\Configuration\Configuration\displayDetailsOnIncompleteTests</a></div><div class="ttdeci">displayDetailsOnIncompleteTests()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00778">Configuration.php:778</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html_aadda9d4e8c5440e8bd2401bf16a887a4"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#aadda9d4e8c5440e8bd2401bf16a887a4">PHPUnit\TextUI\Configuration\Configuration\outputIsTestDox</a></div><div class="ttdeci">outputIsTestDox()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00978">Configuration.php:978</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html_ac159bf95b4949e8fbd87a140c717fd83"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#ac159bf95b4949e8fbd87a140c717fd83">PHPUnit\TextUI\Configuration\Configuration\displayDetailsOnSkippedTests</a></div><div class="ttdeci">displayDetailsOnSkippedTests()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00783">Configuration.php:783</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html_acade7c3f2b579ca40fbaf38afee0f76a"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#acade7c3f2b579ca40fbaf38afee0f76a">PHPUnit\TextUI\Configuration\Configuration\reverseDefectList</a></div><div class="ttdeci">reverseDefectList()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00808">Configuration.php:808</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html_ae49fdc2aa11f5718d52aac9b432ac3da"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#ae49fdc2aa11f5718d52aac9b432ac3da">PHPUnit\TextUI\Configuration\Configuration\outputToStandardErrorStream</a></div><div class="ttdeci">outputToStandardErrorStream()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00635">Configuration.php:635</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html_aeddd5dbcaba5bf3e9bc71c8b93109210"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#aeddd5dbcaba5bf3e9bc71c8b93109210">PHPUnit\TextUI\Configuration\Configuration\displayDetailsOnTestsThatTriggerNotices</a></div><div class="ttdeci">displayDetailsOnTestsThatTriggerNotices()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00798">Configuration.php:798</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration_html_af2e17f0bbc3d556fb28ba118fa198703"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_configuration_1_1_configuration.html#af2e17f0bbc3d556fb28ba118fa198703">PHPUnit\TextUI\Configuration\Configuration\colors</a></div><div class="ttdeci">colors()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_configuration_2_configuration_8php_source.html#l00693">Configuration.php:693</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_1_1_progress_printer_1_1_progress_printer_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_1_1_progress_printer_1_1_progress_printer.html">PHPUnit\TextUI\Output\Default\ProgressPrinter\ProgressPrinter</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_output_2_default_2_progress_printer_2_progress_printer_8php_source.html#l00029">ProgressPrinter.php:30</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_1_1_result_printer_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_1_1_result_printer.html">PHPUnit\TextUI\Output\Default\ResultPrinter</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_output_2_default_2_result_printer_8php_source.html#l00045">ResultPrinter.php:46</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_printer_html_a1f52cd2cf763fcd83263e9f3d1227148"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_printer.html#a1f52cd2cf763fcd83263e9f3d1227148">PHPUnit\TextUI\Output\DefaultPrinter\from</a></div><div class="ttdeci">static from(string $out)</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_output_2_printer_2_default_printer_8php_source.html#l00043">DefaultPrinter.php:43</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_printer_html_ac09ba2b63cd66f57c16175f000466d7a"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_printer.html#ac09ba2b63cd66f57c16175f000466d7a">PHPUnit\TextUI\Output\DefaultPrinter\standardOutput</a></div><div class="ttdeci">static standardOutput()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_output_2_printer_2_default_printer_8php_source.html#l00052">DefaultPrinter.php:52</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_printer_html_ac8b2fa3d479b554d10a211f59d822401"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_default_printer.html#ac8b2fa3d479b554d10a211f59d822401">PHPUnit\TextUI\Output\DefaultPrinter\standardError</a></div><div class="ttdeci">static standardError()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2phpunit_2src_2_text_u_i_2_output_2_printer_2_default_printer_8php_source.html#l00061">DefaultPrinter.php:61</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_facade_html_a13c54fe75342cf3a9b47e7c11cbb5b5b"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_facade.html#a13c54fe75342cf3a9b47e7c11cbb5b5b">PHPUnit\TextUI\Output\Facade\printerFor</a></div><div class="ttdeci">static printerFor(string $target)</div><div class="ttdef"><b>Definition</b> <a href="#l00108">Facade.php:108</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_facade_html_a191df1ee71efa4a0d6528a0f7be4816c"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_facade.html#a191df1ee71efa4a0d6528a0f7be4816c">PHPUnit\TextUI\Output\Facade\printResult</a></div><div class="ttdeci">static printResult(TestResult $result, ?array $testDoxResult)</div><div class="ttdef"><b>Definition</b> <a href="#l00080">Facade.php:80</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_facade_html_a96f9fe4590da1aab7ae3b3bab2b1245f"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_facade.html#a96f9fe4590da1aab7ae3b3bab2b1245f">PHPUnit\TextUI\Output\Facade\init</a></div><div class="ttdeci">static init(Configuration $configuration)</div><div class="ttdef"><b>Definition</b> <a href="#l00034">Facade.php:34</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_null_printer_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_null_printer.html">PHPUnit\TextUI\Output\NullPrinter</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_output_2_printer_2_null_printer_8php_source.html#l00015">NullPrinter.php:16</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_summary_printer_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_summary_printer.html">PHPUnit\TextUI\Output\SummaryPrinter</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_output_2_summary_printer_8php_source.html#l00019">SummaryPrinter.php:20</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_test_dox_1_1_result_printer_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_test_dox_1_1_result_printer.html">PHPUnit\TextUI\Output\TestDox\ResultPrinter</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_output_2_test_dox_2_result_printer_8php_source.html#l00033">ResultPrinter.php:34</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_util_1_1_directory_does_not_exist_exception_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_util_1_1_directory_does_not_exist_exception.html">PHPUnit\Util\DirectoryDoesNotExistException</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_util_2_exception_2_directory_does_not_exist_exception_8php_source.html#l00018">DirectoryDoesNotExistException.php:19</a></div></div>
+<div class="ttc" id="aclass_p_h_p_unit_1_1_util_1_1_invalid_socket_exception_html"><div class="ttname"><a href="class_p_h_p_unit_1_1_util_1_1_invalid_socket_exception.html">PHPUnit\Util\InvalidSocketException</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_util_2_exception_2_invalid_socket_exception_8php_source.html#l00018">InvalidSocketException.php:19</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_timer_1_1_resource_usage_formatter_html"><div class="ttname"><a href="class_sebastian_bergmann_1_1_timer_1_1_resource_usage_formatter.html">SebastianBergmann\Timer\ResourceUsageFormatter</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2php-timer_2src_2_resource_usage_formatter_8php_source.html#l00017">ResourceUsageFormatter.php:18</a></div></div>
+<div class="ttc" id="ainterface_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_printer_html"><div class="ttname"><a href="interface_p_h_p_unit_1_1_text_u_i_1_1_output_1_1_printer.html">PHPUnit\TextUI\Output\Printer</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2phpunit_2src_2_text_u_i_2_output_2_printer_2_printer_8php_source.html#l00015">Printer.php:16</a></div></div>
+<div class="ttc" id="anamespace_p_h_p_unit_1_1_text_u_i_1_1_output_html"><div class="ttname"><a href="namespace_p_h_p_unit_1_1_text_u_i_1_1_output.html">PHPUnit\TextUI\Output</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

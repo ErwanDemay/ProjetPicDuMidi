@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetPicDuMidiDoc:  Fichier source de C:/wamp64/www/ProjetPicDuMidi/ProjetPicDuMidi/vendor/nikic/php-parser/lib/PhpParser/Error.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetPicDuMidiDoc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_690cb576a7a137b13a3c790099da7d93.html">wamp64</a></li><li class="navelem"><a class="el" href="dir_6d4ed096fb3f4baa8acf47e3b339ffc6.html">www</a></li><li class="navelem"><a class="el" href="dir_17d949868782b00a0fb995f52b18ae45.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_e9bc861d08190637e86535ea3220281a.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_7f3f8b7a37945c30d800d25a2881adbb.html">vendor</a></li><li class="navelem"><a class="el" href="dir_bf319f31c90f62720609f973073e12f0.html">nikic</a></li><li class="navelem"><a class="el" href="dir_65c335598e548f7038e0448884b81693.html">php-parser</a></li><li class="navelem"><a class="el" href="dir_bf343285e449d7ad9d3a02bdf5a2841f.html">lib</a></li><li class="navelem"><a class="el" href="dir_65e3c11a9e4278335c66921d0dcdd22c.html">PhpParser</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Error.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_error_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php declare(strict_types=1);</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_php_parser.html">PhpParser</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">class </span>Error <span class="keyword">extends</span> \RuntimeException {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#a29e2c5afdf53167378623092b7c3c18b">    6</a></span>    <span class="keyword">protected</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_php_parser_1_1_error.html#a29e2c5afdf53167378623092b7c3c18b">$rawMessage</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#ac89f2733f3f084f1e693e13afbb67739">    8</a></span>    <span class="keyword">protected</span> array <a class="code hl_variable" href="class_php_parser_1_1_error.html#ac89f2733f3f084f1e693e13afbb67739">$attributes</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#a9f7a91f385be98140892cebf24abd1a3">   16</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#a9f7a91f385be98140892cebf24abd1a3">__construct</a>(<span class="keywordtype">string</span> $message, array $attributes = []) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        $this-&gt;rawMessage = $message;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        $this-&gt;attributes = $attributes;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        $this-&gt;updateMessage();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    }</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#ae10360028f8c467cf5855bcaf76b091f">   27</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#ae10360028f8c467cf5855bcaf76b091f">getRawMessage</a>(): string {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        return $this-&gt;rawMessage;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#a0c5336ffcf8d85709d6f212bd49c7bb4">   37</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#a0c5336ffcf8d85709d6f212bd49c7bb4">getStartLine</a>(): int {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        return $this-&gt;attributes[<span class="stringliteral">&#39;startLine&#39;</span>] ?? -1;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#a7ad149e4075bba710a8933065263fe0e">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#a7ad149e4075bba710a8933065263fe0e">getEndLine</a>(): int {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        return $this-&gt;attributes[<span class="stringliteral">&#39;endLine&#39;</span>] ?? -1;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    }</div>
+</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#afbe85ec4b9947cc951c67d63911cf0a4">   56</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#afbe85ec4b9947cc951c67d63911cf0a4">getAttributes</a>(): array {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        return $this-&gt;attributes;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00065" data-start="{" data-end="}">
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#ad4c58c23f94923a1ba4ad37b24a80504">   65</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#ad4c58c23f94923a1ba4ad37b24a80504">setAttributes</a>(array $attributes): void {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        $this-&gt;attributes = $attributes;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $this-&gt;updateMessage();</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
+</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#a0b6f58a8e01e16e9edec6afaebebac37">   75</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#a0b6f58a8e01e16e9edec6afaebebac37">setRawMessage</a>(<span class="keywordtype">string</span> $message): void {</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        $this-&gt;rawMessage = $message;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $this-&gt;updateMessage();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#ade4708ff36cfe2aad084be9e58128578">   85</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#ade4708ff36cfe2aad084be9e58128578">setStartLine</a>(<span class="keywordtype">int</span> $line): void {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $this-&gt;attributes[<span class="stringliteral">&#39;startLine&#39;</span>] = $line;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        $this-&gt;updateMessage();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
+</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#a3d593396bd7153045f204a45c9ab8538">   95</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#a3d593396bd7153045f204a45c9ab8538">hasColumnInfo</a>(): bool {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        return isset($this-&gt;attributes[<span class="stringliteral">&#39;startFilePos&#39;</span>], $this-&gt;attributes[<span class="stringliteral">&#39;endFilePos&#39;</span>]);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
+</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="foldopen" id="foldopen00104" data-start="{" data-end="}">
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#a140beabf81b804a75b7688b898b13519">  104</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#a140beabf81b804a75b7688b898b13519">getStartColumn</a>(<span class="keywordtype">string</span> $code): int {</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <a class="code hl_variable" href="_projet_pic_du_midi_2vendor_2autoload_8php.html#a26d062d8da79dc83e81e01fd4d82c715">if</a> (!$this-&gt;hasColumnInfo()) {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&#39;Error does not have column information&#39;</span>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        }</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">return</span> $this-&gt;toColumn($code, $this-&gt;attributes[<span class="stringliteral">&#39;startFilePos&#39;</span>]);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#a9f11eddaece9ae615419a2399b98c6f3">  117</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#a9f11eddaece9ae615419a2399b98c6f3">getEndColumn</a>(<span class="keywordtype">string</span> $code): int {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        <a class="code hl_variable" href="_projet_pic_du_midi_2vendor_2autoload_8php.html#a26d062d8da79dc83e81e01fd4d82c715">if</a> (!$this-&gt;hasColumnInfo()) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&#39;Error does not have column information&#39;</span>);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">return</span> $this-&gt;toColumn($code, $this-&gt;attributes[<span class="stringliteral">&#39;endFilePos&#39;</span>]);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="foldopen" id="foldopen00132" data-start="{" data-end="}">
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#a71e892806f40abae9f8578c52ae7f988">  132</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#a71e892806f40abae9f8578c52ae7f988">getMessageWithColumnInfo</a>(<span class="keywordtype">string</span> $code): string {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        return sprintf(</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>            <span class="stringliteral">&#39;%s from %d:%d to %d:%d&#39;</span>, $this-&gt;getRawMessage(),</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            $this-&gt;getStartLine(), $this-&gt;getStartColumn($code),</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>            $this-&gt;getEndLine(), $this-&gt;getEndColumn($code)</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        );</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    }</div>
+</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keyword">private</span> <span class="keyword">function</span> toColumn(<span class="keywordtype">string</span> $code, <span class="keywordtype">int</span> $pos): int {</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        <a class="code hl_variable" href="_projet_pic_du_midi_2vendor_2autoload_8php.html#a26d062d8da79dc83e81e01fd4d82c715">if</a> ($pos &gt; strlen($code)) {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>            <span class="keywordflow">throw</span> new \RuntimeException(<span class="stringliteral">&#39;Invalid position information&#39;</span>);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        $lineStartPos = strrpos($code, <span class="stringliteral">&quot;\n&quot;</span>, $pos - strlen($code));</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>        <span class="keywordflow">if</span> (<span class="keyword">false</span> === $lineStartPos) {</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>            $lineStartPos = -1;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>        }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>        <span class="keywordflow">return</span> $pos - $lineStartPos;</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
+<div class="foldopen" id="foldopen00164" data-start="{" data-end="}">
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_error.html#ac08241eeea22007799f6a52e7b094158">  164</a></span>    <span class="keyword">protected</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_error.html#ac08241eeea22007799f6a52e7b094158">updateMessage</a>(): void {</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>        $this-&gt;message = $this-&gt;rawMessage;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>        <span class="keywordflow">if</span> (-1 === $this-&gt;getStartLine()) {</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>            $this-&gt;message .= <span class="stringliteral">&#39; on unknown line&#39;</span>;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>            $this-&gt;message .= <span class="stringliteral">&#39; on line &#39;</span> . $this-&gt;getStartLine();</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        }</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
+</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>}</div>
+<div class="ttc" id="a_projet_pic_du_midi_2vendor_2autoload_8php_html_a26d062d8da79dc83e81e01fd4d82c715"><div class="ttname"><a href="_projet_pic_du_midi_2vendor_2autoload_8php.html#a26d062d8da79dc83e81e01fd4d82c715">if</a></div><div class="ttdeci">if(PHP_VERSION_ID&lt; 50600)</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2autoload_8php_source.html#l00005">autoload.php:5</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_a0b6f58a8e01e16e9edec6afaebebac37"><div class="ttname"><a href="class_php_parser_1_1_error.html#a0b6f58a8e01e16e9edec6afaebebac37">PhpParser\Error\setRawMessage</a></div><div class="ttdeci">setRawMessage(string $message)</div><div class="ttdef"><b>Definition</b> <a href="#l00075">Error.php:75</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_a0c5336ffcf8d85709d6f212bd49c7bb4"><div class="ttname"><a href="class_php_parser_1_1_error.html#a0c5336ffcf8d85709d6f212bd49c7bb4">PhpParser\Error\getStartLine</a></div><div class="ttdeci">getStartLine()</div><div class="ttdef"><b>Definition</b> <a href="#l00037">Error.php:37</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_a140beabf81b804a75b7688b898b13519"><div class="ttname"><a href="class_php_parser_1_1_error.html#a140beabf81b804a75b7688b898b13519">PhpParser\Error\getStartColumn</a></div><div class="ttdeci">getStartColumn(string $code)</div><div class="ttdef"><b>Definition</b> <a href="#l00104">Error.php:104</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_a29e2c5afdf53167378623092b7c3c18b"><div class="ttname"><a href="class_php_parser_1_1_error.html#a29e2c5afdf53167378623092b7c3c18b">PhpParser\Error\$rawMessage</a></div><div class="ttdeci">string $rawMessage</div><div class="ttdef"><b>Definition</b> <a href="#l00006">Error.php:6</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_a3d593396bd7153045f204a45c9ab8538"><div class="ttname"><a href="class_php_parser_1_1_error.html#a3d593396bd7153045f204a45c9ab8538">PhpParser\Error\hasColumnInfo</a></div><div class="ttdeci">hasColumnInfo()</div><div class="ttdef"><b>Definition</b> <a href="#l00095">Error.php:95</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_a71e892806f40abae9f8578c52ae7f988"><div class="ttname"><a href="class_php_parser_1_1_error.html#a71e892806f40abae9f8578c52ae7f988">PhpParser\Error\getMessageWithColumnInfo</a></div><div class="ttdeci">getMessageWithColumnInfo(string $code)</div><div class="ttdef"><b>Definition</b> <a href="#l00132">Error.php:132</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_a7ad149e4075bba710a8933065263fe0e"><div class="ttname"><a href="class_php_parser_1_1_error.html#a7ad149e4075bba710a8933065263fe0e">PhpParser\Error\getEndLine</a></div><div class="ttdeci">getEndLine()</div><div class="ttdef"><b>Definition</b> <a href="#l00047">Error.php:47</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_a9f11eddaece9ae615419a2399b98c6f3"><div class="ttname"><a href="class_php_parser_1_1_error.html#a9f11eddaece9ae615419a2399b98c6f3">PhpParser\Error\getEndColumn</a></div><div class="ttdeci">getEndColumn(string $code)</div><div class="ttdef"><b>Definition</b> <a href="#l00117">Error.php:117</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_a9f7a91f385be98140892cebf24abd1a3"><div class="ttname"><a href="class_php_parser_1_1_error.html#a9f7a91f385be98140892cebf24abd1a3">PhpParser\Error\__construct</a></div><div class="ttdeci">__construct(string $message, array $attributes=[])</div><div class="ttdef"><b>Definition</b> <a href="#l00016">Error.php:16</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_ac08241eeea22007799f6a52e7b094158"><div class="ttname"><a href="class_php_parser_1_1_error.html#ac08241eeea22007799f6a52e7b094158">PhpParser\Error\updateMessage</a></div><div class="ttdeci">updateMessage()</div><div class="ttdef"><b>Definition</b> <a href="#l00164">Error.php:164</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_ac89f2733f3f084f1e693e13afbb67739"><div class="ttname"><a href="class_php_parser_1_1_error.html#ac89f2733f3f084f1e693e13afbb67739">PhpParser\Error\$attributes</a></div><div class="ttdeci">array $attributes</div><div class="ttdef"><b>Definition</b> <a href="#l00008">Error.php:8</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_ad4c58c23f94923a1ba4ad37b24a80504"><div class="ttname"><a href="class_php_parser_1_1_error.html#ad4c58c23f94923a1ba4ad37b24a80504">PhpParser\Error\setAttributes</a></div><div class="ttdeci">setAttributes(array $attributes)</div><div class="ttdef"><b>Definition</b> <a href="#l00065">Error.php:65</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_ade4708ff36cfe2aad084be9e58128578"><div class="ttname"><a href="class_php_parser_1_1_error.html#ade4708ff36cfe2aad084be9e58128578">PhpParser\Error\setStartLine</a></div><div class="ttdeci">setStartLine(int $line)</div><div class="ttdef"><b>Definition</b> <a href="#l00085">Error.php:85</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_ae10360028f8c467cf5855bcaf76b091f"><div class="ttname"><a href="class_php_parser_1_1_error.html#ae10360028f8c467cf5855bcaf76b091f">PhpParser\Error\getRawMessage</a></div><div class="ttdeci">getRawMessage()</div><div class="ttdef"><b>Definition</b> <a href="#l00027">Error.php:27</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_error_html_afbe85ec4b9947cc951c67d63911cf0a4"><div class="ttname"><a href="class_php_parser_1_1_error.html#afbe85ec4b9947cc951c67d63911cf0a4">PhpParser\Error\getAttributes</a></div><div class="ttdeci">getAttributes()</div><div class="ttdef"><b>Definition</b> <a href="#l00056">Error.php:56</a></div></div>
+<div class="ttc" id="anamespace_php_parser_html"><div class="ttname"><a href="namespace_php_parser.html">PhpParser</a></div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_8php_source.html#l00003">Builder.php:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

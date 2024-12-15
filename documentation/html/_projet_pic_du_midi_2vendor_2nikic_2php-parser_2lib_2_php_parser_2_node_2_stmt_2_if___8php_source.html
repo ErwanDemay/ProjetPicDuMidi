@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetPicDuMidiDoc:  Fichier source de C:/wamp64/www/ProjetPicDuMidi/ProjetPicDuMidi/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/If_.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetPicDuMidiDoc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_690cb576a7a137b13a3c790099da7d93.html">wamp64</a></li><li class="navelem"><a class="el" href="dir_6d4ed096fb3f4baa8acf47e3b339ffc6.html">www</a></li><li class="navelem"><a class="el" href="dir_17d949868782b00a0fb995f52b18ae45.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_e9bc861d08190637e86535ea3220281a.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_7f3f8b7a37945c30d800d25a2881adbb.html">vendor</a></li><li class="navelem"><a class="el" href="dir_bf319f31c90f62720609f973073e12f0.html">nikic</a></li><li class="navelem"><a class="el" href="dir_65c335598e548f7038e0448884b81693.html">php-parser</a></li><li class="navelem"><a class="el" href="dir_bf343285e449d7ad9d3a02bdf5a2841f.html">lib</a></li><li class="navelem"><a class="el" href="dir_65e3c11a9e4278335c66921d0dcdd22c.html">PhpParser</a></li><li class="navelem"><a class="el" href="dir_6a7b1e3a757bd7cff1cea0ccbf4b1d65.html">Node</a></li><li class="navelem"><a class="el" href="dir_2fc07ced1639412ea1722f6206d2e3d0.html">Stmt</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">If_.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_stmt_2_if___8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php declare(strict_types=1);</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_php_parser_1_1_node_1_1_stmt.html">PhpParser\Node\Stmt</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>use <a class="code hl_namespace" href="namespace_php_parser_1_1_node.html">PhpParser\Node</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">class </span>If_ <span class="keyword">extends</span> Node\Stmt {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#ada692c53475583e12cd6157f4344e4ab">    9</a></span>    <span class="keyword">public</span> Node\Expr <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#ada692c53475583e12cd6157f4344e4ab">$cond</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#ad3c2d13e2be45280844be93be62d1954">   11</a></span>    <span class="keyword">public</span> array <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#ad3c2d13e2be45280844be93be62d1954">$stmts</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#ae2b665e10655ad745bdd58597093733e">   13</a></span>    <span class="keyword">public</span> array <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#ae2b665e10655ad745bdd58597093733e">$elseifs</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#a992891efd81eb3b12d88ab538f620fef">   15</a></span>    <span class="keyword">public</span> ?<a class="code hl_class" href="class_php_parser_1_1_node_1_1_stmt_1_1_else__.html">Else_</a> <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#a992891efd81eb3b12d88ab538f620fef">$else</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00031" data-start="{" data-end="}">
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#af7c3886248ef215b8dc72469bc48dc32">   31</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#af7c3886248ef215b8dc72469bc48dc32">__construct</a>(<a class="code hl_interface" href="interface_php_parser_1_1_node.html">Node</a>\<a class="code hl_class" href="class_php_parser_1_1_node_1_1_expr.html">Expr</a> <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#ada692c53475583e12cd6157f4344e4ab">$cond</a>, array $subNodes = [], array <a class="code hl_variable" href="class_php_parser_1_1_node_abstract.html#ac89f2733f3f084f1e693e13afbb67739">$attributes</a> = []) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        $this-&gt;attributes = <a class="code hl_variable" href="class_php_parser_1_1_node_abstract.html#ac89f2733f3f084f1e693e13afbb67739">$attributes</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        $this-&gt;cond = <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#ada692c53475583e12cd6157f4344e4ab">$cond</a>;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        $this-&gt;stmts = $subNodes[<span class="stringliteral">&#39;stmts&#39;</span>] ?? [];</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        $this-&gt;elseifs = $subNodes[<span class="stringliteral">&#39;elseifs&#39;</span>] ?? [];</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        $this-&gt;<span class="keywordflow">else</span> = $subNodes[<span class="stringliteral">&#39;else&#39;</span>] ?? <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
+</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="}">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#a7e06a91cc526dc52826d18313e64798a">   39</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#a7e06a91cc526dc52826d18313e64798a">getSubNodeNames</a>(): array {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        return [<span class="stringliteral">&#39;cond&#39;</span>, <span class="stringliteral">&#39;stmts&#39;</span>, <span class="stringliteral">&#39;elseifs&#39;</span>, <span class="stringliteral">&#39;else&#39;</span>];</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="foldopen" id="foldopen00043" data-start="{" data-end="}">
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#a830b5c75df72b32396701bc563fbe3c7">   43</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#a830b5c75df72b32396701bc563fbe3c7">getType</a>(): string {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        return <span class="stringliteral">&#39;Stmt_If&#39;</span>;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_expr_html"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_expr.html">PhpParser\Node\Expr</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_expr_8php_source.html#l00007">Expr.php:7</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_else___html"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_else__.html">PhpParser\Node\Stmt\Else_</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_stmt_2_else___8php_source.html#l00007">Else_.php:7</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_if___html_a7e06a91cc526dc52826d18313e64798a"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#a7e06a91cc526dc52826d18313e64798a">PhpParser\Node\Stmt\If_\getSubNodeNames</a></div><div class="ttdeci">getSubNodeNames()</div><div class="ttdef"><b>Definition</b> <a href="#l00039">If_.php:39</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_if___html_a830b5c75df72b32396701bc563fbe3c7"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#a830b5c75df72b32396701bc563fbe3c7">PhpParser\Node\Stmt\If_\getType</a></div><div class="ttdeci">getType()</div><div class="ttdef"><b>Definition</b> <a href="#l00043">If_.php:43</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_if___html_a992891efd81eb3b12d88ab538f620fef"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#a992891efd81eb3b12d88ab538f620fef">PhpParser\Node\Stmt\If_\$else</a></div><div class="ttdeci">Else_ $else</div><div class="ttdef"><b>Definition</b> <a href="#l00015">If_.php:15</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_if___html_ad3c2d13e2be45280844be93be62d1954"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#ad3c2d13e2be45280844be93be62d1954">PhpParser\Node\Stmt\If_\$stmts</a></div><div class="ttdeci">array $stmts</div><div class="ttdef"><b>Definition</b> <a href="#l00011">If_.php:11</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_if___html_ada692c53475583e12cd6157f4344e4ab"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#ada692c53475583e12cd6157f4344e4ab">PhpParser\Node\Stmt\If_\$cond</a></div><div class="ttdeci">Node Expr $cond</div><div class="ttdef"><b>Definition</b> <a href="#l00009">If_.php:9</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_if___html_ae2b665e10655ad745bdd58597093733e"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#ae2b665e10655ad745bdd58597093733e">PhpParser\Node\Stmt\If_\$elseifs</a></div><div class="ttdeci">array $elseifs</div><div class="ttdef"><b>Definition</b> <a href="#l00013">If_.php:13</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_if___html_af7c3886248ef215b8dc72469bc48dc32"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_if__.html#af7c3886248ef215b8dc72469bc48dc32">PhpParser\Node\Stmt\If_\__construct</a></div><div class="ttdeci">__construct(Node\Expr $cond, array $subNodes=[], array $attributes=[])</div><div class="ttdef"><b>Definition</b> <a href="#l00031">If_.php:31</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_abstract_html_ac89f2733f3f084f1e693e13afbb67739"><div class="ttname"><a href="class_php_parser_1_1_node_abstract.html#ac89f2733f3f084f1e693e13afbb67739">PhpParser\NodeAbstract\$attributes</a></div><div class="ttdeci">array $attributes</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_abstract_8php_source.html#l00007">NodeAbstract.php:7</a></div></div>
+<div class="ttc" id="ainterface_php_parser_1_1_node_html"><div class="ttname"><a href="interface_php_parser_1_1_node.html">PhpParser\Node</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_8php_source.html#l00005">Node.php:5</a></div></div>
+<div class="ttc" id="anamespace_php_parser_1_1_node_1_1_stmt_html"><div class="ttname"><a href="namespace_php_parser_1_1_node_1_1_stmt.html">PhpParser\Node\Stmt</a></div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_stmt_2_block_8php_source.html#l00003">Block.php:3</a></div></div>
+<div class="ttc" id="anamespace_php_parser_1_1_node_html"><div class="ttname"><a href="namespace_php_parser_1_1_node.html">PhpParser\Node</a></div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_arg_8php_source.html#l00003">Arg.php:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

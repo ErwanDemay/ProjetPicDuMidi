@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetPicDuMidiDoc:  Fichier source de C:/wamp64/www/ProjetPicDuMidi/vendor/nikic/php-parser/lib/PhpParser/Builder/Method.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetPicDuMidiDoc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_690cb576a7a137b13a3c790099da7d93.html">wamp64</a></li><li class="navelem"><a class="el" href="dir_6d4ed096fb3f4baa8acf47e3b339ffc6.html">www</a></li><li class="navelem"><a class="el" href="dir_17d949868782b00a0fb995f52b18ae45.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_a5d39cea70582ed997324fb386642b0a.html">vendor</a></li><li class="navelem"><a class="el" href="dir_5dcc88d987c0ec27747f0b3fd06c043c.html">nikic</a></li><li class="navelem"><a class="el" href="dir_29b7a58b19fe6a1130d8eb9ed2feefc7.html">php-parser</a></li><li class="navelem"><a class="el" href="dir_8f3ab2fe530b2cb5ef54dc2120f643cf.html">lib</a></li><li class="navelem"><a class="el" href="dir_07b98e9be706d4757986325750c5ee59.html">PhpParser</a></li><li class="navelem"><a class="el" href="dir_bdc19053fe8c022462a79db493b1da2b.html">Builder</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">Method.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_2_method_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php declare(strict_types=1);</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_php_parser_1_1_builder.html">PhpParser\Builder</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>use <a class="code hl_namespace" href="namespace_php_parser.html">PhpParser</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>use <a class="code hl_class" href="class_php_parser_1_1_builder_helpers.html">PhpParser\BuilderHelpers</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>use <a class="code hl_class" href="class_php_parser_1_1_modifiers.html">PhpParser\Modifiers</a>;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>use <a class="code hl_namespace" href="namespace_php_parser_1_1_node.html">PhpParser\Node</a>;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>use <a class="code hl_namespace" href="namespace_php_parser_1_1_node_1_1_stmt.html">PhpParser\Node\Stmt</a>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="foldopen" id="foldopen00011" data-start="{" data-end="};">
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_builder_1_1_method.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="class_php_parser_1_1_builder_1_1_method.html">Method</a> <span class="keyword">extends</span> <a class="code hl_class" href="class_php_parser_1_1_builder_1_1_function_like.html">FunctionLike</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">protected</span> <span class="keywordtype">string</span> <a class="code hl_variable" href="class_php_parser_1_1_builder_1_1_method.html#a58551b63ba97fb35b928f11f36b1fac6">$name</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">protected</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_php_parser_1_1_builder_1_1_method.html#a374c616ba2ed6edabbecbec4c1a8a24f">$flags</a> = 0;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">protected</span> ?array <a class="code hl_variable" href="class_php_parser_1_1_builder_1_1_method.html#ad3c2d13e2be45280844be93be62d1954">$stmts</a> = [];</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">protected</span> array <a class="code hl_variable" href="class_php_parser_1_1_builder_1_1_method.html#a6545e4b9fa532870993841cc05875124">$attributeGroups</a> = [];</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_builder_1_1_method.html#a196b3403dd3fe36fd9617ada22960ff1">   27</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_builder_1_1_method.html#a196b3403dd3fe36fd9617ada22960ff1">__construct</a>(<span class="keywordtype">string</span> <a class="code hl_variable" href="class_php_parser_1_1_builder_1_1_method.html#a58551b63ba97fb35b928f11f36b1fac6">$name</a>) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        $this-&gt;name = <a class="code hl_variable" href="class_php_parser_1_1_builder_1_1_method.html#a58551b63ba97fb35b928f11f36b1fac6">$name</a>;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00036" data-start="{" data-end="}">
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_builder_1_1_method.html#a41ed4b9d914f6b2eac84909a9f3d4fe4">   36</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_builder_1_1_method.html#a41ed4b9d914f6b2eac84909a9f3d4fe4">makePublic</a>() {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        $this-&gt;flags = <a class="code hl_function" href="class_php_parser_1_1_builder_helpers.html#a4a11d598f1901afa72cd55dfe014b75d">BuilderHelpers::addModifier</a>($this-&gt;flags, <a class="code hl_variable" href="class_php_parser_1_1_modifiers.html#afffa0ef3b7b0443747745be320a768f8">Modifiers::PUBLIC</a>);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00047" data-start="{" data-end="}">
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_builder_1_1_method.html#aef351d1dc94a77a9e4851fbd274b30a0">   47</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_builder_1_1_method.html#aef351d1dc94a77a9e4851fbd274b30a0">makeProtected</a>() {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        $this-&gt;flags = <a class="code hl_function" href="class_php_parser_1_1_builder_helpers.html#a4a11d598f1901afa72cd55dfe014b75d">BuilderHelpers::addModifier</a>($this-&gt;flags, <a class="code hl_variable" href="class_php_parser_1_1_modifiers.html#a238e4a7a799162a264a3d4daca87635d">Modifiers::PROTECTED</a>);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00058" data-start="{" data-end="}">
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_builder_1_1_method.html#a99aa3141cb057030f2aadfb9649aab8e">   58</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_builder_1_1_method.html#a99aa3141cb057030f2aadfb9649aab8e">makePrivate</a>() {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $this-&gt;flags = <a class="code hl_function" href="class_php_parser_1_1_builder_helpers.html#a4a11d598f1901afa72cd55dfe014b75d">BuilderHelpers::addModifier</a>($this-&gt;flags, <a class="code hl_variable" href="class_php_parser_1_1_modifiers.html#a66ec3c36a86d3dfd350c32c1b150e04f">Modifiers::PRIVATE</a>);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    }</div>
+</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_builder_1_1_method.html#acf8284c9ad05947c5b02b162495388d9">   69</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_builder_1_1_method.html#acf8284c9ad05947c5b02b162495388d9">makeStatic</a>() {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        $this-&gt;flags = <a class="code hl_function" href="class_php_parser_1_1_builder_helpers.html#a4a11d598f1901afa72cd55dfe014b75d">BuilderHelpers::addModifier</a>($this-&gt;flags, <a class="code hl_variable" href="class_php_parser_1_1_modifiers.html#afb9c5cdc04bbed8f69e7330abda37e62">Modifiers::STATIC</a>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="foldopen" id="foldopen00080" data-start="{" data-end="}">
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_builder_1_1_method.html#a2039840a6179829a7eb7aacca3957d3c">   80</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_builder_1_1_method.html#a2039840a6179829a7eb7aacca3957d3c">makeAbstract</a>() {</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordflow">if</span> (!empty($this-&gt;stmts)) {</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>            <span class="keywordflow">throw</span> new \LogicException(<span class="stringliteral">&#39;Cannot make method with statements abstract&#39;</span>);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        }</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        $this-&gt;flags = <a class="code hl_function" href="class_php_parser_1_1_builder_helpers.html#a4a11d598f1901afa72cd55dfe014b75d">BuilderHelpers::addModifier</a>($this-&gt;flags, <a class="code hl_variable" href="class_php_parser_1_1_modifiers.html#af9dabe5de6624e999eb01506607012be">Modifiers::ABSTRACT</a>);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        $this-&gt;stmts = <span class="keyword">null</span>; <span class="comment">// abstract methods don&#39;t have statements</span></div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
+</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="foldopen" id="foldopen00096" data-start="{" data-end="}">
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_builder_1_1_method.html#a196c1fd61671c7b0f571d867c47d2be2">   96</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_builder_1_1_method.html#a196c1fd61671c7b0f571d867c47d2be2">makeFinal</a>() {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        $this-&gt;flags = <a class="code hl_function" href="class_php_parser_1_1_builder_helpers.html#a4a11d598f1901afa72cd55dfe014b75d">BuilderHelpers::addModifier</a>($this-&gt;flags, <a class="code hl_variable" href="class_php_parser_1_1_modifiers.html#a8b75e92747e61426d0f82ab56babaa89">Modifiers::FINAL</a>);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    }</div>
+</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="foldopen" id="foldopen00109" data-start="{" data-end="}">
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_builder_1_1_method.html#a84285314df11d1a21c01569981967d27">  109</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_builder_1_1_method.html#a84285314df11d1a21c01569981967d27">addStmt</a>($stmt) {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="keywordflow">if</span> (<span class="keyword">null</span> === $this-&gt;stmts) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="keywordflow">throw</span> new \LogicException(<span class="stringliteral">&#39;Cannot add statements to an abstract method&#39;</span>);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        $this-&gt;stmts[] = <a class="code hl_function" href="class_php_parser_1_1_builder_helpers.html#a1c85f56bb904a4c7c6a867c2ee3671cd">BuilderHelpers::normalizeStmt</a>($stmt);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
+</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="foldopen" id="foldopen00126" data-start="{" data-end="}">
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_builder_1_1_method.html#ace927af3c97e66624a7b251c59f2ece2">  126</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_builder_1_1_method.html#ace927af3c97e66624a7b251c59f2ece2">addAttribute</a>($attribute) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        $this-&gt;attributeGroups[] = <a class="code hl_function" href="class_php_parser_1_1_builder_helpers.html#a5ad559387fd11d712f50d6ed03497f10">BuilderHelpers::normalizeAttribute</a>($attribute);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordflow">return</span> $this;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
+</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="foldopen" id="foldopen00137" data-start="{" data-end="}">
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_builder_1_1_method.html#a3a0d17930cbcc57bef84064afcc1a837">  137</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_builder_1_1_method.html#a3a0d17930cbcc57bef84064afcc1a837">getNode</a>(): <a class="code hl_interface" href="interface_php_parser_1_1_node.html">Node</a> {</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        return new <a class="code hl_class" href="class_php_parser_1_1_node_1_1_stmt.html">Stmt</a>\<a class="code hl_class" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_method.html">ClassMethod</a>($this-&gt;name, [</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>            <span class="stringliteral">&#39;flags&#39;</span>      =&gt; $this-&gt;flags,</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>            <span class="stringliteral">&#39;byRef&#39;</span>      =&gt; $this-&gt;returnByRef,</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>            <span class="stringliteral">&#39;params&#39;</span>     =&gt; $this-&gt;params,</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>            <span class="stringliteral">&#39;returnType&#39;</span> =&gt; $this-&gt;returnType,</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>            <span class="stringliteral">&#39;stmts&#39;</span>      =&gt; $this-&gt;stmts,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>            <span class="stringliteral">&#39;attrGroups&#39;</span> =&gt; $this-&gt;attributeGroups,</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>        ], $this-&gt;attributes);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    }</div>
+</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>}</div>
+</div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_function_like_html"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_function_like.html">PhpParser\Builder\FunctionLike</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_2_function_like_8php_source.html#l00008">FunctionLike.php:8</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html">PhpParser\Builder\Method</a></div><div class="ttdef"><b>Definition</b> <a href="#l00011">Method.php:11</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_a196b3403dd3fe36fd9617ada22960ff1"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#a196b3403dd3fe36fd9617ada22960ff1">PhpParser\Builder\Method\__construct</a></div><div class="ttdeci">__construct(string $name)</div><div class="ttdef"><b>Definition</b> <a href="#l00027">Method.php:27</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_a196c1fd61671c7b0f571d867c47d2be2"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#a196c1fd61671c7b0f571d867c47d2be2">PhpParser\Builder\Method\makeFinal</a></div><div class="ttdeci">makeFinal()</div><div class="ttdef"><b>Definition</b> <a href="#l00096">Method.php:96</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_a2039840a6179829a7eb7aacca3957d3c"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#a2039840a6179829a7eb7aacca3957d3c">PhpParser\Builder\Method\makeAbstract</a></div><div class="ttdeci">makeAbstract()</div><div class="ttdef"><b>Definition</b> <a href="#l00080">Method.php:80</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_a374c616ba2ed6edabbecbec4c1a8a24f"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#a374c616ba2ed6edabbecbec4c1a8a24f">PhpParser\Builder\Method\$flags</a></div><div class="ttdeci">int $flags</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_2_method_8php_source.html#l00014">Method.php:14</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_a3a0d17930cbcc57bef84064afcc1a837"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#a3a0d17930cbcc57bef84064afcc1a837">PhpParser\Builder\Method\getNode</a></div><div class="ttdeci">getNode()</div><div class="ttdef"><b>Definition</b> <a href="#l00137">Method.php:137</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_a41ed4b9d914f6b2eac84909a9f3d4fe4"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#a41ed4b9d914f6b2eac84909a9f3d4fe4">PhpParser\Builder\Method\makePublic</a></div><div class="ttdeci">makePublic()</div><div class="ttdef"><b>Definition</b> <a href="#l00036">Method.php:36</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_a58551b63ba97fb35b928f11f36b1fac6"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#a58551b63ba97fb35b928f11f36b1fac6">PhpParser\Builder\Method\$name</a></div><div class="ttdeci">string $name</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_2_method_8php_source.html#l00012">Method.php:12</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_a6545e4b9fa532870993841cc05875124"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#a6545e4b9fa532870993841cc05875124">PhpParser\Builder\Method\$attributeGroups</a></div><div class="ttdeci">array $attributeGroups</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_2_method_8php_source.html#l00020">Method.php:20</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_a84285314df11d1a21c01569981967d27"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#a84285314df11d1a21c01569981967d27">PhpParser\Builder\Method\addStmt</a></div><div class="ttdeci">addStmt($stmt)</div><div class="ttdef"><b>Definition</b> <a href="#l00109">Method.php:109</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_a99aa3141cb057030f2aadfb9649aab8e"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#a99aa3141cb057030f2aadfb9649aab8e">PhpParser\Builder\Method\makePrivate</a></div><div class="ttdeci">makePrivate()</div><div class="ttdef"><b>Definition</b> <a href="#l00058">Method.php:58</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_ace927af3c97e66624a7b251c59f2ece2"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#ace927af3c97e66624a7b251c59f2ece2">PhpParser\Builder\Method\addAttribute</a></div><div class="ttdeci">addAttribute($attribute)</div><div class="ttdef"><b>Definition</b> <a href="#l00126">Method.php:126</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_acf8284c9ad05947c5b02b162495388d9"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#acf8284c9ad05947c5b02b162495388d9">PhpParser\Builder\Method\makeStatic</a></div><div class="ttdeci">makeStatic()</div><div class="ttdef"><b>Definition</b> <a href="#l00069">Method.php:69</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_ad3c2d13e2be45280844be93be62d1954"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#ad3c2d13e2be45280844be93be62d1954">PhpParser\Builder\Method\$stmts</a></div><div class="ttdeci">array $stmts</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_2_method_8php_source.html#l00017">Method.php:17</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_1_1_method_html_aef351d1dc94a77a9e4851fbd274b30a0"><div class="ttname"><a href="class_php_parser_1_1_builder_1_1_method.html#aef351d1dc94a77a9e4851fbd274b30a0">PhpParser\Builder\Method\makeProtected</a></div><div class="ttdeci">makeProtected()</div><div class="ttdef"><b>Definition</b> <a href="#l00047">Method.php:47</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_helpers_html"><div class="ttname"><a href="class_php_parser_1_1_builder_helpers.html">PhpParser\BuilderHelpers</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_helpers_8php_source.html#l00019">BuilderHelpers.php:19</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_helpers_html_a1c85f56bb904a4c7c6a867c2ee3671cd"><div class="ttname"><a href="class_php_parser_1_1_builder_helpers.html#a1c85f56bb904a4c7c6a867c2ee3671cd">PhpParser\BuilderHelpers\normalizeStmt</a></div><div class="ttdeci">static normalizeStmt($node)</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_helpers_8php_source.html#l00048">BuilderHelpers.php:48</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_helpers_html_a4a11d598f1901afa72cd55dfe014b75d"><div class="ttname"><a href="class_php_parser_1_1_builder_helpers.html#a4a11d598f1901afa72cd55dfe014b75d">PhpParser\BuilderHelpers\addModifier</a></div><div class="ttdeci">static addModifier(int $modifiers, int $modifier)</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_helpers_8php_source.html#l00325">BuilderHelpers.php:325</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_builder_helpers_html_a5ad559387fd11d712f50d6ed03497f10"><div class="ttname"><a href="class_php_parser_1_1_builder_helpers.html#a5ad559387fd11d712f50d6ed03497f10">PhpParser\BuilderHelpers\normalizeAttribute</a></div><div class="ttdeci">static normalizeAttribute($attribute)</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_helpers_8php_source.html#l00305">BuilderHelpers.php:305</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_modifiers_html"><div class="ttname"><a href="class_php_parser_1_1_modifiers.html">PhpParser\Modifiers</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_modifiers_8php_source.html#l00009">Modifiers.php:9</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_modifiers_html_a238e4a7a799162a264a3d4daca87635d"><div class="ttname"><a href="class_php_parser_1_1_modifiers.html#a238e4a7a799162a264a3d4daca87635d">PhpParser\Modifiers\PROTECTED</a></div><div class="ttdeci">const PROTECTED</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_modifiers_8php_source.html#l00011">Modifiers.php:11</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_modifiers_html_a66ec3c36a86d3dfd350c32c1b150e04f"><div class="ttname"><a href="class_php_parser_1_1_modifiers.html#a66ec3c36a86d3dfd350c32c1b150e04f">PhpParser\Modifiers\PRIVATE</a></div><div class="ttdeci">const PRIVATE</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_modifiers_8php_source.html#l00012">Modifiers.php:12</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_modifiers_html_a8b75e92747e61426d0f82ab56babaa89"><div class="ttname"><a href="class_php_parser_1_1_modifiers.html#a8b75e92747e61426d0f82ab56babaa89">PhpParser\Modifiers\FINAL</a></div><div class="ttdeci">const FINAL</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_modifiers_8php_source.html#l00015">Modifiers.php:15</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_modifiers_html_af9dabe5de6624e999eb01506607012be"><div class="ttname"><a href="class_php_parser_1_1_modifiers.html#af9dabe5de6624e999eb01506607012be">PhpParser\Modifiers\ABSTRACT</a></div><div class="ttdeci">const ABSTRACT</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_modifiers_8php_source.html#l00014">Modifiers.php:14</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_modifiers_html_afb9c5cdc04bbed8f69e7330abda37e62"><div class="ttname"><a href="class_php_parser_1_1_modifiers.html#afb9c5cdc04bbed8f69e7330abda37e62">PhpParser\Modifiers\STATIC</a></div><div class="ttdeci">const STATIC</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_modifiers_8php_source.html#l00013">Modifiers.php:13</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_modifiers_html_afffa0ef3b7b0443747745be320a768f8"><div class="ttname"><a href="class_php_parser_1_1_modifiers.html#afffa0ef3b7b0443747745be320a768f8">PhpParser\Modifiers\PUBLIC</a></div><div class="ttdeci">const PUBLIC</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_modifiers_8php_source.html#l00010">Modifiers.php:10</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_method_html"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_method.html">PhpParser\Node\Stmt\ClassMethod</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_stmt_2_class_method_8php_source.html#l00009">ClassMethod.php:9</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_html"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt.html">PhpParser\Node\Stmt</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_stmt_8php_source.html#l00007">Stmt.php:7</a></div></div>
+<div class="ttc" id="ainterface_php_parser_1_1_node_html"><div class="ttname"><a href="interface_php_parser_1_1_node.html">PhpParser\Node</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_8php_source.html#l00005">Node.php:5</a></div></div>
+<div class="ttc" id="anamespace_php_parser_1_1_builder_html"><div class="ttname"><a href="namespace_php_parser_1_1_builder.html">PhpParser\Builder</a></div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_2_class___8php_source.html#l00003">Class_.php:3</a></div></div>
+<div class="ttc" id="anamespace_php_parser_1_1_node_1_1_stmt_html"><div class="ttname"><a href="namespace_php_parser_1_1_node_1_1_stmt.html">PhpParser\Node\Stmt</a></div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_stmt_2_block_8php_source.html#l00003">Block.php:3</a></div></div>
+<div class="ttc" id="anamespace_php_parser_1_1_node_html"><div class="ttname"><a href="namespace_php_parser_1_1_node.html">PhpParser\Node</a></div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_arg_8php_source.html#l00003">Arg.php:3</a></div></div>
+<div class="ttc" id="anamespace_php_parser_html"><div class="ttname"><a href="namespace_php_parser.html">PhpParser</a></div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_builder_8php_source.html#l00003">Builder.php:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

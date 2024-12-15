@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetPicDuMidiDoc:  Fichier source de C:/wamp64/www/ProjetPicDuMidi/ProjetPicDuMidi/modeles/DAO/UtilisateurDAO.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetPicDuMidiDoc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_690cb576a7a137b13a3c790099da7d93.html">wamp64</a></li><li class="navelem"><a class="el" href="dir_6d4ed096fb3f4baa8acf47e3b339ffc6.html">www</a></li><li class="navelem"><a class="el" href="dir_17d949868782b00a0fb995f52b18ae45.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_e9bc861d08190637e86535ea3220281a.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_7b5ded9d05a511849cf216fa38475779.html">modeles</a></li><li class="navelem"><a class="el" href="dir_d3b1fc8de762a4a85adee2f60d3c3186.html">DAO</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">UtilisateurDAO.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_utilisateur_d_a_o_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span>include_once (<span class="stringliteral">&quot;./modeles/Base.php&quot;</span>);</div>
+<div class="foldopen" id="foldopen00003" data-start="{" data-end="};">
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="class_utilisateur_d_a_o.html">    3</a></span><span class="keyword">class </span><a class="code hl_class" href="class_utilisateur_d_a_o.html">UtilisateurDAO</a> <span class="keyword">extends</span> <a class="code hl_class" href="class_base.html">Base</a>{</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>    </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_utilisateur_d_a_o.html#a095c5d389db211932136b53f25f39685">    8</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_utilisateur_d_a_o.html#a095c5d389db211932136b53f25f39685">__construct</a>(){</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>        parent::__construct();</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        parent::setConnexionBase(<span class="stringliteral">&#39;mancisidor_bdd_picdumidi&#39;</span>,<span class="stringliteral">&#39;377513&#39;</span>,<span class="stringliteral">&#39;ProjetSIO2!&#39;</span>);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    }</div>
+</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="}">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_utilisateur_d_a_o.html#a80ca5386d53e29b2b310cb83191a9b31">   18</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_utilisateur_d_a_o.html#a80ca5386d53e29b2b310cb83191a9b31">estConnecte</a>(){</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        $estConnecte = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <span class="keywordflow">if</span>(isset($_SESSION[<span class="stringliteral">&#39;utilisateurConnecte&#39;</span>])){</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <a class="code hl_variable" href="v__reservation_soiree_8php.html#a2dd2d8ca994bbcc39ef01182769aa269">$utilisateurConnecte</a> = unserialize($_SESSION[<span class="stringliteral">&#39;utilisateurConnecte&#39;</span>]);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            $id = <a class="code hl_variable" href="v__reservation_soiree_8php.html#a2dd2d8ca994bbcc39ef01182769aa269">$utilisateurConnecte</a>-&gt;getId();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            $nom = <a class="code hl_variable" href="v__reservation_soiree_8php.html#a2dd2d8ca994bbcc39ef01182769aa269">$utilisateurConnecte</a>-&gt;getNom();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            $prenom = <a class="code hl_variable" href="v__reservation_soiree_8php.html#a2dd2d8ca994bbcc39ef01182769aa269">$utilisateurConnecte</a>-&gt;getPrenom();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>            $email = <a class="code hl_variable" href="v__reservation_soiree_8php.html#a2dd2d8ca994bbcc39ef01182769aa269">$utilisateurConnecte</a>-&gt;getEmail();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            $motDePasse = <a class="code hl_variable" href="v__reservation_soiree_8php.html#a2dd2d8ca994bbcc39ef01182769aa269">$utilisateurConnecte</a>-&gt;getMotDePasse();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            $ordreSQL = <span class="stringliteral">&quot;SELECT * FROM utilisateurs WHERE id = :id AND nom = :nom AND prenom = :prenom AND email = :email AND motDePasse = :motDePasse&quot;</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>            $reqPrepa = $this-&gt;<a class="code hl_function" href="class_base.html#a0f741e7b39d5685c909a704708ed1033">prepare</a>($ordreSQL);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>            </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>            $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:id&#39;</span>, $id);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>            $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:nom&#39;</span>, $nom);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:prenom&#39;</span>, $prenom);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:email&#39;</span>, $email);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:motDePasse&#39;</span>, $motDePasse);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>            </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>            $reqPrepa-&gt;execute();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            $resultatDeLaRequete = $reqPrepa-&gt;fetch();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>            <span class="keywordflow">if</span>($resultatDeLaRequete &gt; 0){</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                $estConnecte = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>            }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        <span class="keywordflow">return</span> $estConnecte;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    }</div>
+</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="foldopen" id="foldopen00053" data-start="{" data-end="}">
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="class_utilisateur_d_a_o.html#a8d795fe1d9c3cea756f5436bd90d5228">   53</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_utilisateur_d_a_o.html#a8d795fe1d9c3cea756f5436bd90d5228">addUtilisateur</a>($unUtilisateur){</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        $ordreSQL = <span class="stringliteral">&quot;INSERT INTO utilisateurs (`nom`, `prenom`, `email`, `motDePasse`, `sel`) </span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="stringliteral">                     VALUES (:nom, :prenom, :email, :motDePasse, :sel)&quot;</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        $reqPrepa = $this-&gt;<a class="code hl_function" href="class_base.html#a0f741e7b39d5685c909a704708ed1033">prepare</a>($ordreSQL);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        $nom = $unUtilisateur-&gt;getNom();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        $prenom = $unUtilisateur-&gt;getPrenom();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        $email = $unUtilisateur-&gt;getEmail();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        $motDePasse = $unUtilisateur-&gt;getMotDePasse();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        $sel = bin2hex(random_bytes(16));   <span class="comment">//génère un sel aléatoire de 16-byte</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>                                            <span class="comment">//l&#39;intérêt d&#39;un sel aléatoire et qu&#39;un seul brute force ne compromet pas tous les comptes</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        $motDePasseSelEtPoivre = $sel.$motDePasse.$this-&gt;getPoivre(); <span class="comment">//donne la chaîne de caractère à hasher, composée du sel aléatoire, du mot de passe saisi et du poivre</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        $motDePasseHashe = password_hash($motDePasseSelEtPoivre, PASSWORD_ARGON2ID, [<span class="stringliteral">&#39;memory_cost&#39;</span> =&gt; 2048, <span class="stringliteral">&#39;time_cost&#39;</span> =&gt; 4, <span class="stringliteral">&#39;threads&#39;</span> =&gt; 3]); <span class="comment">//fonction permettant de hasher le mot de passe avec l&#39;algorithme argon2id, recommandé par OWASP</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:nom&#39;</span>, $nom);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:prenom&#39;</span>, $prenom);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:email&#39;</span>, $email);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:motDePasse&#39;</span>, $motDePasseHashe);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:sel&#39;</span>, $sel); <span class="comment">//permettra de garder en mémoire le sel utilisé pour cet utilisateur pour pouvoir vérifier ses tentatives de connections</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        $resultatDeLaRequete = $reqPrepa-&gt;execute();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span> $resultatDeLaRequete;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="}">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="class_utilisateur_d_a_o.html#a20d415b4f39c102a4f002c06127a9574">   87</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_utilisateur_d_a_o.html#a20d415b4f39c102a4f002c06127a9574">getSel</a>($email){</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        $ordreSQL = <span class="stringliteral">&quot;SELECT sel FROM utilisateurs WHERE email = :email&quot;</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            $reqPrepa = $this-&gt;<a class="code hl_function" href="class_base.html#a0f741e7b39d5685c909a704708ed1033">prepare</a>($ordreSQL);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:email&#39;</span>, $email);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>            $reqPrepa-&gt;execute();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>            $resultatDeLaRequete = $reqPrepa-&gt;fetch();</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>            <span class="keywordflow">return</span> (<span class="keywordtype">string</span>)$resultatDeLaRequete[<span class="stringliteral">&#39;sel&#39;</span>];</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    }</div>
+</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="foldopen" id="foldopen00103" data-start="{" data-end="}">
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="class_utilisateur_d_a_o.html#a9cb7f600b2fc7dd9fdc519c57bf4b776">  103</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_utilisateur_d_a_o.html#a9cb7f600b2fc7dd9fdc519c57bf4b776">existeDeja</a>($email){</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        $ordreSQL = <span class="stringliteral">&quot;SELECT COUNT(email) AS existeDeja FROM utilisateurs WHERE email = :email&quot;</span>;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        $reqPrepa = $this-&gt;<a class="code hl_function" href="class_base.html#a0f741e7b39d5685c909a704708ed1033">prepare</a>($ordreSQL);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:email&#39;</span>, $email);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        $reqPrepa-&gt;execute();</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        $resultatDeLaRequete = $reqPrepa-&gt;fetch(PDO::FETCH_ASSOC);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        <span class="keywordflow">return</span> (<span class="keywordtype">int</span>)$resultatDeLaRequete[<span class="stringliteral">&#39;existeDeja&#39;</span>];</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
+</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="foldopen" id="foldopen00121" data-start="{" data-end="}">
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno"><a class="line" href="class_utilisateur_d_a_o.html#a80505901fb7b236e64d1d5dea5aa07fc">  121</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_utilisateur_d_a_o.html#a80505901fb7b236e64d1d5dea5aa07fc">verifConnection</a>($email, $motDePasse){</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keywordflow">if</span>($this-&gt;<a class="code hl_function" href="class_utilisateur_d_a_o.html#a9cb7f600b2fc7dd9fdc519c57bf4b776">existeDeja</a>($email)){ <span class="comment">//si l&#39;email appartient bien à un utilisateur, alors on vérifie le mot de passe</span></div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>            $sel = $this-&gt;<a class="code hl_function" href="class_utilisateur_d_a_o.html#a20d415b4f39c102a4f002c06127a9574">getSel</a>($email); <span class="comment">//on récupère le sel utilisé pour cet email</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>            $motDePasseSelEtPoivre = $sel.$motDePasse.$this-&gt;getPoivre();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>            $ordreSQL = <span class="stringliteral">&quot;SELECT motDePasse FROM utilisateurs WHERE email = :email&quot;</span>;</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>            $ordreSQL = <span class="stringliteral">&quot;SELECT motDePasse FROM utilisateurs WHERE email = :email&quot;</span>; <span class="comment">//récupération du hash de mot de passe stocké</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>            $reqPrepa = $this-&gt;<a class="code hl_function" href="class_base.html#a0f741e7b39d5685c909a704708ed1033">prepare</a>($ordreSQL);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>            $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:email&#39;</span>, $email);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>            $reqPrepa-&gt;execute();</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>            $resultatDeLaRequete = $reqPrepa-&gt;fetch();</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>            <span class="keywordflow">if</span> ($resultatDeLaRequete) {</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>                $motDePasseStocke = $resultatDeLaRequete[<span class="stringliteral">&#39;motDePasse&#39;</span>];</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>                <span class="keywordflow">if</span> (password_verify($motDePasseSelEtPoivre, $motDePasseStocke)) { <span class="comment">//vérifie si le mot de passe est correct, alors on récupère les informations de l&#39;utilisateur</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span> </div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>                    $ordreSQL = <span class="stringliteral">&quot;SELECT * FROM utilisateurs WHERE email = :email&quot;</span>;</div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>                    $reqPrepa = $this-&gt;<a class="code hl_function" href="class_base.html#a0f741e7b39d5685c909a704708ed1033">prepare</a>($ordreSQL);</div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>                    $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:email&#39;</span>, $email);</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>                    $reqPrepa-&gt;execute();</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                    $unUtilisateur = $reqPrepa-&gt;fetch();</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    </div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                    $unObjUtilisateur = <span class="keyword">new</span> <a class="code hl_class" href="class_utilisateur.html">Utilisateur</a>(</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                        $unUtilisateur[<span class="stringliteral">&#39;id&#39;</span>],</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                        $unUtilisateur[<span class="stringliteral">&#39;nom&#39;</span>],</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                        $unUtilisateur[<span class="stringliteral">&#39;prenom&#39;</span>],</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                        $unUtilisateur[<span class="stringliteral">&#39;email&#39;</span>],</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                        $unUtilisateur[<span class="stringliteral">&#39;motDePasse&#39;</span>],</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                        $unUtilisateur[<span class="stringliteral">&#39;habilitation&#39;</span>]</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>                    );</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    </div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>                    <span class="keywordflow">return</span> $unObjUtilisateur;</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>                } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>                    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>                }</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>            } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>                <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>            }</div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        }<span class="keywordflow">else</span>{</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        }</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>    }</div>
+</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="foldopen" id="foldopen00172" data-start="{" data-end="}">
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno"><a class="line" href="class_utilisateur_d_a_o.html#a8e0d30cdf5c0d8d40e524058dae831a4">  172</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_utilisateur_d_a_o.html#a8e0d30cdf5c0d8d40e524058dae831a4">getLesUtilisateurs</a>(){</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        $ordreSQL = <span class="stringliteral">&quot;SELECT * FROM utilisateurs ORDER BY nom DESC;&quot;</span>;</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>        </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        $reqPrepa = $this-&gt;<a class="code hl_function" href="class_base.html#a0f741e7b39d5685c909a704708ed1033">prepare</a>($ordreSQL);</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        $reqPrepa-&gt;execute();</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>    </div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>        <span class="keywordflow">if</span>($reqPrepa-&gt;fetch() == 0){</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>;</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        }</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span> </div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>        $tableauUtilisateurs = $reqPrepa-&gt;fetchAll();</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>        $lesObjUtilisateurs = array();</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span> </div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>        <span class="keywordflow">foreach</span>($tableauUtilisateurs as $uneLigneUnUtilisateur){</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>            $unUtilisateur = <span class="keyword">new</span> <a class="code hl_class" href="class_utilisateur.html">Utilisateur</a>(</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>                $uneLigneUnUtilisateur[<span class="stringliteral">&#39;id&#39;</span>],</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>                $uneLigneUnUtilisateur[<span class="stringliteral">&#39;nom&#39;</span>],</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>                $uneLigneUnUtilisateur[<span class="stringliteral">&#39;prenom&#39;</span>],</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>                $uneLigneUnUtilisateur[<span class="stringliteral">&#39;email&#39;</span>],</div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>                $uneLigneUnUtilisateur[<span class="stringliteral">&#39;motDePasse&#39;</span>],</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>                $uneLigneUnUtilisateur[<span class="stringliteral">&#39;habilitation&#39;</span>]</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            );</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            $lesObjUtilisateurs[] = $unUtilisateur;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>        }</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        <span class="keywordflow">return</span> $lesObjUtilisateurs;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    }</div>
+</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="foldopen" id="foldopen00205" data-start="{" data-end="}">
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno"><a class="line" href="class_utilisateur_d_a_o.html#a79c2dc5336a65c3596377ce77c87b5ef">  205</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_utilisateur_d_a_o.html#a79c2dc5336a65c3596377ce77c87b5ef">deleteUtilisateur</a>($id){</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        $ordreSQL = <span class="stringliteral">&quot;DELETE FROM utilisateurs WHERE id = :id&quot;</span>;</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        </div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        $reqPrepa = $this-&gt;<a class="code hl_function" href="class_base.html#a0f741e7b39d5685c909a704708ed1033">prepare</a>($ordreSQL);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:id&#39;</span>, $id, PDO::PARAM_INT);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>        $resultatDeLaRequete = $reqPrepa-&gt;execute();</div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>    </div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>        <span class="keywordflow">return</span> $resultatDeLaRequete;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>    }</div>
+</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="foldopen" id="foldopen00220" data-start="{" data-end="}">
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno"><a class="line" href="class_utilisateur_d_a_o.html#a4a9f09f46fe2b4bb67905961ff418b08">  220</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_utilisateur_d_a_o.html#a4a9f09f46fe2b4bb67905961ff418b08">editUtilisateur</a>($utilisateur){</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>        $ordreSQL = <span class="stringliteral">&quot;UPDATE utilisateurs </span></div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span><span class="stringliteral">                     SET nom = :nom, </span></div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span><span class="stringliteral">                         prenom = :prenom, </span></div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="stringliteral">                         email = :email, </span></div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span><span class="stringliteral">                         motDePasse = :motDePasse, </span></div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span><span class="stringliteral">                         habilitation = :habilitation</span></div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span><span class="stringliteral">                     WHERE id = :id&quot;</span>;</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>        </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>        $reqPrepa = $this-&gt;<a class="code hl_function" href="class_base.html#a0f741e7b39d5685c909a704708ed1033">prepare</a>($ordreSQL);</div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>        </div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>        $id = $utilisateur-&gt;getId();</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>        $nom = $utilisateur-&gt;getNom();</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>        $prenom =  $utilisateur-&gt;getPrenom();</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>        $email = $utilisateur-&gt;getEmail();</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>        $motDePasse = $utilisateur-&gt;getMotDePasse();</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>        $habilitation = $utilisateur-&gt;getHabilitation();</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>        $sel = $this-&gt;<a class="code hl_function" href="class_utilisateur_d_a_o.html#a20d415b4f39c102a4f002c06127a9574">getSel</a>($email); <span class="comment">//lors d&#39;un changement de mot de passe, le sel reste le même</span></div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        $motDePasseSelEtPoivre = $sel.$motDePasse.$this-&gt;getPoivre();</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>        $nouveauMotDePasseHashe = password_hash($motDePasseSelEtPoivre, PASSWORD_ARGON2ID, [<span class="stringliteral">&#39;memory_cost&#39;</span> =&gt; 2048, <span class="stringliteral">&#39;time_cost&#39;</span> =&gt; 4, <span class="stringliteral">&#39;threads&#39;</span> =&gt; 3]);</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span> </div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:id&#39;</span>, $id);</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:nom&#39;</span>, $nom);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:prenom&#39;</span>, $prenom);</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:email&#39;</span>, $email);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:motDePasse&#39;</span>, $nouveauMotDePasseHashe);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>        $reqPrepa-&gt;bindParam(<span class="stringliteral">&#39;:habilitation&#39;</span>, $habilitation);</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span> </div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        $resultatDeLaRequete = $reqPrepa-&gt;execute();</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>        </div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>        <span class="keywordflow">return</span> $resultatDeLaRequete;</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    }</div>
+</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span> </div>
+<div class="foldopen" id="foldopen00259" data-start="{" data-end="}">
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno"><a class="line" href="class_utilisateur_d_a_o.html#ac509589e7e5f796d5ece2187584f9015">  259</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_utilisateur_d_a_o.html#ac509589e7e5f796d5ece2187584f9015">getUnUtilisateur</a>($id){</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        $ordreSQL = <span class="stringliteral">&quot;SELECT * FROM utilisateurs WHERE id = :id;&quot;</span>;</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        $reqPrepa = $this-&gt;<a class="code hl_function" href="class_base.html#a0f741e7b39d5685c909a704708ed1033">prepare</a>($ordreSQL);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span> </div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>        $reqPrepa-&gt;bindValue(<span class="stringliteral">&#39;:id&#39;</span>, $id);</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span> </div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        $reqPrepa-&gt;execute();</div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        </div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        $unUtilisateur = $reqPrepa-&gt;fetch();</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span> </div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>        <span class="keywordflow">if</span> ($unUtilisateur) {</div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>            $unObjUtilisateur = <span class="keyword">new</span> <a class="code hl_class" href="class_utilisateur.html">Utilisateur</a>(</div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>                $unUtilisateur[<span class="stringliteral">&quot;id&quot;</span>],</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>                $unUtilisateur[<span class="stringliteral">&quot;nom&quot;</span>],</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>                $unUtilisateur[<span class="stringliteral">&quot;prenom&quot;</span>],</div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>                $unUtilisateur[<span class="stringliteral">&quot;email&quot;</span>],</div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>                $unUtilisateur[<span class="stringliteral">&quot;motDePasse&quot;</span>],</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>                $unUtilisateur[<span class="stringliteral">&quot;habilitation&quot;</span>],</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>            );</div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>            <span class="keywordflow">return</span> $unObjUtilisateur;</div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>            <span class="keywordflow">return</span> <span class="keyword">null</span>; </div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span>        }</div>
+<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    }</div>
+</div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>}</div>
+</div>
+<div class="ttc" id="aclass_base_html"><div class="ttname"><a href="class_base.html">Base</a></div><div class="ttdef"><b>Definition</b> <a href="_base_8php_source.html#l00002">Base.php:2</a></div></div>
+<div class="ttc" id="aclass_base_html_a0f741e7b39d5685c909a704708ed1033"><div class="ttname"><a href="class_base.html#a0f741e7b39d5685c909a704708ed1033">Base\prepare</a></div><div class="ttdeci">prepare(string $sql)</div><div class="ttdef"><b>Definition</b> <a href="_base_8php_source.html#l00033">Base.php:33</a></div></div>
+<div class="ttc" id="aclass_utilisateur_d_a_o_html"><div class="ttname"><a href="class_utilisateur_d_a_o.html">UtilisateurDAO</a></div><div class="ttdef"><b>Definition</b> <a href="#l00003">UtilisateurDAO.php:3</a></div></div>
+<div class="ttc" id="aclass_utilisateur_d_a_o_html_a095c5d389db211932136b53f25f39685"><div class="ttname"><a href="class_utilisateur_d_a_o.html#a095c5d389db211932136b53f25f39685">UtilisateurDAO\__construct</a></div><div class="ttdeci">__construct()</div><div class="ttdef"><b>Definition</b> <a href="#l00008">UtilisateurDAO.php:8</a></div></div>
+<div class="ttc" id="aclass_utilisateur_d_a_o_html_a20d415b4f39c102a4f002c06127a9574"><div class="ttname"><a href="class_utilisateur_d_a_o.html#a20d415b4f39c102a4f002c06127a9574">UtilisateurDAO\getSel</a></div><div class="ttdeci">getSel($email)</div><div class="ttdef"><b>Definition</b> <a href="#l00087">UtilisateurDAO.php:87</a></div></div>
+<div class="ttc" id="aclass_utilisateur_d_a_o_html_a4a9f09f46fe2b4bb67905961ff418b08"><div class="ttname"><a href="class_utilisateur_d_a_o.html#a4a9f09f46fe2b4bb67905961ff418b08">UtilisateurDAO\editUtilisateur</a></div><div class="ttdeci">editUtilisateur($utilisateur)</div><div class="ttdef"><b>Definition</b> <a href="#l00220">UtilisateurDAO.php:220</a></div></div>
+<div class="ttc" id="aclass_utilisateur_d_a_o_html_a79c2dc5336a65c3596377ce77c87b5ef"><div class="ttname"><a href="class_utilisateur_d_a_o.html#a79c2dc5336a65c3596377ce77c87b5ef">UtilisateurDAO\deleteUtilisateur</a></div><div class="ttdeci">deleteUtilisateur($id)</div><div class="ttdef"><b>Definition</b> <a href="#l00205">UtilisateurDAO.php:205</a></div></div>
+<div class="ttc" id="aclass_utilisateur_d_a_o_html_a80505901fb7b236e64d1d5dea5aa07fc"><div class="ttname"><a href="class_utilisateur_d_a_o.html#a80505901fb7b236e64d1d5dea5aa07fc">UtilisateurDAO\verifConnection</a></div><div class="ttdeci">verifConnection($email, $motDePasse)</div><div class="ttdef"><b>Definition</b> <a href="#l00121">UtilisateurDAO.php:121</a></div></div>
+<div class="ttc" id="aclass_utilisateur_d_a_o_html_a80ca5386d53e29b2b310cb83191a9b31"><div class="ttname"><a href="class_utilisateur_d_a_o.html#a80ca5386d53e29b2b310cb83191a9b31">UtilisateurDAO\estConnecte</a></div><div class="ttdeci">estConnecte()</div><div class="ttdef"><b>Definition</b> <a href="#l00018">UtilisateurDAO.php:18</a></div></div>
+<div class="ttc" id="aclass_utilisateur_d_a_o_html_a8d795fe1d9c3cea756f5436bd90d5228"><div class="ttname"><a href="class_utilisateur_d_a_o.html#a8d795fe1d9c3cea756f5436bd90d5228">UtilisateurDAO\addUtilisateur</a></div><div class="ttdeci">addUtilisateur($unUtilisateur)</div><div class="ttdef"><b>Definition</b> <a href="#l00053">UtilisateurDAO.php:53</a></div></div>
+<div class="ttc" id="aclass_utilisateur_d_a_o_html_a8e0d30cdf5c0d8d40e524058dae831a4"><div class="ttname"><a href="class_utilisateur_d_a_o.html#a8e0d30cdf5c0d8d40e524058dae831a4">UtilisateurDAO\getLesUtilisateurs</a></div><div class="ttdeci">getLesUtilisateurs()</div><div class="ttdef"><b>Definition</b> <a href="#l00172">UtilisateurDAO.php:172</a></div></div>
+<div class="ttc" id="aclass_utilisateur_d_a_o_html_a9cb7f600b2fc7dd9fdc519c57bf4b776"><div class="ttname"><a href="class_utilisateur_d_a_o.html#a9cb7f600b2fc7dd9fdc519c57bf4b776">UtilisateurDAO\existeDeja</a></div><div class="ttdeci">existeDeja($email)</div><div class="ttdef"><b>Definition</b> <a href="#l00103">UtilisateurDAO.php:103</a></div></div>
+<div class="ttc" id="aclass_utilisateur_d_a_o_html_ac509589e7e5f796d5ece2187584f9015"><div class="ttname"><a href="class_utilisateur_d_a_o.html#ac509589e7e5f796d5ece2187584f9015">UtilisateurDAO\getUnUtilisateur</a></div><div class="ttdeci">getUnUtilisateur($id)</div><div class="ttdef"><b>Definition</b> <a href="#l00259">UtilisateurDAO.php:259</a></div></div>
+<div class="ttc" id="aclass_utilisateur_html"><div class="ttname"><a href="class_utilisateur.html">Utilisateur</a></div><div class="ttdef"><b>Definition</b> <a href="_utilisateur_8php_source.html#l00008">Utilisateur.php:8</a></div></div>
+<div class="ttc" id="av__reservation_soiree_8php_html_a2dd2d8ca994bbcc39ef01182769aa269"><div class="ttname"><a href="v__reservation_soiree_8php.html#a2dd2d8ca994bbcc39ef01182769aa269">$utilisateurConnecte</a></div><div class="ttdeci">$utilisateurConnecte</div><div class="ttdef"><b>Definition</b> <a href="v__reservation_soiree_8php_source.html#l00043">v_reservationSoiree.php:43</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

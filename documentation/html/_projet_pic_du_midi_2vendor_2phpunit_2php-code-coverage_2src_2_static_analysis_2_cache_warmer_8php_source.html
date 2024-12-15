@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetPicDuMidiDoc:  Fichier source de C:/wamp64/www/ProjetPicDuMidi/ProjetPicDuMidi/vendor/phpunit/php-code-coverage/src/StaticAnalysis/CacheWarmer.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetPicDuMidiDoc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_690cb576a7a137b13a3c790099da7d93.html">wamp64</a></li><li class="navelem"><a class="el" href="dir_6d4ed096fb3f4baa8acf47e3b339ffc6.html">www</a></li><li class="navelem"><a class="el" href="dir_17d949868782b00a0fb995f52b18ae45.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_e9bc861d08190637e86535ea3220281a.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_7f3f8b7a37945c30d800d25a2881adbb.html">vendor</a></li><li class="navelem"><a class="el" href="dir_a6950b5282e7d409cd590ad60d8c902e.html">phpunit</a></li><li class="navelem"><a class="el" href="dir_00ba0ba57a0b0442cb781eefd59817a4.html">php-code-coverage</a></li><li class="navelem"><a class="el" href="dir_807ef86934b5da9f65016b54f4d58ce4.html">src</a></li><li class="navelem"><a class="el" href="dir_7b76040d756b03252cd5e852ed83a7f6.html">StaticAnalysis</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">CacheWarmer.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_projet_pic_du_midi_2vendor_2phpunit_2php-code-coverage_2src_2_static_analysis_2_cache_warmer_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php declare(strict_types=1);</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment"> * This file is part of phpunit/php-code-coverage.</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment"> * (c) Sebastian Bergmann &lt;sebastian@phpunit.de&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> *</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> * For the full copyright and license information, please view the LICENSE</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment"> * file that was distributed with this source code.</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="namespace_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis.html">   10</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis.html">SebastianBergmann\CodeCoverage\StaticAnalysis</a>;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>use <a class="code hl_class" href="class_sebastian_bergmann_1_1_code_coverage_1_1_filter.html">SebastianBergmann\CodeCoverage\Filter</a>;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">final</span> <span class="keyword">class </span><a class="code hl_class" href="class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_cache_warmer.html">CacheWarmer</a></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_cache_warmer.html#aec0a35bc36845e48765177e927ac6b7d">   16</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_cache_warmer.html#aec0a35bc36845e48765177e927ac6b7d">warmCache</a>(<span class="keywordtype">string</span> $cacheDirectory, <span class="keywordtype">bool</span> $useAnnotationsForIgnoringCode, <span class="keywordtype">bool</span> $ignoreDeprecatedCode, <a class="code hl_class" href="class_sebastian_bergmann_1_1_code_coverage_1_1_filter.html">Filter</a> $filter): void</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        $analyser = <span class="keyword">new</span> <a class="code hl_class" href="class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_caching_file_analyser.html">CachingFileAnalyser</a>(</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            $cacheDirectory,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>            <span class="keyword">new</span> <a class="code hl_class" href="class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_parsing_file_analyser.html">ParsingFileAnalyser</a>(</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                $useAnnotationsForIgnoringCode,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                $ignoreDeprecatedCode,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            ),</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>            $useAnnotationsForIgnoringCode,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            $ignoreDeprecatedCode,</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        );</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        <span class="keywordflow">foreach</span> ($filter-&gt;<a class="code hl_function" href="class_sebastian_bergmann_1_1_code_coverage_1_1_filter.html#a26f846b09db5e10b30498e97e4ee28ed">files</a>() as $file) {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            $analyser-&gt;process($file);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    }</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}</div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_code_coverage_1_1_filter_html"><div class="ttname"><a href="class_sebastian_bergmann_1_1_code_coverage_1_1_filter.html">SebastianBergmann\CodeCoverage\Filter</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2php-code-coverage_2src_2_filter_8php_source.html#l00019">Filter.php:20</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_code_coverage_1_1_filter_html_a26f846b09db5e10b30498e97e4ee28ed"><div class="ttname"><a href="class_sebastian_bergmann_1_1_code_coverage_1_1_filter.html#a26f846b09db5e10b30498e97e4ee28ed">SebastianBergmann\CodeCoverage\Filter\files</a></div><div class="ttdeci">files()</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2phpunit_2php-code-coverage_2src_2_filter_8php_source.html#l00119">Filter.php:119</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_cache_warmer_html"><div class="ttname"><a href="class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_cache_warmer.html">SebastianBergmann\CodeCoverage\StaticAnalysis\CacheWarmer</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2php-code-coverage_2src_2_static_analysis_2_cache_warmer_8php_source.html#l00014">CacheWarmer.php:15</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_cache_warmer_html_aec0a35bc36845e48765177e927ac6b7d"><div class="ttname"><a href="class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_cache_warmer.html#aec0a35bc36845e48765177e927ac6b7d">SebastianBergmann\CodeCoverage\StaticAnalysis\CacheWarmer\warmCache</a></div><div class="ttdeci">warmCache(string $cacheDirectory, bool $useAnnotationsForIgnoringCode, bool $ignoreDeprecatedCode, Filter $filter)</div><div class="ttdef"><b>Definition</b> <a href="#l00016">CacheWarmer.php:16</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_caching_file_analyser_html"><div class="ttname"><a href="class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_caching_file_analyser.html">SebastianBergmann\CodeCoverage\StaticAnalysis\CachingFileAnalyser</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2php-code-coverage_2src_2_static_analysis_2_caching_file_analyser_8php_source.html#l00027">CachingFileAnalyser.php:28</a></div></div>
+<div class="ttc" id="aclass_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_parsing_file_analyser_html"><div class="ttname"><a href="class_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_1_1_parsing_file_analyser.html">SebastianBergmann\CodeCoverage\StaticAnalysis\ParsingFileAnalyser</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2phpunit_2php-code-coverage_2src_2_static_analysis_2_parsing_file_analyser_8php_source.html#l00042">ParsingFileAnalyser.php:43</a></div></div>
+<div class="ttc" id="anamespace_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis_html"><div class="ttname"><a href="namespace_sebastian_bergmann_1_1_code_coverage_1_1_static_analysis.html">SebastianBergmann\CodeCoverage\StaticAnalysis</a></div><div class="ttdef"><b>Definition</b> <a href="#l00010">CacheWarmer.php:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

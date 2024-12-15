@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetPicDuMidiDoc:  Fichier source de C:/wamp64/www/ProjetPicDuMidi/vendor/nikic/php-parser/lib/PhpParser/Node/Stmt/ClassConst.php</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetPicDuMidiDoc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_690cb576a7a137b13a3c790099da7d93.html">wamp64</a></li><li class="navelem"><a class="el" href="dir_6d4ed096fb3f4baa8acf47e3b339ffc6.html">www</a></li><li class="navelem"><a class="el" href="dir_17d949868782b00a0fb995f52b18ae45.html">ProjetPicDuMidi</a></li><li class="navelem"><a class="el" href="dir_a5d39cea70582ed997324fb386642b0a.html">vendor</a></li><li class="navelem"><a class="el" href="dir_5dcc88d987c0ec27747f0b3fd06c043c.html">nikic</a></li><li class="navelem"><a class="el" href="dir_29b7a58b19fe6a1130d8eb9ed2feefc7.html">php-parser</a></li><li class="navelem"><a class="el" href="dir_8f3ab2fe530b2cb5ef54dc2120f643cf.html">lib</a></li><li class="navelem"><a class="el" href="dir_07b98e9be706d4757986325750c5ee59.html">PhpParser</a></li><li class="navelem"><a class="el" href="dir_89d4ceb5275be1d80b0ad792f55603e2.html">Node</a></li><li class="navelem"><a class="el" href="dir_a5b96443f7eed328c822b0d450a06d6c.html">Stmt</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">ClassConst.php</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_stmt_2_class_const_8php.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>&lt;?php declare(strict_types=1);</div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="keyword">namespace </span><a class="code hl_namespace" href="namespace_php_parser_1_1_node_1_1_stmt.html">PhpParser\Node\Stmt</a>;</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>use <a class="code hl_class" href="class_php_parser_1_1_modifiers.html">PhpParser\Modifiers</a>;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>use <a class="code hl_namespace" href="namespace_php_parser_1_1_node.html">PhpParser\Node</a>;</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="foldopen" id="foldopen00008" data-start="{" data-end="};">
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html">    8</a></span><span class="keyword">class </span><a class="code hl_class" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html">ClassConst</a> <span class="keyword">extends</span> Node\Stmt {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">public</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a374c616ba2ed6edabbecbec4c1a8a24f">$flags</a>;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">public</span> array <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a66437f206670911bcd54abed07ad667d">$consts</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">public</span> array <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#ab93594de6e352282d8d837db8f2726d0">$attrGroups</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">public</span> ?<a class="code hl_interface" href="interface_php_parser_1_1_node.html">Node</a> <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a4ad4ba9bc3f81fabf69f790e1e801f3a">$type</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="foldopen" id="foldopen00027" data-start="{" data-end="}">
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#aed1152be5266afc27c2f3af3d7c49d88">   27</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#aed1152be5266afc27c2f3af3d7c49d88">__construct</a>(</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        array <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a66437f206670911bcd54abed07ad667d">$consts</a>,</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordtype">int</span> <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a374c616ba2ed6edabbecbec4c1a8a24f">$flags</a> = 0,</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        array <a class="code hl_variable" href="class_php_parser_1_1_node_abstract.html#ac89f2733f3f084f1e693e13afbb67739">$attributes</a> = [],</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        array <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#ab93594de6e352282d8d837db8f2726d0">$attrGroups</a> = [],</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        ?<a class="code hl_interface" href="interface_php_parser_1_1_node.html">Node</a> <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a4ad4ba9bc3f81fabf69f790e1e801f3a">$type</a> = <span class="keyword">null</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    ) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        $this-&gt;attributes = <a class="code hl_variable" href="class_php_parser_1_1_node_abstract.html#ac89f2733f3f084f1e693e13afbb67739">$attributes</a>;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        $this-&gt;flags = <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a374c616ba2ed6edabbecbec4c1a8a24f">$flags</a>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        $this-&gt;consts = <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a66437f206670911bcd54abed07ad667d">$consts</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        $this-&gt;attrGroups = <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#ab93594de6e352282d8d837db8f2726d0">$attrGroups</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        $this-&gt;type = <a class="code hl_variable" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a4ad4ba9bc3f81fabf69f790e1e801f3a">$type</a>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="foldopen" id="foldopen00041" data-start="{" data-end="}">
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a7e06a91cc526dc52826d18313e64798a">   41</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a7e06a91cc526dc52826d18313e64798a">getSubNodeNames</a>(): array {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        return [<span class="stringliteral">&#39;attrGroups&#39;</span>, <span class="stringliteral">&#39;flags&#39;</span>, <span class="stringliteral">&#39;type&#39;</span>, <span class="stringliteral">&#39;consts&#39;</span>];</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    }</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#ac0eb21abcd8889b02b75c545a480fb48">   48</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#ac0eb21abcd8889b02b75c545a480fb48">isPublic</a>(): bool {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        return ($this-&gt;flags &amp; <a class="code hl_class" href="class_php_parser_1_1_modifiers.html">Modifiers</a>::PUBLIC) !== 0</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            || ($this-&gt;flags &amp; <a class="code hl_class" href="class_php_parser_1_1_modifiers.html">Modifiers</a>::VISIBILITY_MASK) === 0;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="foldopen" id="foldopen00056" data-start="{" data-end="}">
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#aeb33f149ae972c38ea061fc80a67d7cc">   56</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#aeb33f149ae972c38ea061fc80a67d7cc">isProtected</a>(): bool {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        return (bool) ($this-&gt;flags &amp; <a class="code hl_class" href="class_php_parser_1_1_modifiers.html">Modifiers</a>::PROTECTED);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    }</div>
+</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a55426c7f8596f9fc117210bf5311d4b9">   63</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a55426c7f8596f9fc117210bf5311d4b9">isPrivate</a>(): bool {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        return (bool) ($this-&gt;flags &amp; <a class="code hl_class" href="class_php_parser_1_1_modifiers.html">Modifiers</a>::PRIVATE);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="foldopen" id="foldopen00070" data-start="{" data-end="}">
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#af5e2c93992e760dc57f31b31ed354cfa">   70</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#af5e2c93992e760dc57f31b31ed354cfa">isFinal</a>(): bool {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        return (bool) ($this-&gt;flags &amp; <a class="code hl_class" href="class_php_parser_1_1_modifiers.html">Modifiers</a>::FINAL);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
+</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="foldopen" id="foldopen00074" data-start="{" data-end="}">
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a830b5c75df72b32396701bc563fbe3c7">   74</a></span>    <span class="keyword">public</span> <span class="keyword">function</span> <a class="code hl_function" href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a830b5c75df72b32396701bc563fbe3c7">getType</a>(): string {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        return <span class="stringliteral">&#39;Stmt_ClassConst&#39;</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
+</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
+</div>
+<div class="ttc" id="aclass_php_parser_1_1_modifiers_html"><div class="ttname"><a href="class_php_parser_1_1_modifiers.html">PhpParser\Modifiers</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_modifiers_8php_source.html#l00009">Modifiers.php:9</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_const_html"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html">PhpParser\Node\Stmt\ClassConst</a></div><div class="ttdef"><b>Definition</b> <a href="#l00008">ClassConst.php:8</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_const_html_a374c616ba2ed6edabbecbec4c1a8a24f"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a374c616ba2ed6edabbecbec4c1a8a24f">PhpParser\Node\Stmt\ClassConst\$flags</a></div><div class="ttdeci">int $flags</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_stmt_2_class_const_8php_source.html#l00010">ClassConst.php:10</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_const_html_a4ad4ba9bc3f81fabf69f790e1e801f3a"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a4ad4ba9bc3f81fabf69f790e1e801f3a">PhpParser\Node\Stmt\ClassConst\$type</a></div><div class="ttdeci">Node $type</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_stmt_2_class_const_8php_source.html#l00016">ClassConst.php:16</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_const_html_a55426c7f8596f9fc117210bf5311d4b9"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a55426c7f8596f9fc117210bf5311d4b9">PhpParser\Node\Stmt\ClassConst\isPrivate</a></div><div class="ttdeci">isPrivate()</div><div class="ttdef"><b>Definition</b> <a href="#l00063">ClassConst.php:63</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_const_html_a66437f206670911bcd54abed07ad667d"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a66437f206670911bcd54abed07ad667d">PhpParser\Node\Stmt\ClassConst\$consts</a></div><div class="ttdeci">array $consts</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_stmt_2_class_const_8php_source.html#l00012">ClassConst.php:12</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_const_html_a7e06a91cc526dc52826d18313e64798a"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a7e06a91cc526dc52826d18313e64798a">PhpParser\Node\Stmt\ClassConst\getSubNodeNames</a></div><div class="ttdeci">getSubNodeNames()</div><div class="ttdef"><b>Definition</b> <a href="#l00041">ClassConst.php:41</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_const_html_a830b5c75df72b32396701bc563fbe3c7"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#a830b5c75df72b32396701bc563fbe3c7">PhpParser\Node\Stmt\ClassConst\getType</a></div><div class="ttdeci">getType()</div><div class="ttdef"><b>Definition</b> <a href="#l00074">ClassConst.php:74</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_const_html_ab93594de6e352282d8d837db8f2726d0"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#ab93594de6e352282d8d837db8f2726d0">PhpParser\Node\Stmt\ClassConst\$attrGroups</a></div><div class="ttdeci">array $attrGroups</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_stmt_2_class_const_8php_source.html#l00014">ClassConst.php:14</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_const_html_ac0eb21abcd8889b02b75c545a480fb48"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#ac0eb21abcd8889b02b75c545a480fb48">PhpParser\Node\Stmt\ClassConst\isPublic</a></div><div class="ttdeci">isPublic()</div><div class="ttdef"><b>Definition</b> <a href="#l00048">ClassConst.php:48</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_const_html_aeb33f149ae972c38ea061fc80a67d7cc"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#aeb33f149ae972c38ea061fc80a67d7cc">PhpParser\Node\Stmt\ClassConst\isProtected</a></div><div class="ttdeci">isProtected()</div><div class="ttdef"><b>Definition</b> <a href="#l00056">ClassConst.php:56</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_const_html_aed1152be5266afc27c2f3af3d7c49d88"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#aed1152be5266afc27c2f3af3d7c49d88">PhpParser\Node\Stmt\ClassConst\__construct</a></div><div class="ttdeci">__construct(array $consts, int $flags=0, array $attributes=[], array $attrGroups=[], ?Node $type=null)</div><div class="ttdef"><b>Definition</b> <a href="#l00027">ClassConst.php:27</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_1_1_stmt_1_1_class_const_html_af5e2c93992e760dc57f31b31ed354cfa"><div class="ttname"><a href="class_php_parser_1_1_node_1_1_stmt_1_1_class_const.html#af5e2c93992e760dc57f31b31ed354cfa">PhpParser\Node\Stmt\ClassConst\isFinal</a></div><div class="ttdeci">isFinal()</div><div class="ttdef"><b>Definition</b> <a href="#l00070">ClassConst.php:70</a></div></div>
+<div class="ttc" id="aclass_php_parser_1_1_node_abstract_html_ac89f2733f3f084f1e693e13afbb67739"><div class="ttname"><a href="class_php_parser_1_1_node_abstract.html#ac89f2733f3f084f1e693e13afbb67739">PhpParser\NodeAbstract\$attributes</a></div><div class="ttdeci">array $attributes</div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_abstract_8php_source.html#l00007">NodeAbstract.php:7</a></div></div>
+<div class="ttc" id="ainterface_php_parser_1_1_node_html"><div class="ttname"><a href="interface_php_parser_1_1_node.html">PhpParser\Node</a></div><div class="ttdef"><b>Definition</b> <a href="vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_8php_source.html#l00005">Node.php:5</a></div></div>
+<div class="ttc" id="anamespace_php_parser_1_1_node_1_1_stmt_html"><div class="ttname"><a href="namespace_php_parser_1_1_node_1_1_stmt.html">PhpParser\Node\Stmt</a></div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_stmt_2_block_8php_source.html#l00003">Block.php:3</a></div></div>
+<div class="ttc" id="anamespace_php_parser_1_1_node_html"><div class="ttname"><a href="namespace_php_parser_1_1_node.html">PhpParser\Node</a></div><div class="ttdef"><b>Definition</b> <a href="_projet_pic_du_midi_2vendor_2nikic_2php-parser_2lib_2_php_parser_2_node_2_arg_8php_source.html#l00003">Arg.php:3</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>

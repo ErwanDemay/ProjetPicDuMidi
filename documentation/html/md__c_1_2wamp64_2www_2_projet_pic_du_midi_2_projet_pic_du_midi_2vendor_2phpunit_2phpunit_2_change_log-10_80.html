@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.12.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ProjetPicDuMidiDoc: Changes in PHPUnit 10.0</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">ProjetPicDuMidiDoc
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.12.0 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche',false);
+  $(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){ initResizable(false); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div id="doc-content">
+<div><div class="header">
+  <div class="headertitle"><div class="title">Changes in PHPUnit 10.0</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p><a class="anchor" id="autotoc_md227"></a></p>
+<p>All notable changes of the <a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a> 10.0 release series are documented in this file using the <a href="https://keepachangelog.com/">Keep a CHANGELOG</a> principles.</p>
+<h1><a class="anchor" id="autotoc_md228"></a>
+<a href="https://github.com/sebastianbergmann/phpunit/compare/9.6...10.0.0">10.0.0</a> - 2023-02-03</h1>
+<h2><a class="anchor" id="autotoc_md229"></a>
+Added</h2>
+<ul>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4676">#4676</a>: Event System for extending <a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>'s test runner</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4502">#4502</a>: Support PHP 8 attributes for adding metadata to test classes and test methods as well as tested code units</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4641">#4641</a>: <code>assertStringEqualsStringIgnoringLineEndings()</code> and <code>assertStringContainsStringIgnoringLineEndings()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4650">#4650</a>: Support dist file name <code>phpunit.dist.xml</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/pull/4657">#4657</a>: <code>--exclude-testsuite</code> option</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/pull/4818">#4818</a>: <code>assertIsList()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4892">#4892</a>: Make colors used in HTML code coverage report configurable</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4893">#4893</a>: Make path to custom.css for HTML code coverage report configurable</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/5097">#5097</a>: Support for <code>enum</code> values in TestDox placeholder replacements</li>
+<li><code>TestCase::createStubForIntersectionOfInterfaces()</code> and <code>TestCase::createMockForIntersectionOfInterfaces()</code></li>
+<li>&lsquo;#[ExcludeGlobalVariableFromBackup('variable&rsquo;)]<code>attribute for excluding a global variable from the backup/restore of global and super-global variables *</code>#[ExcludeStaticPropertyFromBackup('className', 'propertyName')]<code>attribute for excluding a static property from the backup/restore of static properties in user-defined classes *</code>&ndash;log-events-text &lt;file&gt;<code>option that controls streaming of event information (without event telemetry) in text format to a file *</code>&ndash;log-events-verbose-text &lt;file&gt;<code>option that controls streaming of event information (with event telemetry) in text format to a file *</code>&ndash;no-progress<code>option to disable test execution progress output *</code>&ndash;no-results<code>option to disable test result output *</code>&ndash;no-output<code>option to disable all output *</code>&ndash;display-incomplete<code>option and</code>displayDetailsOnIncompleteTests<code>XML configuration attribute to control whether details on incomplete tests should be displayed *</code>&ndash;display-skipped<code>option and</code>displayDetailsOnSkippedTests<code>XML configuration attribute to control whether details on skipped tests should be displayed *</code>&ndash;display-deprecations<code>option and</code>displayDetailsOnTestsThatTriggerDeprecations<code>XML configuration attribute to control whether details on tests that trigger</code>E_DEPRECATED<code>or</code>E_USER_DEPRECATED<code>should be displayed *</code>&ndash;display-errors<code>option and</code>displayDetailsOnTestsThatTriggerErrors<code>XML configuration attribute to control whether details on tests that trigger</code>E_ERROR<code>or</code>E_USER_ERROR<code>should be displayed *</code>&ndash;display-notices<code>option and</code>displayDetailsOnTestsThatTriggerNotices<code>XML configuration attribute to control whether details on tests that trigger</code>E_STRING<code>,</code>E_NOTICE<code>, or</code>E_USER_NOTICE<code>should be displayed *</code>&ndash;display-warnings<code>option and</code>displayDetailsOnTestsThatTriggerWarnings<code>XML configuration attribute to control whether details on tests that trigger</code>E_WARNING<code>or</code>E_USER_WARNING` should be displayed</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md230"></a>
+Changed</h2>
+<ul>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/3871">#3871</a>: Declare return types for <code>InvocationStubber</code> methods</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/3954">#3954</a>: Disable global state preservation for process isolation by default</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4599">#4599</a>: Unify cache configuration</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4603">#4603</a>: Use "property" instead of "attribute" for configuring the backup of static fields</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4656">#4656</a>: Prevent doubling of <code>__destruct()</code></li>
+<li>Using a non-static method as a data provider is now deprecated</li>
+<li>Using a non-public method as a data provider is now deprecated</li>
+<li>Declaring a data provider method to require an argument is now deprecated</li>
+<li>A test method now continues execution after test(ed) code triggered <code>E_(USER_)DEPRECATED</code>, <code>E_(USER_)NOTICE</code>, <code>E_STRICT</code>, or <code>E_(USER_)WARNING</code></li>
+<li><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a> no longer invokes a static method named <code>suite</code> on a class that is declared in a file that is passed as an argument to the CLI test runner</li>
+<li><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a> no longer promotes variables that are global in the bootstrap script's scope to global variables in the test runner's scope (use &lsquo;$GLOBALS['variable&rsquo;] = 'value'<code>instead of</code>$variable = 'value'<code>in your bootstrap script) *</code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\TestCase::$backupGlobals<code>can no longer be used to enable or disable the backup/restore of global and super-global variables for a test case class *</code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\TestCase::$backupStaticAttributes<code>can no longer be used to enable or disable the backup/restore of static properties in user-defined classes for a test case class *</code><dl class="section author"><dt>Auteur</dt><dd><code>is no longer an alias for</code>@group<code></code></dd></dl>
+</li>
+<li><code>The JUnit XML logfile now has both</code>name<code>and</code>file<code>attributes on</code>&lt;testcase&gt;<code>elements for PHPT tests</code></li>
+<li><code>The JUnit XML logfile no longer has</code>&lt;system-out&gt;<code>elements that contain the output printed to</code>stdout<code>by a test</code></li>
+<li><code>The JUnit XML logfile now only reports test outcome (errored, failed, incomplete, skipped, or passed) and no longer test issues (considered risky, for instance)</code></li>
+<li><code>The</code>forceCoversAnnotation<code>attribute of the</code>&lt;phpunit&gt;<code>element of <a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>'s XML configuration file has been renamed to</code>requireCoverageMetadata<code></code></li>
+<li><code>The</code>beStrictAboutCoversAnnotation<code>attribute of the</code>&lt;phpunit&gt;<code>element of <a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>'s XML configuration file has been renamed to</code>beStrictAboutCoverageMetadata<code></code></li>
+<li><code>The public methods of</code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\Assert<code>and</code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\TestCase<code>are now</code>final<code></code></li>
+<li><code>The</code>&ndash;testdox<code>CLI option no longer replaces the default progress output, but only the default result output</code></li>
+<li><code>The CLI test runner now only stops after a test errored when</code>&ndash;stop-on-error<code>or</code>&ndash;stop-on-defect<code>is used</code></li>
+<li><code>The CLI test runner now only stops after a test failed when</code>&ndash;stop-on-failure<code>or</code>&ndash;stop-on-defect<code>is used</code></li>
+<li><code>The CLI test runner now only stops after a test triggered a warning when</code>&ndash;stop-on-warning<code>or</code>&ndash;stop-on-defect<code>is used</code></li>
+<li><code>The CLI test runner now only stops after a test was marked as risky when</code>&ndash;stop-on-risky<code>or</code>&ndash;stop-on-defect<code>is used</code></li>
+<li><code>The CLI test runner now only stops after a test was skipped when</code>&ndash;stop-on-skipped<code>is used</code></li>
+<li><code>The CLI test runner now only stops after a test was marked as incomplete when</code>&ndash;stop-on-incomplete` is used</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md231"></a>
+Removed</h2>
+<ul>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/3389">#3389</a>: Remove <code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\TestListener</code> and <code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\TestListenerDefaultImplementation</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/3631">#3631</a>: Remove support for <code>"ClassName&lt;*&gt;"</code> as values for <code>@covers</code> and <code>@uses</code> annotations</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/3769">#3769</a>: Remove <code>MockBuilder::setMethods()</code> and <code>MockBuilder::setMethodsExcept()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/3777">#3777</a>: Remove <code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\Error\*</code> classes</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4063">#4063</a>: Remove <code>assertNotIsReadable()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4066">#4066</a>: Remove <code>assertNotIsWritable()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4069">#4069</a>: Remove <code>assertDirectoryNotExists()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4072">#4072</a>: Remove <code>assertDirectoryNotIsReadable()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4075">#4075</a>: Remove <code>assertDirectoryNotIsWritable()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4078">#4078</a>: Remove <code>assertFileNotExists()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4081">#4081</a>: Remove <code>assertFileNotIsReadable()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4087">#4087</a>: Remove <code>assertRegExp()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4090">#4090</a>: Remove <code>assertNotRegExp()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4092">#4092</a>: Remove <code>assertEqualXMLStructure()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4142">#4142</a>: Remove Prophecy integration</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4227">#4227</a>: Remove <code>--dump-xdebug-filter</code> and <code>--prepend</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4272">#4272</a>: Remove <code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Util\Blacklist</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4273">#4273</a>: Remove <code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\TestCase::$backupGlobalsBlacklist</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4274">#4274</a>: Remove <code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\TestCase::$backupStaticAttributesBlacklist</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4278">#4278</a>: Remove <code>--whitelist</code> option</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4279">#4279</a>: Remove support for old code coverage configuration</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4286">#4286</a>: Remove support for old logging configuration</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4298">#4298</a>: Remove <code>at()</code> matcher</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4397">#4397</a>: Remove confusing parameter options for XML assertions</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/pull/4531">#4531</a>: Remove <code>--loader</code> option as well as <code>testSuiteLoaderClass</code> and <code>testSuiteLoaderFile</code> XML configuration settings</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4536">#4536</a>: Remove <code>assertFileNotIsWritable()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4595">#4596</a>: Remove Test Hooks</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4564">#4564</a>: Remove <code>withConsecutive()</code></li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4567">#4567</a>: Remove support for generators in <code>assertCount()</code> and <code>Count</code> constraint</li>
+<li><a href="https://github.com/sebastianbergmann/phpunit/issues/4601">#4601</a>: Remove assertions that operate on class/object properties</li>
+<li>Removed the <code>expectDeprecation()</code>, <code>expectDeprecationMessage()</code>, and <code>expectDeprecationMessageMatches()</code> methods</li>
+<li>Removed the <code>expectError()</code>, <code>expectErrorMessage()</code>, and <code>expectErrorMessageMatches()</code> methods</li>
+<li>Removed the <code>expectNotice()</code>, <code>expectNoticeMessage()</code>, and <code>expectNoticeMessageMatches()</code> methods</li>
+<li>Removed the <code>expectWarning()</code>, <code>expectWarningMessage()</code>, and <code>expectWarningMessageMatches()</code> methods</li>
+<li>Removed the <code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Runner\TestSuiteLoader</code> interface</li>
+<li>Removed the <code>&lt;listeners&gt;</code> XML configuration element and its children</li>
+<li>Removed the <code>beStrictAboutResourceUsageDuringSmallTests</code> attribute on the <code>&lt;phpunit&gt;</code> XML configuration element and the <code>--disallow-resource-usage</code> option as well as the feature they used to control</li>
+<li>Removed the <code>beStrictAboutTodoAnnotatedTests</code> attribute on the <code>&lt;phpunit&gt;</code> XML configuration element and the <code>--disallow-todo-tests</code> option as well as the feature they used to control</li>
+<li>Removed the <code>convertDeprecationsToExceptions</code> attribute on the <code>&lt;phpunit&gt;</code> XML configuration element as well as the feature it used to control</li>
+<li>Removed the <code>convertErrorsToExceptions</code> attribute on the <code>&lt;phpunit&gt;</code> XML configuration element as well as the feature it used to control</li>
+<li>Removed the <code>convertNoticesToExceptions</code> attribute on the <code>&lt;phpunit&gt;</code> XML configuration element as well as the feature it used to control</li>
+<li>Removed the <code>convertWarningsToExceptions</code> attribute on the <code>&lt;phpunit&gt;</code> XML configuration element as well as the feature it used to control</li>
+<li>Removed the <code>noInteraction</code> attribute on the <code>&lt;phpunit&gt;</code> XML configuration element and <code>--no-interaction</code> option as well as the feature they used to control</li>
+<li>Removed the <code>processUncoveredFiles</code> attribute on the <code>&lt;coverage&gt;</code> XML configuration element</li>
+<li>Removed the <code>testdoxGroups</code> XML configuration element, the <code>--testdox-group</code> option, and the <code>--testdox-exclude-group</code> option as well as the feature they used to control</li>
+<li>Removed the <code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\TestCase::getMockClass()</code> method</li>
+<li>Removed the <code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\TestCase::$backupGlobalsExcludeList</code> property, use the &lsquo;#[ExcludeGlobalVariableFromBackup('variable&rsquo;)]<code>attribute instead for excluding a global variable from the backup/restore of global and super-global variables</code></li>
+<li><code>Removed the</code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\TestCase::$backupStaticAttributesExcludeList<code>property, use the</code>#[ExcludeStaticPropertyFromBackup('className', 'propertyName')]<code>attribute instead for excluding a static property from the backup/restore of static properties in user-defined classes</code></li>
+<li><code>Removed the</code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\Framework\TestCase::$preserveGlobalState<code>property, use the</code>@preserveGlobalState enabled<code>annotation or the</code>#[PreserveGlobalState(true)]<code>attribute instead for enabling the preservation of global state when running tests in isolation</code></li>
+<li><code>Removed the</code>&ndash;repeat<code>option</code></li>
+<li><code>Removed the</code>&ndash;debug<code>option</code></li>
+<li><code>Removed the</code>&ndash;extensions<code>option</code></li>
+<li><code>Removed the</code>&ndash;printer<code>option</code></li>
+<li><code>Removed the</code>printerClass<code>and</code>printerFile<code>attributes on the</code>&lt;phpunit&gt;<code>XML configuration element</code></li>
+<li><code>Removed the</code>&ndash;testdox-xml<code>option and the</code>&lt;testdoxXml&gt;<code>XML configuration element as well as the feature they used to control</code></li>
+<li><code>Removed the</code>&ndash;verbose<code>option</code></li>
+<li><code>Removed the</code>verbose<code>attribute on the</code>&lt;phpunit&gt;<code>XML configuration element</code></li>
+<li><code>Removed the</code>&lt;text&gt;<code>XML configuration element (child of</code>&lt;logging&gt;<code>)</code></li>
+<li><code>The CLI test runner can no longer be extended through inheritance, the</code><a class="el" href="namespace_p_h_p_unit.html">PHPUnit</a>\TextUI\Command` class has been removed</li>
+<li>PHP 7.3, PHP 7.4, and PHP 8.0 are no longer supported </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.12.0
+</small></address>
+</div><!-- doc-content -->
+</body>
+</html>
