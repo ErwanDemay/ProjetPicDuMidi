@@ -1,16 +1,38 @@
-# ProjetPicDuMidi
+# Project PicDuMidi
 
-Instalation --
+This web app is a dashboard providing data visualization over ParaView’s launcher logs. It reveals stats about how users use ParaView and who uses ParaView (soon).
 
-Clonez l'url du projet sur votre ide , lancez le projet grâce a un serveur PHP (wampServer ou bien PhpServer inclus dans vsCode)
+#### Where does the data come from?
 
-Comptes --
+The app retrieves data from a database hosted on AlwaysData.
 
-Le compte "admin" est le suivant
-Username : test@test.test
-mdp : test
+## Getting Started
 
-Un compte "classique" 
+### Installing the App
+
+Copy the source files and launch the app with a php server (wampServer or PhpServer, included in VSCode).
+
+### Launching the app
+
+Launching an accessing the app heavily depends on you server choice.
+
+## Authors
+
+- Victor MARIÉ
+- Erwan DEMAY--PEAUCELLIER
+- Loan MANCISIDOR
+- Léonardo FERIGO
+- Antony LOPEZ
+
+## Things to know
+
+Here are two accounts to use the app :
+
+Credentials for a basic account :
 Username : harrycot@gmail.com 
 mdp : test
 
+
+Credentials for the admin account :
+Username : test@test.test
+mdp : test
